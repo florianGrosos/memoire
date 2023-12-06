@@ -21,7 +21,7 @@ class _PagePrincipalState extends State<PagePrincipal> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("memoire")),
+      appBar: AppBar(title: const Text("Le mémoire")),
       body: Container(
         child: const Column(children: [
           SearchAndSelect(),
@@ -88,6 +88,33 @@ class _SearchAndSelectState extends State<SearchAndSelect> {
         struc.add(Structure(donnee[0], donnee[4], lien, donnee[5], donnee[6]));
       }
     }
+    for (var structure in struc) {
+      if (structure.nom.length > 2) {
+        if (structure.nom.substring(0, 1) == 'M.') {
+          structure.type = "Muscle";
+        }
+      }
+      if (structure.nom.length > 12) {
+        if (structure.nom.substring(0, 11) == 'Articulation') {
+          structure.type = "Articulation";
+        }
+      }
+      if (structure.nom.length > 5) {
+        if (structure.nom.substring(0, 5) == 'Plexus') {
+          structure.type = "Nerf";
+        }
+      }
+      if (structure.nom.length > 3) {
+        if (structure.nom.substring(0, 3) == 'Nerf') {
+          structure.type = "Nerf";
+        }
+      }
+      if (structure.type == "") {
+        structure.type = "Os";
+
+        print(structure.type);
+      }
+    }
     return struc;
   }
 
@@ -106,6 +133,20 @@ class _SearchAndSelectState extends State<SearchAndSelect> {
     // for(var donnee in donneeBrut){
   }
 
+  Color choiceColor(typeStructure) {
+    switch (typeStructure) {
+      case "Muscle":
+        return const Color.fromARGB(255, 252, 76, 36);
+      case "Articulation":
+        return const Color.fromARGB(255, 44, 120, 242);
+      case "Nerf":
+        return const Color.fromARGB(255, 252, 242, 51);
+      case "Os":
+        return const Color.fromARGB(255, 255, 255, 255);
+    }
+    return const Color.fromARGB(255, 255, 255, 255);
+  }
+
   @override
   Widget build(BuildContext context) {
     return MultipleSearchSelection(
@@ -113,7 +154,7 @@ class _SearchAndSelectState extends State<SearchAndSelect> {
       pickedItemBuilder: (structure) {
         return Container(
           decoration: BoxDecoration(
-            color: const Color.fromARGB(255, 255, 0, 0),
+            color: choiceColor(structure.type),
             border: Border.all(color: const Color.fromARGB(255, 0, 0, 0)),
           ),
           child: Padding(
@@ -131,7 +172,7 @@ class _SearchAndSelectState extends State<SearchAndSelect> {
           child: Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(6),
-              color: Colors.white,
+              color: choiceColor(structure.type),
             ),
             child: Padding(
               padding: const EdgeInsets.symmetric(

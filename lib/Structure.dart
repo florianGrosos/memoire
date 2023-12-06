@@ -6,6 +6,7 @@ class Structure {
   List<String> lien;
   String image;
   String tips;
+  String type = "";
 
   Structure(this.nom, this.description, this.lien, this.image, this.tips);
 

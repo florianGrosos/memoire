@@ -19,7 +19,7 @@ class _PageAffichageStructureState extends State<PageAffichageStructure> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("memoire")),
+      appBar: AppBar(title: const Text("Le mémoire")),
       body: Container(
         child: const Column(children: []),
       ),

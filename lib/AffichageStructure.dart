@@ -12,7 +12,9 @@ class PageAffichageStructure extends StatefulWidget {
 }
 
 class _PageAffichageStructureState extends State<PageAffichageStructure> {
+  late Structure structureActuelle;
   _PageAffichageStructureState(Structure structureMere) {
+    structureActuelle = structureMere;
     print(structureMere.nom);
   }
 
@@ -21,7 +23,15 @@ class _PageAffichageStructureState extends State<PageAffichageStructure> {
     return Scaffold(
       appBar: AppBar(title: const Text("Le mémoire")),
       body: Container(
-        child: const Column(children: []),
+        child: Column(children: [
+          Text(structureActuelle.nom),
+          Text("Lien : "),
+          Text(structureActuelle.lien.toString()),
+          Text("Description :"),
+          Text(structureActuelle.description),
+          Text("Image :"),
+          // Image(image: AssetImage("assets/480538.png"))
+        ]),
       ),
     );
   }

@@ -156,6 +156,7 @@ class _PageResultatState extends State<PageResultat> {
   @override
   initState() {
     super.initState();
+    var truc = "";
     //Analyse pour le premier ordre
     //Création de la Map {"NomDeLaStructure":Structure}
     for (var structure in structures) {
@@ -165,11 +166,17 @@ class _PageResultatState extends State<PageResultat> {
     //Réalisation de la Map {Structure: (NbIterationDeLaStructure,0} pour avoir le nombre d'itération de chaque structure dans la liste des lien des Structure sélectionnées
     for (var strucSelect in structureSelect) {
       for (String lien in strucSelect.lien) {
-        print(strucSelect.lien);
-        print(
-            lien); //Tracage, point d'arret pour savoir quelle Structure n'existe pas
-        print(nomToStructure[lien]! == null);
-        print(nomToStructure[lien]!);
+        // print(strucSelect.lien);
+        try {
+          print(lien);
+          truc = lien;
+          //Tracage, point d'arret pour savoir quelle Structure n'existe pas
+        } catch (e) {
+          Exception(truc);
+          break;
+        }
+        // print(nomToStructure[lien]! == null);
+        // print(nomToStructure[lien]!);
         if (res[nomToStructure[lien]!] == null) {
           res[nomToStructure[lien]!] = const Tuple2(1, 0);
           selected.add(false);

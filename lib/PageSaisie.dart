@@ -24,7 +24,10 @@ class _PagePrincipalState extends State<PagePrincipal> {
       appBar: AppBar(title: const Text("Le mémoire")),
       body: Container(
         child: const Column(children: [
-          SearchAndSelect(),
+          Expanded(
+            flex: 2,
+            child: SearchAndSelect(),
+          ),
           BoutonValidation(),
         ]),
       ),
@@ -58,7 +61,7 @@ class _SearchAndSelectState extends State<SearchAndSelect> {
   Future<List<Structure>> createData() async {
     List<Structure> struc = [];
     List<List<dynamic>> donneebrut = [];
-    var rawData = await rootBundle.loadString("assets/donnee.csv");
+    var rawData = await rootBundle.loadString("assets/donneeTest.csv");
     List<List<dynamic>> listData = const CsvToListConverter().convert(rawData);
     // tailleDonne = listData.length;
     donneebrut = listData;
@@ -90,29 +93,27 @@ class _SearchAndSelectState extends State<SearchAndSelect> {
     }
     for (var structure in struc) {
       if (structure.nom.length > 2) {
-        if (structure.nom.substring(0, 1) == 'M.') {
+        if (structure.nom.substring(0, 2) == 'M.') {
           structure.type = "Muscle";
         }
       }
       if (structure.nom.length > 12) {
-        if (structure.nom.substring(0, 11) == 'Articulation') {
+        if (structure.nom.substring(0, 12) == 'Articulation') {
           structure.type = "Articulation";
         }
       }
       if (structure.nom.length > 5) {
-        if (structure.nom.substring(0, 5) == 'Plexus') {
+        if (structure.nom.substring(0, 6) == 'Plexus') {
           structure.type = "Nerf";
         }
       }
       if (structure.nom.length > 3) {
-        if (structure.nom.substring(0, 3) == 'Nerf') {
+        if (structure.nom.substring(0, 4) == 'Nerf') {
           structure.type = "Nerf";
         }
       }
       if (structure.type == "") {
         structure.type = "Os";
-
-        print(structure.type);
       }
     }
     return struc;
@@ -126,11 +127,6 @@ class _SearchAndSelectState extends State<SearchAndSelect> {
       });
     });
     super.initState();
-    // while (structures.length != tailleDonne) {
-    //   print(structures.length);
-    //   print(tailleDonne);
-    // }
-    // for(var donnee in donneeBrut){
   }
 
   Color choiceColor(typeStructure) {
@@ -174,12 +170,29 @@ class _SearchAndSelectState extends State<SearchAndSelect> {
               borderRadius: BorderRadius.circular(6),
               color: choiceColor(structure.type),
             ),
-            child: Padding(
+            child: Container(
               padding: const EdgeInsets.symmetric(
-                vertical: 20.0,
+                vertical: 10.0,
                 horizontal: 12,
               ),
-              child: Text(structure.nom),
+              child: Row(
+                children: [
+                  GestureDetector(
+                    child: Container(
+                      padding: const EdgeInsets.all(3),
+                      child: const Icon(Icons.info),
+                    ),
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => PageResultat(),
+                        ),
+                      );
+                    },
+                  ),
+                  Text(structure.nom)
+                ],
+              ),
             ),
           ),
         );
@@ -190,6 +203,7 @@ class _SearchAndSelectState extends State<SearchAndSelect> {
       onItemRemoved: (p0) {
         structureSelect.remove(p0);
       },
+      hintText: "Recherche",
     );
   }
 }

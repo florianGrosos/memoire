@@ -145,11 +145,9 @@ class _PageResultatState extends State<PageResultat> {
     print(await sheet.values.row(1));
 
     Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (context) => const PagePrincipal(
-          title: 'memoire',
-        ),
-      ),
+      MaterialPageRoute(builder: (BuildContext context) {
+        return Text("data");
+      }),
     );
   }
 

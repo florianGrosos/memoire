@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:memoire/PageResultat.dart';
 import 'package:multiple_search_selection/multiple_search_selection.dart';
@@ -9,28 +11,37 @@ List<Structure> structures = [];
 List<Structure> structureSelect = [];
 
 class PagePrincipal extends StatefulWidget {
-  const PagePrincipal({super.key, required this.title});
-
-  final String title;
+  final Text title;
+  const PagePrincipal(this.title, {super.key});
 
   @override
-  State<PagePrincipal> createState() => _PagePrincipalState();
+  State<PagePrincipal> createState() => _PagePrincipalState(this.title);
 }
 
 class _PagePrincipalState extends State<PagePrincipal> {
+  Text title;
+
+  _PagePrincipalState(Text this.title);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Le mémoire")),
-      body: Container(
-        child: const Column(children: [
-          Expanded(
-            flex: 2,
-            child: SearchAndSelect(),
-          ),
-          BoutonValidation(),
-        ]),
-      ),
+      appBar: AppBar(title: title),
+      body: Row(children: [
+        SizedBox(
+          child: SearchAndSelect(),
+          width: MediaQuery.of(context).size.width / 2,
+        ),
+        Column(
+          children: [
+            Container(
+              child: Text(
+                  "Il faut choisir les structures douloureuses de votre patient"),
+            ),
+            BoutonValidation()
+          ],
+        )
+      ]),
     );
   }
 }
@@ -146,65 +157,65 @@ class _SearchAndSelectState extends State<SearchAndSelect> {
   @override
   Widget build(BuildContext context) {
     return MultipleSearchSelection(
-      items: structures,
-      pickedItemBuilder: (structure) {
-        return Container(
-          decoration: BoxDecoration(
-            color: choiceColor(structure.type),
-            border: Border.all(color: const Color.fromARGB(255, 0, 0, 0)),
-          ),
-          child: Padding(
-            padding: const EdgeInsets.all(8),
-            child: Text(structure.nom),
-          ),
-        );
-      },
-      fieldToCheck: (val) {
-        return val.nom;
-      },
-      itemBuilder: (structure, truc) {
-        return Padding(
-          padding: const EdgeInsets.all(6.0),
-          child: Container(
+        items: structures,
+        pickedItemBuilder: (structure) {
+          return Container(
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(6),
               color: choiceColor(structure.type),
+              border: Border.all(color: const Color.fromARGB(255, 0, 0, 0)),
             ),
+            child: Padding(
+              padding: const EdgeInsets.all(8),
+              child: Text(structure.nom),
+            ),
+          );
+        },
+        fieldToCheck: (val) {
+          return val.nom;
+        },
+        itemBuilder: (structure, truc) {
+          return Padding(
+            padding: const EdgeInsets.all(6.0),
             child: Container(
-              padding: const EdgeInsets.symmetric(
-                vertical: 10.0,
-                horizontal: 12,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(6),
+                color: choiceColor(structure.type),
               ),
-              child: Row(
-                children: [
-                  GestureDetector(
-                    child: Container(
-                      padding: const EdgeInsets.all(3),
-                      child: const Icon(Icons.info),
+              child: Container(
+                padding: const EdgeInsets.symmetric(
+                  vertical: 10.0,
+                  horizontal: 12,
+                ),
+                child: Row(
+                  children: [
+                    GestureDetector(
+                      child: Container(
+                        padding: const EdgeInsets.all(3),
+                        child: const Icon(Icons.info),
+                      ),
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => PageResultat(),
+                          ),
+                        );
+                      },
                     ),
-                    onTap: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (context) => PageResultat(),
-                        ),
-                      );
-                    },
-                  ),
-                  Text(structure.nom)
-                ],
+                    Text(structure.nom)
+                  ],
+                ),
               ),
             ),
-          ),
-        );
-      },
-      onItemAdded: (p0) {
-        structureSelect.add(p0);
-      },
-      onItemRemoved: (p0) {
-        structureSelect.remove(p0);
-      },
-      hintText: "Recherche",
-    );
+          );
+        },
+        onItemAdded: (p0) {
+          structureSelect.add(p0);
+        },
+        onItemRemoved: (p0) {
+          structureSelect.remove(p0);
+        },
+        hintText: "Recherche",
+        maximumShowItemsHeight: MediaQuery.of(context).size.height * (7 / 10));
   }
 }
 

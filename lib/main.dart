@@ -1,12 +1,6 @@
 import 'package:flutter/material.dart';
-import 'PageSaisie.dart';
-
-/// Flutter code sample for [TextButton].
-
-// Variables
-// final List<Widget> _listDeproposition = [];
-// Map<String, (Structure, bool)> _structures = HashMap();
-// List<Structure> structures = [];
+import 'package:memoire/selection_unite_fonctionnelle.dart';
+import 'package:memoire/PageSaisie.dart';
 
 void main() => runApp(const MyApp());
 
@@ -15,9 +9,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: "Mémoire",
-      home: PagePrincipal(title: 'Mémoire'),
-    );
+    const Text title = Text("Mémoire");
+    // return SelectionUF(title: title);
+    return MaterialApp(title: "Mémoire", home: SelectionUF(title: title));
   }
 }

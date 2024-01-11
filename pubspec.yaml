@@ -39,6 +39,7 @@ dependencies:
   tuple: ^2.0.2
   flutter_email_sender: ^6.0.2
   gsheets: ^0.5.0
+  flutter_image_map: ^1.0.1
 
 dev_dependencies:
   flutter_test:
@@ -95,3 +96,5 @@ flutter:
     - assets/donnee.csv
     - assets/donneeTest.csv
     - assets/480538.png
+    - assets/corps.jpg
+    - assets/coordonee.json

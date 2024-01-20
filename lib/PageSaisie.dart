@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:memoire/PageResultat.dart';
 import 'package:multiple_search_selection/multiple_search_selection.dart';
@@ -7,65 +5,30 @@ import 'Structure.dart';
 import 'package:flutter/services.dart';
 import 'package:csv/csv.dart';
 
-List<Structure> structures = [];
-List<Structure> structureSelect = [];
-
 class PagePrincipal extends StatefulWidget {
   final Text title;
-  const PagePrincipal(this.title, {super.key});
+  final List<String> fonctionnalUnityList;
+  PagePrincipal(this.title, this.fonctionnalUnityList, {super.key});
 
   @override
-  State<PagePrincipal> createState() => _PagePrincipalState(this.title);
+  State<PagePrincipal> createState() =>
+      // ignore: no_logic_in_create_state
+      _PagePrincipalState(title, fonctionnalUnityList);
 }
 
 class _PagePrincipalState extends State<PagePrincipal> {
   Text title;
+  List<String> fonctionnalUnityList;
+  List<Structure> structures = [];
+  List<Structure> structureSelect = [];
 
-  _PagePrincipalState(Text this.title);
+  _PagePrincipalState(this.title, this.fonctionnalUnityList);
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: title),
-      body: Row(children: [
-        SizedBox(
-          child: SearchAndSelect(),
-          width: MediaQuery.of(context).size.width / 2,
-        ),
-        Column(
-          children: [
-            Container(
-              child: Text(
-                  "Il faut choisir les structures douloureuses de votre patient"),
-            ),
-            BoutonValidation()
-          ],
-        )
-      ]),
-    );
-  }
-}
-
-class SearchAndSelect extends StatefulWidget {
-  const SearchAndSelect({super.key});
-
-  @override
-  State<SearchAndSelect> createState() => _SearchAndSelectState();
-}
-
-class _SearchAndSelectState extends State<SearchAndSelect> {
   int tailleDonne = 10;
 
   // Suppression des espaces en début et en fin de mot
   String miseAuPropre(String chaine) {
-    // print(chaine[0]);
-    while (chaine[0] == " ") {
-      chaine = chaine.replaceRange(0, 1, '');
-    }
-    while (chaine[chaine.length - 1] == " ") {
-      chaine = chaine.replaceRange(chaine.length - 1, chaine.length, '');
-    }
-    // print(chaine);
+    chaine = chaine.trim();
     return chaine;
   }
 
@@ -99,10 +62,13 @@ class _SearchAndSelectState extends State<SearchAndSelect> {
           }
         }
         //Création de la liste de toutes les structures
-        struc.add(Structure(donnee[0], donnee[4], lien, donnee[5], donnee[6]));
+        struc.add(Structure(
+            donnee[0], donnee[4], lien, donnee[5], donnee[6], donnee[7]));
       }
     }
+
     for (var structure in struc) {
+      // A faire en regex ou .contains
       if (structure.nom.length > 2) {
         if (structure.nom.substring(0, 2) == 'M.') {
           structure.type = "Muscle";
@@ -127,6 +93,7 @@ class _SearchAndSelectState extends State<SearchAndSelect> {
         structure.type = "Os";
       }
     }
+    // print(struc);
     return struc;
   }
 
@@ -154,85 +121,129 @@ class _SearchAndSelectState extends State<SearchAndSelect> {
     return const Color.fromARGB(255, 255, 255, 255);
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return MultipleSearchSelection(
-        items: structures,
-        pickedItemBuilder: (structure) {
-          return Container(
-            decoration: BoxDecoration(
-              color: choiceColor(structure.type),
-              border: Border.all(color: const Color.fromARGB(255, 0, 0, 0)),
-            ),
-            child: Padding(
-              padding: const EdgeInsets.all(8),
-              child: Text(structure.nom),
-            ),
-          );
-        },
-        fieldToCheck: (val) {
-          return val.nom;
-        },
-        itemBuilder: (structure, truc) {
-          return Padding(
-            padding: const EdgeInsets.all(6.0),
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(6),
-                color: choiceColor(structure.type),
-              ),
-              child: Container(
-                padding: const EdgeInsets.symmetric(
-                  vertical: 10.0,
-                  horizontal: 12,
-                ),
-                child: Row(
-                  children: [
-                    GestureDetector(
-                      child: Container(
-                        padding: const EdgeInsets.all(3),
-                        child: const Icon(Icons.info),
-                      ),
-                      onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (context) => PageResultat(),
-                          ),
-                        );
-                      },
-                    ),
-                    Text(structure.nom)
-                  ],
-                ),
-              ),
-            ),
-          );
-        },
-        onItemAdded: (p0) {
-          structureSelect.add(p0);
-        },
-        onItemRemoved: (p0) {
-          structureSelect.remove(p0);
-        },
-        hintText: "Recherche",
-        maximumShowItemsHeight: MediaQuery.of(context).size.height * (7 / 10));
+  List<Widget> makeUFView() {
+    final List<Widget> UFlistTile = [];
+    for (var UFName in fonctionnalUnityList) {
+      UFlistTile.add(Text("- " + UFName));
+    }
+    return UFlistTile;
   }
-}
-
-class BoutonValidation extends StatelessWidget {
-  const BoutonValidation({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return TextButton(
-      onPressed: () {
-        Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (context) => PageResultat(),
-          ),
-        );
-      },
-      child: const Text("Valider"),
+    const double textSize = 1.4;
+
+    return Scaffold(
+      appBar: AppBar(title: title),
+      body: Row(children: [
+        SizedBox(
+            width: MediaQuery.of(context).size.width / 2,
+            child: MultipleSearchSelection(
+                items: structures,
+                pickedItemBuilder: (structure) {
+                  return Container(
+                    decoration: BoxDecoration(
+                      color: choiceColor(structure.type),
+                      border:
+                          Border.all(color: const Color.fromARGB(255, 0, 0, 0)),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Text(structure.nom),
+                    ),
+                  );
+                },
+                fieldToCheck: (val) {
+                  return val.nom;
+                },
+                itemBuilder: (structure, truc) {
+                  return Padding(
+                    padding: const EdgeInsets.all(6.0),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(6),
+                        color: choiceColor(structure.type),
+                      ),
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(
+                          vertical: 10.0,
+                          horizontal: 12,
+                        ),
+                        child: Row(
+                          children: [
+                            // Marche pas pour l'instant
+                            // GestureDetector(
+                            //   child: Container(
+                            //     padding: const EdgeInsets.all(3),
+                            //     child: const Icon(Icons.info),
+                            //   ),
+                            //   onTap: () {
+                            //     Navigator.of(context).push(
+                            //       MaterialPageRoute(
+                            //         builder: (context) => PageResultat(
+                            //           title: title,
+                            //           structures: structures,
+                            //           structureSelect: structureSelect,
+                            //         ),
+                            //       ),
+                            //     );
+                            //   },
+                            // ),
+                            Text(structure.nom)
+                          ],
+                        ),
+                      ),
+                    ),
+                  );
+                },
+                onItemAdded: (p0) {
+                  structureSelect.add(p0);
+                },
+                onItemRemoved: (p0) {
+                  structureSelect.remove(p0);
+                },
+                hintText: "Recherche",
+                maximumShowItemsHeight:
+                    MediaQuery.of(context).size.height * (7 / 10))),
+        Column(
+          children: [
+            Container(
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(9),
+                  color: Colors.white,
+                  border: Border.all(color: Colors.black, width: 3)),
+              padding: const EdgeInsets.all(10),
+              child: const Text(
+                "Sélectionné les structures douloureuses de votre patient",
+                textScaleFactor: textSize,
+                textAlign: TextAlign.center,
+                overflow: TextOverflow.visible,
+              ),
+            ),
+            const Text("UF sélectionné"),
+            Column(
+              children: makeUFView(),
+              mainAxisAlignment: MainAxisAlignment.center,
+            ),
+            TextButton(
+              onPressed: () {
+                // print(structureSelect);
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => PageResultat(
+                      title: title,
+                      structures: structures,
+                      structureSelect: structureSelect,
+                      fonctionnalUnityList: fonctionnalUnityList,
+                    ),
+                  ),
+                );
+              },
+              child: const Text("Valider"),
+            )
+          ],
+        )
+      ]),
     );
   }
 }

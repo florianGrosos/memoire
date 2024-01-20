@@ -7,8 +7,10 @@ class Structure {
   String image;
   String tips;
   String type = "";
+  String uniteFonctionnelle;
 
-  Structure(this.nom, this.description, this.lien, this.image, this.tips);
+  Structure(this.nom, this.description, this.lien, this.image, this.tips,
+      this.uniteFonctionnelle);
 
   String affichage() {
     String resultat;

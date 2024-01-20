@@ -5,12 +5,13 @@ import 'package:flutter_image_map/flutter_image_map.dart';
 import 'PageSaisie.dart';
 
 class SelectionUF extends StatefulWidget {
-  Text title;
+  final Text title;
 
-  SelectionUF({super.key, required Text this.title});
+  const SelectionUF({super.key, required this.title});
 
   @override
-  State<SelectionUF> createState() => _SelectionUFState(this.title);
+  // ignore: no_logic_in_create_state
+  State<SelectionUF> createState() => _SelectionUFState(title);
 }
 
 class _SelectionUFState extends State<SelectionUF> {
@@ -42,6 +43,18 @@ class _SelectionUFState extends State<SelectionUF> {
           Offset(brutList[index].toDouble(), brutList[index + 1].toDouble()));
     }
     return offsetList;
+  }
+
+  List<String> makeList() {
+    List<String> fonctionnalUnitylist = [];
+    if (isCrane) fonctionnalUnitylist.add("Crane");
+    if (isSup) fonctionnalUnitylist.add("Supérieur");
+    if (isRachis) fonctionnalUnitylist.add("Rachis");
+    if (isThorax) fonctionnalUnitylist.add("Thorax");
+    if (isMoyenne) fonctionnalUnitylist.add("Moyenne");
+    if (isAbdomen) fonctionnalUnitylist.add("Abdomen");
+    if (isInferieure) fonctionnalUnitylist.add("Inferieur");
+    return fonctionnalUnitylist;
   }
 
   Future<Map<String, List<int>>> loadCoor() async {
@@ -210,7 +223,7 @@ class _SelectionUFState extends State<SelectionUF> {
                       border: Border.all(color: Colors.black, width: 3)),
                   padding: const EdgeInsets.all(10),
                   child: const Text(
-                    "Bonjour, pour commencer ton évaluation, sélectionnes les Unités fonctionnelles douloureuse du patient.",
+                    "Bonjour, je m'appelle Andrew. Pour commencer, sélectionne 1 ou plusieurs unités fonctionnelles correspondantes au motif de consultation de ton patient.",
                     textScaleFactor: textSize,
                     textAlign: TextAlign.center,
                     overflow: TextOverflow.visible,
@@ -221,9 +234,11 @@ class _SelectionUFState extends State<SelectionUF> {
                 alignment: Alignment.center,
                 child: ElevatedButton(
                     onPressed: () {
+                      List<String> fonctionnalUnityList = makeList();
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => PagePrincipal(title),
+                          builder: (context) =>
+                              PagePrincipal(title, fonctionnalUnityList),
                         ),
                       );
                     },

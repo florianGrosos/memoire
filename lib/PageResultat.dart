@@ -62,7 +62,7 @@ class _PageResultatState extends State<PageResultat> {
     //Réalisation de la Map {Structure: (NbIterationDeLaStructure,0} pour avoir le nombre d'itération de chaque structure dans la liste des lien des Structure sélectionnées
     for (var strucSelect in structureSelect) {
       for (String lien in strucSelect.lien) {
-        print(nomToStructure[lien]!.uniteFonctionnelle);
+        // print(nomToStructure[lien]!.uniteFonctionnelle);
         res = UFSort[nomToStructure[lien]!.uniteFonctionnelle]!;
         try {
           truc = lien;
@@ -92,11 +92,11 @@ class _PageResultatState extends State<PageResultat> {
   }
 
   Widget showStrucureWithUF(
-      String UF, Map<Structure, Tuple2<int, int>> resultat) {
+      String UF, Map<Structure, Tuple2<int, int>>? resultat) {
     List<Widget> temp = [];
     //Le -1 c'est pour avoir un tri décroissant
 
-    var resSort = Map.fromEntries(resultat.entries.toList()
+    var resSort = Map.fromEntries(resultat!.entries.toList()
       ..sort((e1, e2) => -1 * e1.value.item1.compareTo(e2.value.item1)));
     var listStruc = resSort.entries.toList();
 
@@ -117,10 +117,13 @@ class _PageResultatState extends State<PageResultat> {
         ),
       );
     }
+    print(temp);
+    print(UF);
     return Row(
       children: [
         Text(UF),
         ListView(
+          scrollDirection: Axis.vertical,
           children: temp,
         )
       ],
@@ -129,48 +132,48 @@ class _PageResultatState extends State<PageResultat> {
 
   @override
   Widget build(BuildContext context) {
-    List<Widget> affichageResult = [];
+    // List<Widget> affichageResult = [];
 
     // for (var structure in structureSelect) {
     //   UFSort[structure.uniteFonctionnelle]?.add(structure);
     // }
 
     //Le -1 c'est pour avoir un tri décroissant
-    var resSort = Map.fromEntries(res.entries.toList()
-      ..sort((e1, e2) => -1 * e1.value.item1.compareTo(e2.value.item1)));
-    var listStruc = resSort.entries.toList();
+    // var resSort = Map.fromEntries(res.entries.toList()
+    //   ..sort((e1, e2) => -1 * e1.value.item1.compareTo(e2.value.item1)));
+    // var listStruc = resSort.entries.toList();
     //Réalisation de la liste de ListTile
-    if (resSort.isNotEmpty) {
-      for (var i = 0; i < resSort.entries.length; i++) {
-        affichageResult.add(
-          ListTile(
-            title: Text(listStruc[i].key.nom),
-            subtitle: Text(
-                "Nombre de lien de premier ordre : ${listStruc[i].value.item1}\nNombre de lien de second ordre : ${listStruc[i].value.item2}"),
-            trailing: Checkbox(
-              value: selected[i],
-              onChanged: (val) {
-                setState(() {
-                  selected[i] = val!;
-                });
-              },
-            ),
-            onTap: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) =>
-                      PageAffichageStructure(structure: listStruc[i].key),
-                ),
-              );
-            },
-          ),
-        );
-      }
-    } else {
-      affichageResult.add(const ListTile(
-        title: Text("Aucune structure en commun"),
-      ));
-    }
+    // if (resSort.isNotEmpty) {
+    //   for (var i = 0; i < resSort.entries.length; i++) {
+    //     affichageResult.add(
+    //       ListTile(
+    //         title: Text(listStruc[i].key.nom),
+    //         subtitle: Text(
+    //             "Nombre de lien de premier ordre : ${listStruc[i].value.item1}\nNombre de lien de second ordre : ${listStruc[i].value.item2}"),
+    //         trailing: Checkbox(
+    //           value: selected[i],
+    //           onChanged: (val) {
+    //             setState(() {
+    //               selected[i] = val!;
+    //             });
+    //           },
+    //         ),
+    //         onTap: () {
+    //           Navigator.of(context).push(
+    //             MaterialPageRoute(
+    //               builder: (context) =>
+    //                   PageAffichageStructure(structure: listStruc[i].key),
+    //             ),
+    //           );
+    //         },
+    //       ),
+    //     );
+    //   }
+    // } else {
+    //   affichageResult.add(const ListTile(
+    //     title: Text("Aucune structure en commun"),
+    //   ));
+    // }
 
     return Scaffold(
         appBar: AppBar(title: const Text("memoire")),
@@ -178,14 +181,15 @@ class _PageResultatState extends State<PageResultat> {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            for(var i in UFSort.entries){
-              showStrucureWithUF(i.key,i.value);
-            }]
+            Expanded(child: showStrucureWithUF("Rachis", UFSort["Rachis"])),
+            // for(var i in UFSort.entries){
+            //   showStrucureWithUF(i.key,i.value);
+            // }],
             // Expanded(
-            //   child: 
-              // ListView(
-              //   children: affichageResult,
-              // ),
+            //   child:
+            // ListView(
+            //   children: affichageResult,
+            // ),
             // ),
             FilledButton(
                 onPressed: () {

@@ -78,7 +78,7 @@ class _SelectionUFState extends State<SelectionUF> {
   @override
   Widget build(BuildContext context) {
     //Taille texte hors titre
-    const double textSize = 1.4;
+    const double textSize = 18;
 
     return Scaffold(
         appBar: AppBar(
@@ -117,10 +117,8 @@ class _SelectionUFState extends State<SelectionUF> {
             children: [
               Container(
                   alignment: Alignment.topCenter,
-                  child: const Text(
-                    'Sélection des Unités Fonctionelles (UF)',
-                    textScaleFactor: 3,
-                  )),
+                  child: const Text('Sélection des Unités Fonctionelles (UF)',
+                      style: TextStyle(fontSize: textSize * 2))),
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 Row(children: [
                   Checkbox(
@@ -132,7 +130,7 @@ class _SelectionUFState extends State<SelectionUF> {
                       }),
                   const Text(
                     "UF supérieur",
-                    textScaleFactor: textSize,
+                    style: TextStyle(fontSize: textSize),
                   ),
                 ]),
                 Row(children: [
@@ -145,7 +143,7 @@ class _SelectionUFState extends State<SelectionUF> {
                       }),
                   const Text(
                     "UF Crâne",
-                    textScaleFactor: textSize,
+                    style: TextStyle(fontSize: textSize),
                   ),
                 ]),
                 Row(children: [
@@ -158,7 +156,7 @@ class _SelectionUFState extends State<SelectionUF> {
                       }),
                   const Text(
                     "UF Rachis",
-                    textScaleFactor: textSize,
+                    style: TextStyle(fontSize: textSize),
                   ),
                 ]),
                 Row(children: [
@@ -171,7 +169,7 @@ class _SelectionUFState extends State<SelectionUF> {
                       }),
                   const Text(
                     "UF Thorax",
-                    textScaleFactor: textSize,
+                    style: TextStyle(fontSize: textSize),
                   ),
                 ]),
                 Row(children: [
@@ -184,7 +182,7 @@ class _SelectionUFState extends State<SelectionUF> {
                       }),
                   const Text(
                     "UF Moyenne",
-                    textScaleFactor: textSize,
+                    style: TextStyle(fontSize: textSize),
                   ),
                 ]),
                 Row(children: [
@@ -197,7 +195,7 @@ class _SelectionUFState extends State<SelectionUF> {
                       }),
                   const Text(
                     "UF Abdomen",
-                    textScaleFactor: textSize,
+                    style: TextStyle(fontSize: textSize),
                   ),
                 ]),
                 Row(children: [
@@ -210,28 +208,31 @@ class _SelectionUFState extends State<SelectionUF> {
                       }),
                   const Text(
                     "UF Inférieur",
-                    textScaleFactor: textSize,
+                    style: TextStyle(fontSize: textSize),
                   ),
                 ]),
               ]),
-              Row(children: [
-                Container(
-                  // alignment: Alignment.center,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(9),
-                      color: Colors.white,
-                      border: Border.all(color: Colors.black, width: 3)),
-                  padding: const EdgeInsets.all(10),
-                  child: const Text(
-                    "Bonjour, je m'appelle Andrew. Pour commencer, sélectionne 1 ou plusieurs unités fonctionnelles correspondantes au motif de consultation de ton patient.",
-                    textScaleFactor: textSize,
-                    textAlign: TextAlign.center,
-                    overflow: TextOverflow.visible,
-                  ),
+              Container(
+                // alignment: Alignment.center,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(9),
+                    color: Colors.white,
+                    border: Border.all(color: Colors.black, width: 3)),
+                padding: const EdgeInsets.all(10),
+                // constraints: BoxConstraints.expand(),
+                width: MediaQuery.of(context).size.width * 2 / 3,
+                child: const Text(
+                  "Bonjour, je m'appelle Andrew. Pour commencer, sélectionne 1 ou plusieurs unités fonctionnelles correspondantes au motif de consultation de ton patient.",
+                  style: TextStyle(fontSize: textSize),
+                  // textWidthBasis: TextWidthBasis.parent,
+                  // softWrap: true,
+                  overflow: TextOverflow.clip,
+                  textAlign: TextAlign.center,
                 ),
-              ]),
+              ),
               Container(
                 alignment: Alignment.center,
+                margin: EdgeInsets.all(30),
                 child: ElevatedButton(
                     onPressed: () {
                       List<String> fonctionnalUnityList = makeList();

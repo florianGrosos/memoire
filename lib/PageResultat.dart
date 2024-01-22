@@ -181,7 +181,21 @@ class _PageResultatState extends State<PageResultat> {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            Expanded(child: showStrucureWithUF("Rachis", UFSort["Rachis"])),
+            ListView(
+              children: [
+                ListView(
+                  scrollDirection: Axis.vertical,
+                  children: [
+                    ListTile(
+                      title: Text("test"),
+                      subtitle: Text(
+                          "Nombre de lien de premier ordre : test \nNombre de lien de second ordre : test"),
+                      onTap: () {},
+                    ),
+                  ],
+                )
+              ],
+            ),
             // for(var i in UFSort.entries){
             //   showStrucureWithUF(i.key,i.value);
             // }],

@@ -1,10 +1,10 @@
-Nom,Os en relation,Muscles en relation,Nerfs en relations,Description,Image,Mise en évidence,Unite Fonctionelle
-Nom1,Nom2,Nom3 / Nom4,Nom8,Description1,Image1,Mise en évidence1,Crane
-Nom2,Nom5,Nom3 / Nom4,Nom8 / Nom6,Description2,Image2,Mise en évidence2,Crane
-Nom3,Nom2,Nom9 / Nom4 / Nom7,Nom8 / Nom1 / Nom5,Description3,Image3,Mise en évidence3,Crane
-Nom4,Nom2 / Nom1,Nom3 / Nom5,Nom8 / Nom9,Description4,Image4,Mise en évidence4,Crane
-Nom5,Nom2 / Nom9,Nom3 / Nom4,Nom8,Description5,Image5,Mise en évidence5,Crane
-Nom6,Nom7,Nom5 / Nom4,Nom8 / Nom2,Description6,Image6,Mise en évidence6,Rachis
-Nom7,Nom2 / Nom9,Nom3 / Nom5,Nom8 / Nom6,Description7,Image7,Mise en évidence7,Rachis
-Nom8,Nom2,Nom3 / Nom4,Nom5,Description8,Image8,Mise en évidence8,Rachis
-Nom9,Nom1,Nom3 / Nom4,Nom8,Description9,Image9,Mise en évidence9,Rachis
+Nom,Unite Fonctionelle,Os en relation,Muscles en relation,Nerfs en relations,Description,Image,Mise en évidence
+Nom1,Crane/Moyenne,Nom2,Nom3 / Nom4,Nom8,Description1,Image1,Mise en évidence1
+Nom2,Crane/Superieur,Nom5,Nom3 / Nom4,Nom8 / Nom6,Description2,Image2,Mise en évidence2
+Nom3,Crane/Inferieur,Nom2,Nom9 / Nom4 / Nom7,Nom8 / Nom1 / Nom5,Description3,Image3,Mise en évidence3
+Nom4,Crane/Abdomen/Rachis/,Nom2 / Nom1,Nom3 / Nom5,Nom8 / Nom9,Description4,Image4,Mise en évidence4
+Nom5,Crane/,Nom2 / Nom9,Nom3 / Nom4,Nom8,Description5,Image5,Mise en évidence5
+Nom6,Rachis/,Nom7,Nom5 / Nom4,Nom8 / Nom2,Description6,Image6,Mise en évidence6
+Nom7,Rachis/Thorax/,Nom2 / Nom9,Nom3 / Nom5,Nom8 / Nom6,Description7,Image7,Mise en évidence7
+Nom8,Rachis,Nom2,Nom3 / Nom4,Nom5,Description8,Image8,Mise en évidence8
+Nom9,Rachis,Nom1,Nom3 / Nom4,Nom8,Description9,Image9,Mise en évidence9

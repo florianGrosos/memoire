@@ -7,7 +7,7 @@ class Structure {
   String image;
   String tips;
   String type = "";
-  String uniteFonctionnelle;
+  List<String> uniteFonctionnelle;
 
   Structure(this.nom, this.description, this.lien, this.image, this.tips,
       this.uniteFonctionnelle);
@@ -16,9 +16,13 @@ class Structure {
     String resultat;
     resultat = '------------ $nom ------------';
     resultat = '$resultat \n DESCRIPTION \n $description';
-    resultat = '$resultat \n LIEN \n';
+    resultat = '$resultat \n LIEN ';
     for (var i in lien) {
-      resultat = '$resultat \n $i \n';
+      resultat = '$resultat \n $i ';
+    }
+    resultat = '$resultat \n UF';
+    for (var i in uniteFonctionnelle) {
+      resultat = '$resultat \n $i ';
     }
     resultat = '$resultat \n image : $image';
     resultat = '$resultat \n TIPS \n $tips';

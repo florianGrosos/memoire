@@ -28,184 +28,184 @@ class PageResultat extends StatefulWidget {
 class _PageResultatState extends State<PageResultat> {
   Map<String, Structure> nomToStructure = {};
   Map<Structure, Tuple2<int, int>> res = {};
-  Map<String, Map<Structure, Tuple2<int, int>>> UFSort = {
-    "Crane": {},
-    "Superieur": {},
-    "Rachis": {},
-    "Thorax": {},
-    "Moyenne": {},
-    "Abdomen": {},
-    "Inferieur": {}
-  };
+  Map<String, Map<Structure?, Tuple2<List<String>, List<String>>>> UFSort = {};
   late List<bool> selected = [];
+  // Liste de toutes les structures
   List<Structure> structures;
+  // Liste des structures sélectionnées
   List<Structure> structureSelect;
+  // Titre
   Text title;
+  // UF sélectionnée
   List<String> fonctionnalUnityList;
-  Map<String, bool> condUFSelect = {};
 
   _PageResultatState(this.structureSelect, this.structures, this.title,
       this.fonctionnalUnityList);
   //structureSelect = Liste des structures séléctionnées
   //structures = liste de toutes les structures
 
-  @override
-  initState() {
-    super.initState();
-    var truc = "";
-    //Analyse pour le premier ordre
-    //Création de la Map {"NomDeLaStructure":Structure}
-    for (var structure in structures) {
-      nomToStructure[structure.nom] = structure;
+  Map<String, Structure> structureMapNameGenerate(List<Structure> struc) {
+    Map<String, Structure> res = {};
+    for (var structure in struc) {
+      res[structure.nom] = structure;
     }
-    //1er ordre
-    //Réalisation de la Map {Structure: (NbIterationDeLaStructure,0} pour avoir le nombre d'itération de chaque structure dans la liste des lien des Structure sélectionnées
-    for (var strucSelect in structureSelect) {
-      for (String lien in strucSelect.lien) {
-        // print(nomToStructure[lien]!.uniteFonctionnelle);
-        res = UFSort[nomToStructure[lien]!.uniteFonctionnelle]!;
-        try {
-          truc = lien;
-          //Tracage, point d'arret pour savoir quelle Structure n'existe pas
-        } catch (e) {
-          Exception(truc);
-          break;
+    return res;
+  }
+
+  Map<String, Map<Structure?, Tuple2<List<String>, List<String>>>> rangementUF(
+      Map<String, Map<Structure?, Tuple2<List<String>, List<String>>>>
+          resultatListVierge,
+      Map<Structure?, Tuple2<List<String>, List<String>>> analyseRes) {
+    // On entre chaque structure dans l'unité fonctionnelle correspondante
+    for (var resMap in analyseRes.entries) {
+      bool uncast = true;
+      // On check si pour chaque unite fonctionnelle de la structure il existe un UF dans resultatLisVierge
+      // Pour voir si la structure est dans une UF sélectionnée
+      for (String uf in resMap.key!.uniteFonctionnelle) {
+        uf = uf.trim();
+        if (resultatListVierge.keys.contains(uf)) {
+          resultatListVierge[uf]![resMap.key!] = resMap.value;
+          uncast = false;
         }
-        if (res[nomToStructure[lien]!] == null) {
-          res[nomToStructure[lien]!] = const Tuple2(1, 0);
-          selected.add(false);
+      }
+      if (uncast) {
+        resultatListVierge["Autres"]![resMap.key!] = resMap.value;
+      }
+    }
+    return resultatListVierge;
+  }
+
+  Map<String, Map<Structure?, Tuple2<List<String>, List<String>>>> analyse(
+      Map<String, Structure> structureListGlobalMap,
+      List<Structure> structureListChoose,
+      List<String> fonctionnalityUnityChoose) {
+    Map<String, Map<Structure?, Tuple2<List<String>, List<String>>>>
+        analyseResultat = {};
+    Map<Structure?, Tuple2<List<String>, List<String>>> globalResultat = {};
+
+    // Début de l'analyse
+    // Création d'une Map avec comme index la structure et comme objet un tuple qui liste les structures selectionnées en lien dans lesquel le lien apparait
+    // On fait ça pour le premier et second niveau
+    for (var struc in structureListChoose) {
+      for (String lien in struc.lien) {
+        // On créer l'entrée dans la map si elle n'existe pas et on fixe le nombre de lien de premier degrè à 1
+        if (globalResultat[structureListGlobalMap[lien]] == null) {
+          globalResultat[structureListGlobalMap[lien]] =
+              Tuple2([struc.nom], []);
         } else {
-          res[nomToStructure[lien]!] = res[nomToStructure[lien]!]!
-              .withItem1(res[nomToStructure[lien]!]!.item1 + 1);
+          // On incrémente la valeur du premier paramètre du tuple si l'objet existe déjà dans la map
+          globalResultat[structureListGlobalMap[lien]] =
+              globalResultat[structureListGlobalMap[lien]]!.withItem1(
+                  globalResultat[structureListGlobalMap[lien]]!.item1 +
+                      [struc.nom]);
         }
-        //Second ordre
-        //Pour chaque structure, on cherche si
-        for (String lienSecond in nomToStructure[lien]!.lien) {
-          if (res.containsKey(nomToStructure[lienSecond])) {
-            res[nomToStructure[lien]!] = res[nomToStructure[lien]!]!
-                .withItem2(res[nomToStructure[lien]!]!.item2 + 1);
+
+        // Analyse de second ordre
+        for (String lienSecond in structureListGlobalMap[lien]!.lien) {
+          if (globalResultat[structureListGlobalMap[lienSecond]] == null) {
+            globalResultat[structureListGlobalMap[lienSecond]] =
+                Tuple2([], [lien]);
+          } else {
+            globalResultat[structureListGlobalMap[lienSecond]] =
+                globalResultat[structureListGlobalMap[lienSecond]]!.withItem2(
+                    globalResultat[structureListGlobalMap[lienSecond]]!.item2 +
+                        [lien]);
           }
         }
       }
     }
-    // liste de la forme
+
+    // Création de la Map de résultat
+    // Boucle de génération de Map pour chaque UF sélectionnée
+    for (String UF in fonctionnalityUnityChoose) {
+      analyseResultat[UF] = {};
+    }
+    // Création de la Map qui contiendra les Structures non présente dans les UF sélectionnée
+    analyseResultat["Autres"] = {};
+    // On dispatch les Structure dans la Map fanal dans les UF équivalente
+    analyseResultat = rangementUF(analyseResultat, globalResultat);
+
+    return analyseResultat;
   }
 
-  Widget showStrucureWithUF(
-      String UF, Map<Structure, Tuple2<int, int>>? resultat) {
+  @override
+  initState() {
+    super.initState();
+    //Analyse pour le premier ordre
+    //Création de la Map {"NomDeLaStructure":Structure}
+    nomToStructure = structureMapNameGenerate(structures);
+    // Analyse des resultats
+    UFSort = analyse(nomToStructure, structureSelect, fonctionnalUnityList);
+  }
+
+  List<Widget> showStrucureWithUF(String UF,
+      Map<Structure?, Tuple2<List<String>, List<String>>>? resultat) {
     List<Widget> temp = [];
     //Le -1 c'est pour avoir un tri décroissant
 
-    var resSort = Map.fromEntries(resultat!.entries.toList()
-      ..sort((e1, e2) => -1 * e1.value.item1.compareTo(e2.value.item1)));
-    var listStruc = resSort.entries.toList();
-
-    for (var i = 0; i < resSort.entries.length; i++) {
-      temp.add(
-        ListTile(
-          title: Text(listStruc[i].key.nom),
-          subtitle: Text(
-              "Nombre de lien de premier ordre : ${listStruc[i].value.item1}\nNombre de lien de second ordre : ${listStruc[i].value.item2}"),
-          onTap: () {
-            Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (context) =>
-                    PageAffichageStructure(structure: listStruc[i].key),
-              ),
-            );
-          },
-        ),
-      );
+    var listStruc = resultat!.entries.toList();
+    listStruc.sort(((a, b) {
+      int premComp = -a.value.item1.length.compareTo(b.value.item1.length);
+      if (premComp == 0) {
+        return -a.value.item2.length.compareTo(b.value.item2.length);
+      }
+      return premComp;
+    }));
+    temp.add(ListTile(
+      title: Text(UF),
+    ));
+    for (var i = 0; i < resultat.entries.length; i++) {
+      if (listStruc[i].value.item1.length > 1) {
+        temp.add(
+          ListTile(
+            title: Text(listStruc[i].key!.nom),
+            subtitle: Text(
+                "Nombre de structure en disfonction en lien direct : ${listStruc[i].value.item1.toSet().length}\nNombre de lien intermédaire avec les sturctures en disfonction : ${listStruc[i].value.item2.toSet().length}"),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => PageAffichageStructure(
+                      structure: listStruc[i].key,
+                      lienPremier: listStruc[i].value.item1,
+                      lienSecond: listStruc[i].value.item2),
+                ),
+              );
+            },
+          ),
+        );
+      }
     }
-    print(temp);
-    print(UF);
-    return Row(
-      children: [
-        Text(UF),
-        ListView(
-          scrollDirection: Axis.vertical,
-          children: temp,
-        )
+    return temp;
+  }
+
+  Widget makeResultListView(
+    List<Widget> listWidget,
+  ) {
+    return CustomScrollView(
+      slivers: [
+        SliverList(
+          delegate: SliverChildListDelegate(
+            listWidget,
+          ),
+        ),
       ],
     );
   }
 
   @override
   Widget build(BuildContext context) {
-    // List<Widget> affichageResult = [];
-
-    // for (var structure in structureSelect) {
-    //   UFSort[structure.uniteFonctionnelle]?.add(structure);
-    // }
-
-    //Le -1 c'est pour avoir un tri décroissant
-    // var resSort = Map.fromEntries(res.entries.toList()
-    //   ..sort((e1, e2) => -1 * e1.value.item1.compareTo(e2.value.item1)));
-    // var listStruc = resSort.entries.toList();
-    //Réalisation de la liste de ListTile
-    // if (resSort.isNotEmpty) {
-    //   for (var i = 0; i < resSort.entries.length; i++) {
-    //     affichageResult.add(
-    //       ListTile(
-    //         title: Text(listStruc[i].key.nom),
-    //         subtitle: Text(
-    //             "Nombre de lien de premier ordre : ${listStruc[i].value.item1}\nNombre de lien de second ordre : ${listStruc[i].value.item2}"),
-    //         trailing: Checkbox(
-    //           value: selected[i],
-    //           onChanged: (val) {
-    //             setState(() {
-    //               selected[i] = val!;
-    //             });
-    //           },
-    //         ),
-    //         onTap: () {
-    //           Navigator.of(context).push(
-    //             MaterialPageRoute(
-    //               builder: (context) =>
-    //                   PageAffichageStructure(structure: listStruc[i].key),
-    //             ),
-    //           );
-    //         },
-    //       ),
-    //     );
-    //   }
-    // } else {
-    //   affichageResult.add(const ListTile(
-    //     title: Text("Aucune structure en commun"),
-    //   ));
-    // }
+    List<Widget> resultat = [];
+    for (var uf in UFSort.entries) {
+      if (uf.value.isNotEmpty) {
+        resultat += showStrucureWithUF(uf.key, uf.value);
+      }
+    }
 
     return Scaffold(
-        appBar: AppBar(title: const Text("memoire")),
-        body: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            ListView(
-              children: [
-                ListView(
-                  scrollDirection: Axis.vertical,
-                  children: [
-                    ListTile(
-                      title: Text("test"),
-                      subtitle: Text(
-                          "Nombre de lien de premier ordre : test \nNombre de lien de second ordre : test"),
-                      onTap: () {},
-                    ),
-                  ],
-                )
-              ],
-            ),
-            // for(var i in UFSort.entries){
-            //   showStrucureWithUF(i.key,i.value);
-            // }],
-            // Expanded(
-            //   child:
-            // ListView(
-            //   children: affichageResult,
-            // ),
-            // ),
-            FilledButton(
+        appBar: AppBar(
+          title: const Text("Mise en lien des structures dysfonctionnelles"),
+          actions: [
+            IconButton(
                 onPressed: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(
@@ -213,8 +213,38 @@ class _PageResultatState extends State<PageResultat> {
                     ),
                   );
                 },
-                child: const Text("Terminer"))
+                icon: const Icon(Icons.fiber_new))
           ],
-        ));
+        ),
+        body: SizedBox(
+            child: Row(children: [
+          Container(
+            width: MediaQuery.of(context).size.width / 2,
+            child: makeResultListView(resultat),
+          ),
+          Column(children: [
+            SizedBox(
+              width: MediaQuery.of(context).size.width / 2,
+              child: Container(
+                // alignment: Alignment.center,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(9),
+                    color: Colors.white,
+                    border: Border.all(color: Colors.black, width: 3)),
+                padding: const EdgeInsets.all(10),
+                margin: const EdgeInsets.all(10),
+                // constraints: BoxConstraints.expand(),
+                child: const Text(
+                  "Beau travail, voici les structures, triées par unités fonctionelles, qui ont le plus de liens direct et intermédiaire avec les structures dysfonctionnelles de ton examen clinique\n As-tu pensé à les tester ?",
+                  style: TextStyle(fontSize: 20),
+                  // textWidthBasis: TextWidthBasis.parent,
+                  // softWrap: true,
+                  overflow: TextOverflow.clip,
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            )
+          ])
+        ])));
   }
 }

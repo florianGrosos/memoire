@@ -23,13 +23,13 @@ class _SelectionUFState extends State<SelectionUF> {
   bool isAbdomen = false;
   bool isInferieure = false;
   Map<String, List<int>> coorUF = {
-    "Crane": [],
-    "Superieur": [],
+    "Crânio-sacrée": [],
+    "Superieure": [],
     "Rachis": [],
     "Thorax": [],
     "Moyenne": [],
     "Abdomen": [],
-    "Inferieur": []
+    "Inferieure": []
   };
 
   Text title;
@@ -47,8 +47,8 @@ class _SelectionUFState extends State<SelectionUF> {
 
   List<String> makeList() {
     List<String> fonctionnalUnitylist = [];
-    if (isCrane) fonctionnalUnitylist.add("Crane");
-    if (isSup) fonctionnalUnitylist.add("Supérieur");
+    if (isCrane) fonctionnalUnitylist.add("Crânio-sacrée");
+    if (isSup) fonctionnalUnitylist.add("Supérieure");
     if (isRachis) fonctionnalUnitylist.add("Rachis");
     if (isThorax) fonctionnalUnitylist.add("Thorax");
     if (isMoyenne) fonctionnalUnitylist.add("Moyenne");
@@ -82,7 +82,8 @@ class _SelectionUFState extends State<SelectionUF> {
 
     return Scaffold(
         appBar: AppBar(
-          title: title,
+          title: const Text(
+              "Sélection des unités fonctionnelles en lien avec le(s) motif(s) de consultation"),
         ),
         body: Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
           ImageMap(
@@ -90,10 +91,10 @@ class _SelectionUFState extends State<SelectionUF> {
             onTap: (region) {},
             regions: [
               ImageMapRegion.fromPoly(
-                  points: makeOffset(coorUF["Crane"]!),
+                  points: makeOffset(coorUF["Crânio-sacrée"]!),
                   color: isCrane ? Colors.red : Colors.transparent),
               ImageMapRegion.fromPoly(
-                  points: makeOffset(coorUF["Superieur"]!),
+                  points: makeOffset(coorUF["Superieure"]!),
                   color: isSup ? Colors.red : Colors.transparent),
               ImageMapRegion.fromPoly(
                   points: makeOffset(coorUF["Rachis"]!),
@@ -108,7 +109,7 @@ class _SelectionUFState extends State<SelectionUF> {
                   points: makeOffset(coorUF["Abdomen"]!),
                   color: isAbdomen ? Colors.red : Colors.transparent),
               ImageMapRegion.fromPoly(
-                  points: makeOffset(coorUF["Inferieur"]!),
+                  points: makeOffset(coorUF["Inferieure"]!),
                   color: isInferieure ? Colors.red : Colors.transparent)
             ],
           ),
@@ -122,19 +123,6 @@ class _SelectionUFState extends State<SelectionUF> {
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 Row(children: [
                   Checkbox(
-                      value: isSup,
-                      onChanged: (bool? value) {
-                        setState(() {
-                          isSup = value!;
-                        });
-                      }),
-                  const Text(
-                    "UF supérieur",
-                    style: TextStyle(fontSize: textSize),
-                  ),
-                ]),
-                Row(children: [
-                  Checkbox(
                       value: isCrane,
                       onChanged: (bool? value) {
                         setState(() {
@@ -142,7 +130,20 @@ class _SelectionUFState extends State<SelectionUF> {
                         });
                       }),
                   const Text(
-                    "UF Crâne",
+                    "UF Crânio-sacrée",
+                    style: TextStyle(fontSize: textSize),
+                  ),
+                ]),
+                Row(children: [
+                  Checkbox(
+                      value: isSup,
+                      onChanged: (bool? value) {
+                        setState(() {
+                          isSup = value!;
+                        });
+                      }),
+                  const Text(
+                    "UF Supérieure",
                     style: TextStyle(fontSize: textSize),
                   ),
                 ]),
@@ -207,7 +208,7 @@ class _SelectionUFState extends State<SelectionUF> {
                         });
                       }),
                   const Text(
-                    "UF Inférieur",
+                    "UF Inférieure",
                     style: TextStyle(fontSize: textSize),
                   ),
                 ]),

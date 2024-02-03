@@ -223,7 +223,7 @@ class _SelectionUFState extends State<SelectionUF> {
                 // constraints: BoxConstraints.expand(),
                 width: MediaQuery.of(context).size.width * 2 / 3,
                 child: const Text(
-                  "Bonjour, je m'appelle Andrew. Pour commencer, sélectionne 1 ou plusieurs unités fonctionnelles correspondantes au motif de consultation de ton patient.",
+                  "Bonjour, je m'appelle Andrew. Pour commencer, sélectionne un ou plusieurs unités fonctionnelles correspondantes au motif de consultation de ton patient.",
                   style: TextStyle(fontSize: textSize),
                   // textWidthBasis: TextWidthBasis.parent,
                   // softWrap: true,
@@ -233,7 +233,7 @@ class _SelectionUFState extends State<SelectionUF> {
               ),
               Container(
                 alignment: Alignment.center,
-                margin: EdgeInsets.all(30),
+                margin: const EdgeInsets.all(30),
                 child: ElevatedButton(
                     onPressed: () {
                       List<String> fonctionnalUnityList = makeList();

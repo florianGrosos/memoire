@@ -1,3 +1,5 @@
+// import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:memoire/PageResultat.dart';
 import 'package:multiple_search_selection/multiple_search_selection.dart';
@@ -107,8 +109,15 @@ class _PagePrincipalState extends State<PagePrincipal> {
         structure.type = "Os";
       }
     }
-    // print(struc);
     return struc;
+  }
+
+  Map<String, Structure> generateMapNameToStructure(List<Structure> struc) {
+    Map<String, Structure> res = {};
+    for (var structure in struc) {
+      res[structure.nom] = structure;
+    }
+    return res;
   }
 
   @override
@@ -135,7 +144,7 @@ class _PagePrincipalState extends State<PagePrincipal> {
     return const Color.fromARGB(255, 255, 255, 255);
   }
 
-  List<Widget> makeUFView() {
+  Widget UFSelectedView() {
     final List<Widget> UFlistTile = [];
     for (var UFName in fonctionnalUnityList) {
       UFlistTile.add(Text(
@@ -143,12 +152,44 @@ class _PagePrincipalState extends State<PagePrincipal> {
         style: TextStyle(fontSize: 17),
       ));
     }
-    return UFlistTile;
+
+    return Container(
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      Container(
+          margin: EdgeInsets.all(10),
+          alignment: Alignment.topLeft,
+          child: const Text(
+            "UF sélectionnée(s)",
+            style: TextStyle(fontSize: 20),
+          )),
+      Container(
+          margin: EdgeInsets.fromLTRB(70, 4, 4, 4),
+          child: Column(
+            children: UFlistTile,
+            crossAxisAlignment: CrossAxisAlignment.start,
+          ))
+    ]));
+  }
+
+  Widget donneeList(Color? color, String text) {
+    return Container(
+        margin: EdgeInsets.fromLTRB(70, 4, 4, 4),
+        padding: EdgeInsets.all(3),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(5),
+          color: color,
+        ),
+        child: Text(
+          text,
+          style: TextStyle(fontSize: 15),
+        ));
   }
 
   @override
   Widget build(BuildContext context) {
     const double textSize = 1.4;
+    Map<String, Structure> mapNameToStructure = {};
+    mapNameToStructure = generateMapNameToStructure(structures);
 
     return Scaffold(
       appBar: AppBar(
@@ -158,72 +199,54 @@ class _PagePrincipalState extends State<PagePrincipal> {
         SizedBox(
             width: MediaQuery.of(context).size.width / 2,
             child: MultipleSearchSelection(
-                items: structures,
-                pickedItemBuilder: (structure) {
-                  return Container(
+              items: structures,
+              pickedItemBuilder: (structure) {
+                return Container(
+                  decoration: BoxDecoration(
+                    color: choiceColor(structure.type),
+                    border:
+                        Border.all(color: const Color.fromARGB(255, 0, 0, 0)),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8),
+                    child: Text(structure.nom),
+                  ),
+                );
+              },
+              fieldToCheck: (val) {
+                return val.nom;
+              },
+              itemBuilder: (structure, nbInconnu) {
+                return Padding(
+                  padding: const EdgeInsets.all(6.0),
+                  child: Container(
                     decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(6),
                       color: choiceColor(structure.type),
-                      border:
-                          Border.all(color: const Color.fromARGB(255, 0, 0, 0)),
                     ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(8),
-                      child: Text(structure.nom),
-                    ),
-                  );
-                },
-                fieldToCheck: (val) {
-                  return val.nom;
-                },
-                itemBuilder: (structure, truc) {
-                  return Padding(
-                    padding: const EdgeInsets.all(6.0),
                     child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(6),
-                        color: choiceColor(structure.type),
+                      padding: const EdgeInsets.symmetric(
+                        vertical: 10.0,
+                        horizontal: 12,
                       ),
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(
-                          vertical: 10.0,
-                          horizontal: 12,
-                        ),
-                        child: Row(
-                          children: [
-                            // Marche pas pour l'instant
-                            // GestureDetector(
-                            //   child: Container(
-                            //     padding: const EdgeInsets.all(3),
-                            //     child: const Icon(Icons.info),
-                            //   ),
-                            //   onTap: () {
-                            //     Navigator.of(context).push(
-                            //       MaterialPageRoute(
-                            //         builder: (context) => PageResultat(
-                            //           title: title,
-                            //           structures: structures,
-                            //           structureSelect: structureSelect,
-                            //         ),
-                            //       ),
-                            //     );
-                            //   },
-                            // ),
-                            Text(structure.nom)
-                          ],
-                        ),
+                      child: Row(
+                        children: [Text(structure.nom)],
                       ),
                     ),
-                  );
-                },
-                onItemAdded: (p0) {
-                  structureSelect.add(p0);
-                },
-                onItemRemoved: (p0) {
-                  structureSelect.remove(p0);
-                },
-                hintText: "Rechercher",
-                maximumShowItemsHeight:
-                    MediaQuery.of(context).size.height * (6 / 10))),
+                  ),
+                );
+              },
+              onItemAdded: (p0) {
+                structureSelect.add(p0);
+              },
+              onItemRemoved: (p0) {
+                structureSelect.remove(mapNameToStructure[p0.nom]);
+              },
+              hintText: "Rechercher",
+              maximumShowItemsHeight:
+                  MediaQuery.of(context).size.height * (6 / 10),
+              pickedItemsContainerMaxHeight: 100,
+            )),
         SizedBox(
             width: MediaQuery.of(context).size.width / 2,
             child: Column(
@@ -236,69 +259,51 @@ class _PagePrincipalState extends State<PagePrincipal> {
                       border: Border.all(color: Colors.black, width: 3)),
                   padding: const EdgeInsets.all(10),
                   child: const Text(
-                    "Maintenant, sélectionnes les structures anatomiques dysfonctionnelles retrouvée à l'examen clinique",
+                    "Maintenant, sélectionne les structures anatomiques dysfonctionnelles retrouvées à l'examen clinique",
                     style: TextStyle(fontSize: 20),
                     textAlign: TextAlign.center,
                     overflow: TextOverflow.visible,
                   ),
                 ),
-                Flexible(
-                    child: Column(children: [
-                  Container(
-                      margin: EdgeInsets.all(10),
-                      child: Text(
-                        "Pour cela, tu peux utiliser la barre de recheche ou retrouver les structures dans le menu déroulant sachant que les couleurs correspondent à un type de structure anatomique :",
-                        style: TextStyle(fontSize: 14),
-                      )),
-                  Text(
-                    "Articulation",
-                    style: TextStyle(
-                        fontSize: 15,
-                        backgroundColor: choiceColor("Articulation")),
-                  ),
-                  Text(
-                    "Muscle",
-                    style: TextStyle(
-                        fontSize: 15, backgroundColor: choiceColor("Muscle")),
-                  ),
-                  Text(
-                    "Os",
-                    style: TextStyle(
-                        fontSize: 15, backgroundColor: choiceColor("Os")),
-                  ),
-                  Text(
-                    "Nerf",
-                    style: TextStyle(
-                        fontSize: 15, backgroundColor: choiceColor("Nerf")),
-                  ),
-                ])),
-                Flexible(
-                    child: Column(children: [
-                  const Text(
-                    "UF sélectionnée(s)",
-                    style: TextStyle(fontSize: 18),
-                  ),
-                  Column(
-                    children: makeUFView(),
-                    mainAxisAlignment: MainAxisAlignment.center,
-                  )
-                ])),
-                Flexible(
-                    child: TextButton(
-                  onPressed: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => PageResultat(
-                          title: title,
-                          structures: structures,
-                          structureSelect: structureSelect,
-                          fonctionnalUnityList: fonctionnalUnityList,
-                        ),
+                Container(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                      Container(
+                          margin: EdgeInsets.all(10),
+                          child: const Text(
+                            "Pour cela, tu peux utiliser la barre de recheche ou retrouver les structures dans le menu déroulant sachant que les couleurs correspondent à un type de structure anatomique :",
+                            style: TextStyle(fontSize: 14),
+                          )),
+                      donneeList(choiceColor("Articulation"), "- Articulation"),
+                      donneeList(choiceColor("Muscle"), "- Muscle"),
+                      donneeList(choiceColor("Os"), "- Os"),
+                      donneeList(choiceColor("Nerf"), "- Nerf"),
+                    ])),
+                UFSelectedView(),
+                Container(
+                    alignment: Alignment.bottomRight,
+                    margin: EdgeInsets.fromLTRB(0, 20, 20, 0),
+                    child: IconButton(
+                      icon: Icon(
+                        Icons.arrow_circle_right_outlined,
+                        color: Colors.blue,
+                        size: 50,
                       ),
-                    );
-                  },
-                  child: const Text("Valider"),
-                ))
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => PageResultat(
+                              title: title,
+                              structures: structures,
+                              structureSelect: structureSelect,
+                              fonctionnalUnityList: fonctionnalUnityList,
+                            ),
+                          ),
+                        );
+                      },
+                      // child: const Text("Valider"),
+                    ))
               ],
             ))
       ]),

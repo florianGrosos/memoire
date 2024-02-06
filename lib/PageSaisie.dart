@@ -73,9 +73,6 @@ class _PagePrincipalState extends State<PagePrincipal> {
               .substring(0, donnee[1].toString().length - 1);
         }
         List<String> listUF = donnee[1].split("/");
-        // for (String uf in listUF) {
-        //   uf = uf.trim();
-        // }
 
         //Création de la liste de toutes les structures
         struc.add(Structure(
@@ -246,6 +243,10 @@ class _PagePrincipalState extends State<PagePrincipal> {
               maximumShowItemsHeight:
                   MediaQuery.of(context).size.height * (6 / 10),
               pickedItemsContainerMaxHeight: 100,
+              showSelectAllButton: false,
+              onTapClearAll: () {
+                structureSelect = [];
+              },
             )),
         SizedBox(
             width: MediaQuery.of(context).size.width / 2,
@@ -285,10 +286,10 @@ class _PagePrincipalState extends State<PagePrincipal> {
                     alignment: Alignment.bottomRight,
                     margin: EdgeInsets.fromLTRB(0, 20, 20, 0),
                     child: IconButton(
-                      icon: Icon(
+                      iconSize: 42,
+                      icon: const Icon(
                         Icons.arrow_circle_right_outlined,
                         color: Colors.blue,
-                        size: 50,
                       ),
                       onPressed: () {
                         Navigator.of(context).push(

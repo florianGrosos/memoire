@@ -10,6 +10,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     const Text title = Text("Mémoire");
     // return SelectionUF(title: title);
-    return MaterialApp(title: "Mémoire", home: SelectionUF(title: title));
+    return MaterialApp(
+      title: "Mémoire",
+      home: SelectionUF(title: title),
+      debugShowCheckedModeBanner: false,
+    );
   }
 }

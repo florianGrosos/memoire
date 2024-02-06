@@ -152,15 +152,24 @@ class _PageResultatState extends State<PageResultat> {
       return premComp;
     }));
     temp.add(ListTile(
-      title: Text(UF),
+      title: Container(
+          alignment: Alignment.center,
+          child: Text(
+            UF,
+            style: TextStyle(
+                fontSize: 25,
+                // decoration: TextDecoration.underline,
+                fontWeight: FontWeight.w700),
+          )),
     ));
+    temp.add(Divider());
     for (var i = 0; i < resultat.entries.length; i++) {
       if (listStruc[i].value.item1.length > 1) {
         temp.add(
           ListTile(
             title: Text(listStruc[i].key!.nom),
             subtitle: Text(
-                "Nombre de structure en disfonction en lien direct : ${listStruc[i].value.item1.toSet().length}\nNombre de lien intermédaire avec les sturctures en disfonction : ${listStruc[i].value.item2.toSet().length}"),
+                "Nombre de structures en dysfonction en lien direct : ${listStruc[i].value.item1.toSet().length}\nNombre de liens intermédaires avec les structures en dysfonction : ${listStruc[i].value.item2.toSet().length}"),
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
@@ -175,6 +184,7 @@ class _PageResultatState extends State<PageResultat> {
         );
       }
     }
+    temp.add(Divider());
     return temp;
   }
 
@@ -206,6 +216,7 @@ class _PageResultatState extends State<PageResultat> {
           title: const Text("Mise en lien des structures dysfonctionnelles"),
           actions: [
             IconButton(
+                iconSize: 45,
                 onPressed: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(

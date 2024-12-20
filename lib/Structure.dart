@@ -28,5 +28,7 @@ class Structure {
     resultat = '$resultat \n TIPS \n $tips';
     return resultat;
   }
+
+  void add(Structure structure) {}
   //A voir pour l'affichage de la class
 }

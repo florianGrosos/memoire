@@ -23,6 +23,8 @@ class _PagePrincipalState extends State<PagePrincipal> {
   List<String> fonctionnalUnityList;
   List<Structure> structures = [];
   List<Structure> structureSelect = [];
+  bool _typeSelect = false;
+  String typeSelect = "";
 
   _PagePrincipalState(this.title, this.fonctionnalUnityList);
 
@@ -40,6 +42,7 @@ class _PagePrincipalState extends State<PagePrincipal> {
     var rawData = await rootBundle.loadString("assets/donnee.csv");
     List<List<dynamic>> listData = const CsvToListConverter().convert(rawData);
     // tailleDonne = listData.length;
+    // print(tailleDonne);
     donneebrut = listData;
     for (var donnee in donneebrut.sublist(1)) {
       if (donnee[0] != "") {
@@ -117,6 +120,19 @@ class _PagePrincipalState extends State<PagePrincipal> {
     return res;
   }
 
+  Map<String, List<Structure>> generateMapTypeToListStructure(
+      List<Structure> struc) {
+    Map<String, List<Structure>> res = {};
+    for (var structure in struc) {
+      if (res.containsKey(structure.type)) {
+        res[structure.type]?.add(structure);
+      } else {
+        res[structure.type] = [structure];
+      }
+    }
+    return res;
+  }
+
   @override
   initState() {
     createData().then((value) {
@@ -182,20 +198,143 @@ class _PagePrincipalState extends State<PagePrincipal> {
         ));
   }
 
+// Il faut installer le bouton retour et le fait de rendre les boutton de la liste cliquable ~###############################################################
+  Widget affichageListStruc(List listStruc) {
+    return PageView(scrollDirection: Axis.vertical, children: [
+      Container(
+        child: IconButton(
+            onPressed: () {
+              setState(() {
+                _typeSelect = false;
+                typeSelect = "";
+              });
+            },
+            icon: Icon(Icons.arrow_back)),
+      ),
+      ListView.builder(
+          padding: const EdgeInsets.all(8),
+          itemCount: listStruc.length,
+          itemBuilder: (BuildContext context, int index) {
+            return Container(
+              height: 50,
+              color: Colors.white,
+              child: Center(child: Text('${listStruc[index].nom}')),
+            );
+          })
+    ]);
+  }
+
+  Widget affichageType() {
+    return GridView.count(crossAxisCount: 2, children: [
+      Center(
+          child: AspectRatio(
+        aspectRatio: 0.8,
+        child: InkWell(
+          child: const Column(
+            children: [
+              Image(image: AssetImage('assets/articulation.png')),
+              Text("Articulation")
+            ],
+          ),
+          onTap: () {
+            setState(() {
+              _typeSelect = true;
+              typeSelect = "Articulation";
+            });
+          },
+        ),
+      )),
+      Center(
+          child: AspectRatio(
+        aspectRatio: 0.8,
+        child: InkWell(
+          child: const Column(
+            children: [
+              Image(image: AssetImage('assets/muscle.png')),
+              Text("Muscle")
+            ],
+          ),
+          onTap: () {
+            setState(() {
+              _typeSelect = true;
+              typeSelect = "Muscle";
+            });
+          },
+        ),
+      )),
+      Center(
+          child: AspectRatio(
+              aspectRatio: 0.8,
+              child: InkWell(
+                child: const Column(
+                  children: [
+                    Image(image: AssetImage('assets/nerf.png')),
+                    Text("Nerf")
+                  ],
+                ),
+                onTap: () {
+                  setState(() {
+                    _typeSelect = true;
+                    typeSelect = "Nerf";
+                  });
+                },
+              ))),
+      Center(
+        child: AspectRatio(
+            aspectRatio: 0.8,
+            child: InkWell(
+              child: const Column(
+                children: [
+                  Image(image: AssetImage('assets/os.png')),
+                  Text("Os")
+                ],
+              ),
+              onTap: () {
+                setState(() {
+                  _typeSelect = true;
+                  typeSelect = "Os";
+                });
+              },
+            )),
+      )
+    ]);
+  }
+
+  Widget affichageListeStructure() {
+    return Column(
+      children: [
+        Row(
+          children: [
+            IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back))
+          ],
+        )
+      ],
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     const double textSize = 1.4;
     Map<String, Structure> mapNameToStructure = {};
     mapNameToStructure = generateMapNameToStructure(structures);
+    Map<String, List<Structure>> mapTypeToStructure = {};
+    mapTypeToStructure = generateMapTypeToListStructure(structures);
 
     return Scaffold(
       appBar: AppBar(
-          title: Text(
+          title: const Text(
               "Sélection des dysfonctions retrouvées à l'examen clinique")),
       body: Row(children: [
         SizedBox(
             width: MediaQuery.of(context).size.width / 2,
-            child: MultipleSearchSelection(
+            height: MediaQuery.of(context).size.height,
+            child: Container(
+              child: _typeSelect
+                  ? affichageListStruc(mapTypeToStructure[typeSelect]!)
+                  : affichageType(),
+            ))
+
+        /*MultipleSearchSelection(
               items: structures,
               pickedItemBuilder: (structure) {
                 return Container(
@@ -247,7 +386,8 @@ class _PagePrincipalState extends State<PagePrincipal> {
               onTapClearAll: () {
                 structureSelect = [];
               },
-            )),
+            ))*/
+        ,
         SizedBox(
             width: MediaQuery.of(context).size.width / 2,
             child: Column(

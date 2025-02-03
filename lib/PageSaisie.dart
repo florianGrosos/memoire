@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:memoire/PageResultat.dart';
-import 'package:multiple_search_selection/multiple_search_selection.dart';
 import 'Structure.dart';
 import 'package:flutter/services.dart';
 import 'package:csv/csv.dart';
@@ -10,7 +9,7 @@ import 'package:csv/csv.dart';
 class PagePrincipal extends StatefulWidget {
   final Text title;
   final List<String> fonctionnalUnityList;
-  PagePrincipal(this.title, this.fonctionnalUnityList, {super.key});
+  const PagePrincipal(this.title, this.fonctionnalUnityList, {super.key});
 
   @override
   State<PagePrincipal> createState() =>
@@ -21,14 +20,27 @@ class PagePrincipal extends StatefulWidget {
 class _PagePrincipalState extends State<PagePrincipal> {
   Text title;
   List<String> fonctionnalUnityList;
-  List<Structure> structures = [];
-  List<Structure> structureSelect = [];
-  bool _typeSelect = false;
-  String typeSelect = "";
+  List<Structure> structures = []; //liste de toute les structures
+  List<String> structureSelect =
+      []; // liste de structure qui sera envoyé à la page suivante
+
+  bool _typeSelect = false; //Bool pour signifié si un typer à été selectionné
+  String typeSelect = ""; //Valeur du type selectionné
+  //Variable pour la recherche de structure
+  List<String> _items =
+      []; //Liste de string des structures correspondant au type selectionné
+  List<String> _filteredItems =
+      []; //Liste de string des structures correspondant au type selectionné et filtré par la recherche
+
+  Map<String, Structure> mapNameToStructure =
+      {}; //Map des structures avec pour clé leur nom
+  Map<String, List<String>> mapTypeToStructure =
+      {}; //Map de liste des structures avec pour clé leur type
 
   _PagePrincipalState(this.title, this.fonctionnalUnityList);
 
   int tailleDonne = 10;
+  final TextEditingController _searchController = TextEditingController();
 
   // Suppression des espaces en début et en fin de mot
   String miseAuPropre(String chaine) {
@@ -36,6 +48,7 @@ class _PagePrincipalState extends State<PagePrincipal> {
     return chaine;
   }
 
+  // Création des objets
   Future<List<Structure>> createData() async {
     List<Structure> struc = [];
     List<List<dynamic>> donneebrut = [];
@@ -120,14 +133,14 @@ class _PagePrincipalState extends State<PagePrincipal> {
     return res;
   }
 
-  Map<String, List<Structure>> generateMapTypeToListStructure(
+  Map<String, List<String>> generateMapTypeToListStructure(
       List<Structure> struc) {
-    Map<String, List<Structure>> res = {};
+    Map<String, List<String>> res = {};
     for (var structure in struc) {
       if (res.containsKey(structure.type)) {
-        res[structure.type]?.add(structure);
+        res[structure.type]?.add(structure.nom);
       } else {
-        res[structure.type] = [structure];
+        res[structure.type] = [structure.nom];
       }
     }
     return res;
@@ -138,6 +151,9 @@ class _PagePrincipalState extends State<PagePrincipal> {
     createData().then((value) {
       setState(() {
         structures = value;
+        mapNameToStructure = generateMapNameToStructure(structures);
+        mapTypeToStructure = generateMapTypeToListStructure(structures);
+        _items = mapTypeToStructure["Os"]!;
       });
     });
     super.initState();
@@ -198,33 +214,80 @@ class _PagePrincipalState extends State<PagePrincipal> {
         ));
   }
 
-// Il faut installer le bouton retour et le fait de rendre les boutton de la liste cliquable ~###############################################################
-  Widget affichageListStruc(List listStruc) {
-    return PageView(scrollDirection: Axis.vertical, children: [
-      Container(
-        child: IconButton(
-            onPressed: () {
-              setState(() {
-                _typeSelect = false;
-                typeSelect = "";
-              });
-            },
-            icon: Icon(Icons.arrow_back)),
+  void search(String query) {
+    setState(
+      () {
+        _filteredItems = _items
+            .where(
+              (item) => item.toLowerCase().contains(
+                    query.toLowerCase(),
+                  ),
+            )
+            .toList();
+      },
+    );
+  }
+
+// Il faut installer le bouton retour et le fait de rendre les boutton de la liste cliquable ###############################################################
+  Widget affichageListStruc(List<String> listStruc) {
+    if (_filteredItems.length == 0) {
+      _items = listStruc;
+      _filteredItems = _items;
+    }
+    return Column(children: [
+      Row(
+        children: [
+          Container(
+            child: IconButton(
+                onPressed: () {
+                  setState(() {
+                    _typeSelect = false;
+                    typeSelect = "";
+                    _filteredItems = [];
+                  });
+                },
+                icon: Icon(Icons.arrow_back)),
+          ),
+          Expanded(
+            // child: Text("Search"),
+            child: TextField(
+              controller: _searchController,
+              onChanged: search,
+              decoration: const InputDecoration(
+                hintText: 'Rechercher...',
+                prefixIcon: Icon(Icons.search),
+              ),
+            ),
+          )
+        ],
       ),
-      ListView.builder(
-          padding: const EdgeInsets.all(8),
-          itemCount: listStruc.length,
-          itemBuilder: (BuildContext context, int index) {
-            return Container(
-              height: 50,
-              color: Colors.white,
-              child: Center(child: Text('${listStruc[index].nom}')),
-            );
-          })
+      Expanded(
+          child: ListView.builder(
+              padding: const EdgeInsets.all(8),
+              itemCount: _filteredItems.length,
+              itemBuilder: (context, index) {
+                return ListTile(
+                  title: Text(_filteredItems[index]),
+                  onTap: () {
+                    // Action à effectuer lorsque l'élément est cliqué
+                    setState(() {
+                      structureSelect.add(_filteredItems[index]);
+                      _items.remove(_filteredItems[index]);
+                      search(_searchController.text);
+                    });
+                  },
+                );
+                // return Container(
+                //   height: 50,
+                //   color: Colors.white,
+                //   child: Center(child: Text(_filteredItems[index])),
+                // );
+              }))
     ]);
   }
 
   Widget affichageType() {
+    _searchController.text = "";
     return GridView.count(crossAxisCount: 2, children: [
       Center(
           child: AspectRatio(
@@ -300,25 +363,9 @@ class _PagePrincipalState extends State<PagePrincipal> {
     ]);
   }
 
-  Widget affichageListeStructure() {
-    return Column(
-      children: [
-        Row(
-          children: [
-            IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back))
-          ],
-        )
-      ],
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     const double textSize = 1.4;
-    Map<String, Structure> mapNameToStructure = {};
-    mapNameToStructure = generateMapNameToStructure(structures);
-    Map<String, List<Structure>> mapTypeToStructure = {};
-    mapTypeToStructure = generateMapTypeToListStructure(structures);
 
     return Scaffold(
       appBar: AppBar(
@@ -332,62 +379,7 @@ class _PagePrincipalState extends State<PagePrincipal> {
               child: _typeSelect
                   ? affichageListStruc(mapTypeToStructure[typeSelect]!)
                   : affichageType(),
-            ))
-
-        /*MultipleSearchSelection(
-              items: structures,
-              pickedItemBuilder: (structure) {
-                return Container(
-                  decoration: BoxDecoration(
-                    color: choiceColor(structure.type),
-                    border:
-                        Border.all(color: const Color.fromARGB(255, 0, 0, 0)),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(8),
-                    child: Text(structure.nom),
-                  ),
-                );
-              },
-              fieldToCheck: (val) {
-                return val.nom;
-              },
-              itemBuilder: (structure, nbInconnu) {
-                return Padding(
-                  padding: const EdgeInsets.all(6.0),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(6),
-                      color: choiceColor(structure.type),
-                    ),
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(
-                        vertical: 10.0,
-                        horizontal: 12,
-                      ),
-                      child: Row(
-                        children: [Text(structure.nom)],
-                      ),
-                    ),
-                  ),
-                );
-              },
-              onItemAdded: (p0) {
-                structureSelect.add(p0);
-              },
-              onItemRemoved: (p0) {
-                structureSelect.remove(mapNameToStructure[p0.nom]);
-              },
-              hintText: "Rechercher",
-              maximumShowItemsHeight:
-                  MediaQuery.of(context).size.height * (6 / 10),
-              pickedItemsContainerMaxHeight: 100,
-              showSelectAllButton: false,
-              onTapClearAll: () {
-                structureSelect = [];
-              },
-            ))*/
-        ,
+            )),
         SizedBox(
             width: MediaQuery.of(context).size.width / 2,
             child: Column(
@@ -407,20 +399,41 @@ class _PagePrincipalState extends State<PagePrincipal> {
                   ),
                 ),
                 Container(
-                    child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                      Container(
-                          margin: EdgeInsets.all(10),
-                          child: const Text(
-                            "Pour cela, tu peux utiliser la barre de recheche ou retrouver les structures dans le menu déroulant sachant que les couleurs correspondent à un type de structure anatomique :",
-                            style: TextStyle(fontSize: 14),
-                          )),
-                      donneeList(choiceColor("Articulation"), "- Articulation"),
-                      donneeList(choiceColor("Muscle"), "- Muscle"),
-                      donneeList(choiceColor("Os"), "- Os"),
-                      donneeList(choiceColor("Nerf"), "- Nerf"),
-                    ])),
+                    child: Expanded(
+                  child: ListView.builder(
+                    itemCount: structureSelect.length,
+                    itemBuilder: (context, index) {
+                      return ListTile(
+                        onTap: () {
+                          String typeOnTile =
+                              mapNameToStructure[structureSelect[index]]!.type;
+                          setState(() {
+                            mapTypeToStructure[typeOnTile]!
+                                .add(structureSelect[index]);
+                            structureSelect.remove(structureSelect[index]);
+                            search(_searchController.text);
+                          });
+                        },
+                        title: Text(structureSelect[index]),
+                      );
+                    },
+                  ),
+                )
+                    // Column(
+                    //     crossAxisAlignment: CrossAxisAlignment.start,
+                    //     children: [
+                    //   Container(
+                    //       margin: EdgeInsets.all(10),
+                    //       child: const Text(
+                    //         "Pour cela, tu peux utiliser la barre de recheche ou retrouver les structures dans le menu déroulant sachant que les couleurs correspondent à un type de structure anatomique :",
+                    //         style: TextStyle(fontSize: 14),
+                    //       )),
+                    //   donneeList(choiceColor("Articulation"), "- Articulation"),
+                    //   donneeList(choiceColor("Muscle"), "- Muscle"),
+                    //   donneeList(choiceColor("Os"), "- Os"),
+                    //   donneeList(choiceColor("Nerf"), "- Nerf"),
+                    // ])
+                    ),
                 UFSelectedView(),
                 Container(
                     alignment: Alignment.bottomRight,
@@ -432,12 +445,17 @@ class _PagePrincipalState extends State<PagePrincipal> {
                         color: Colors.blue,
                       ),
                       onPressed: () {
+                        List<Structure> structureSelectInStruct = [];
+                        for (var strucString in structureSelect) {
+                          structureSelectInStruct
+                              .add(mapNameToStructure[strucString]!);
+                        }
                         Navigator.of(context).push(
                           MaterialPageRoute(
                             builder: (context) => PageResultat(
                               title: title,
                               structures: structures,
-                              structureSelect: structureSelect,
+                              structureSelect: structureSelectInStruct,
                               fonctionnalUnityList: fonctionnalUnityList,
                             ),
                           ),

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:memoire/AffichageStructure.dart';
 import 'package:memoire/selection_unite_fonctionnelle.dart';
 import 'package:tuple/tuple.dart';
+import 'package:flutter_email_sender/flutter_email_sender.dart';
 import 'Structure.dart';
 
 // ignore: must_be_immutable
@@ -137,6 +138,26 @@ class _PageResultatState extends State<PageResultat> {
     // Analyse des resultats
     UFSort = analyse(nomToStructure, structureSelect, fonctionnalUnityList);
   }
+
+  // Future<void> debugEmailIssues() async {
+  //   Directory directory = await getTemporaryDirectory();
+  //   String fileName = 'debug_email.csv';
+  //   File file = File('${directory.path}/$fileName');
+  //   await file.writeAsString("data to test email attachment");
+  //   Email email = Email(
+  //       body: 'Debug test with attachment',
+  //       subject: 'Debugging Email',
+  //       recipients: ['debug@example.com'],
+  //       attachmentPaths: [file.path],
+  //       isHTML: false);
+  //   try {
+  //     await FlutterEmailSender.send(email);
+  //   } catch (e) {
+  //     print('Error sending email: $e');
+  //   } finally {
+  //     await file.delete();
+  //   }
+  // }
 
   List<Widget> showStrucureWithUF(String UF,
       Map<Structure?, Tuple2<List<String>, List<String>>>? resultat) {

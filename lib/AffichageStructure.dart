@@ -46,9 +46,9 @@ class _PageAffichageStructureState extends State<PageAffichageStructure> {
     );
   }
 
-  List<Widget> makeDescription() {
+  Widget makeDescription() {
     if (structureActuelle.description.isNotEmpty) {
-      return [
+      return Column(children: [
         Divider(),
         Text(
           "Description :",
@@ -58,58 +58,86 @@ class _PageAffichageStructureState extends State<PageAffichageStructure> {
           structureActuelle.description,
           style: TextStyle(fontSize: 16),
         )
-      ];
+      ]);
     }
-    return [];
+    return Column(
+      children: [],
+    );
   }
 
-  List<Widget> makeImage() {
+  Widget makeImage() {
     if (structureActuelle.image.isNotEmpty) {
-      return [
+      return Column(children: [
         Divider(),
         Text(
           "Image :",
           style: TextStyle(fontSize: 20),
         ),
-        Image(image: AssetImage("assets/" + structureActuelle.image))
-      ];
+        Expanded(
+          child: Image.network(structureActuelle.image),
+        ),
+      ]);
     }
-    return [];
+    return Column(
+      children: [],
+    );
+  }
+
+  Widget makeTips() {
+    if (structureActuelle.tips.isNotEmpty) {
+      return Column(children: [
+        Divider(),
+        Text(
+          "Mise en evidence :",
+          style: TextStyle(fontSize: 20),
+        ),
+        Expanded(
+          child: Text(structureActuelle.tips),
+        ),
+      ]);
+    }
+    return Column(
+      children: [],
+    );
   }
 
   @override
   Widget build(BuildContext context) {
+    print(structureActuelle.tips);
     return Scaffold(
-      appBar: AppBar(title: const Text("Fiche de la structure")),
-      body: Container(
-        padding: EdgeInsets.all(10),
-        alignment: Alignment.center,
-        child: Column(
+        appBar: AppBar(title: const Text("Fiche de la structure")),
+        body: Container(
+          padding: EdgeInsets.all(10),
+          alignment: Alignment.center,
+          child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-                  Text(
-                    structureActuelle.nom,
-                    style: TextStyle(fontSize: 30),
-                  ),
-                  Text(
-                    "Lien : ",
-                    style: TextStyle(fontSize: 20),
-                  ),
-                  Container(
-                      margin: EdgeInsets.all(5),
-                      child: Text(
-                        "En rouge, tu vas retrouver les structures disfonctionnelle de l'examen cinique en lien direct avec " +
-                            structureActuelle.nom +
-                            ".\nEn orange, les structure entre le " +
-                            structureActuelle.nom +
-                            " et les structures dysfonctionnelles de l'examen clinique.",
-                        style: TextStyle(fontSize: 13),
-                      )),
-                  makeLink(structureActuelle.lien),
-                ] +
-                makeDescription() +
-                makeImage()),
-      ),
-    );
+              Text(
+                structureActuelle.nom,
+                style: TextStyle(fontSize: 30),
+              ),
+              Text(
+                "Lien : ",
+                style: TextStyle(fontSize: 20),
+              ),
+              Container(
+                  margin: EdgeInsets.all(5),
+                  child: Text(
+                    "En rouge, tu vas retrouver les structures disfonctionnelle de l'examen cinique en lien direct avec " +
+                        structureActuelle.nom +
+                        ".\nEn orange, les structure entre le " +
+                        structureActuelle.nom +
+                        " et les structures dysfonctionnelles de l'examen clinique.",
+                    style: TextStyle(fontSize: 13),
+                  )),
+              makeLink(structureActuelle.lien),
+              makeDescription(),
+              Expanded(
+                  child: Row(
+                children: [makeImage(), VerticalDivider(), makeTips()],
+              ))
+            ],
+          ),
+        ));
   }
 }

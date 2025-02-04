@@ -1,0 +1,979 @@
+Nom,Unité fonctionnelle ,Os en relation / articulation ,Muscles en relation,Nerfs en relations,Description,Image,Mise en évidence
+,,,,,,,
+Temporal,Supérieure / Crânio-sacrée,C0 / Mandibule / Articulation temporo-mandibulaire ,M. Digastrique / M. Stylo-hyoïdien / M. Droit antérieur / M. SCOM / M. Longissimus / M. Splénius de la tête,Nerf facial (VII) / Nerf trijumeau (V),,,
+Mandibule ,Supérieure / Crânio-sacrée,Temporal / Articulation temporo-mandibulaire ,M. Digastrique / M. Mylo-hyoïdien / M. Génio-hyoïdien / M. SCOM / M. Platysma,,,,
+Articulation temporo-mandibulaire ,Supérieure / Crânio-sacrée,Temporal / Mandibule,M. Digastrique / M. Stylo-hyoïdien / M. Droit antérieur / M. SCOM / M. Longissimus / M. Splénius de la tête / M. Mylo-hyoïdien / M. Génio-hyoïdien / M. Platysma ,,Type articulaire : Plane,,
+Os hyoïde ,Supérieure,,M. Mylo-hyoïdien / M. Digastrique / M. Génio-hyoïdien / M. Stylo-hyoïdien / M. Thyro-hyoïdien / M. Omo-hyoïdien / M. Sterno-hyoïdien ,,,,
+C0,Rachis / Supérieure / Crânio-sacrée,C0 / C1 / Articulation occipitoatloïdienne / Temporal / C2,M. SCOM / M. Trapèze / M. Semi-épineux de la tête / M. Petit droit postérieur / M. Long de la tête / M. Oblique supérieur de la tête / M. Splénius de la tête / M. Droit latéral de la tête / M. Grand droit postérieur / M. Droit antérieur / M. Semi-épineux de la tête,,,,
+C1,Rachis / Supérieure / Crânio-sacrée,C0 / C2 / Articulation atlantoaxoïdienne antérieure / Articulations atlantoaxoïdiennes latérales / Articulation occipitoatloïdienne,M. Petit droit postérieur / M. Oblique supérieur de la tête / M. Oblique inférieur de la tête / M. Droit antérieur / M. Long du cou / M. Droit latéral de la tête  / M. Elévateur de la scapula /  M. Splénius du cou / M. Trapèze,,,,
+C2,Rachis / Supérieure / Crânio-sacrée,C0 / C1/ C3 / Articulation atlantoaxoïdienne antérieure / Articulations atlantoaxoïdiennes latérales / Articulation C2C3,M. Elévateur de la scapula / M. Long du cou / M. Grand droit postérieur / M. Oblique inférieur de la tête / M. Scalène moyen / M. Longissimus / M. Splénius du cou / M. Trapèze,,,,
+ Articulation occipitoatloïdienne ,Rachis / Supérieure / Crânio-sacrée,C0 / C1,M. SCOM / M. Trapèze / M. Petit droit postérieur / M. Long de la tête / M. Oblique supérieur de la tête / M. Splénius de la tête / M. Grand droit postérieur / M. Droit antérieur / M. Semi-épineux de la tête / M. Oblique inférieur de la tête / M. Long du cou / M. Droit latéral de la tête / M. Elévateur de la scapula /  M. Splénius du cou / M. Trapèze,,Type articulaire : Bicondylaire ,,
+Articulation atlantoaxoïdienne antérieure ,Rachis / Supérieure / Crânio-sacrée,C1 / C2,M. Petit droit postérieur / M. Oblique supérieur de la tête / M. Oblique inférieur de la tête / M. Droit antérieur / M. Long du cou / M. Droit latéral de la tête /  M. Splénius du cou / M. Elévateur de la scapula / M. Grand droit postérieur / M. Oblique inférieur de la tête / M. Scalène moyen / M. Longissimus / M. Trapèze,,"Type articulaire : 
+- Antérieure : Ellipsoïde 
+- Postérieure : Plane ",,
+Articulations atlantoaxoïdiennes latérales ,Rachis / Supérieure / Crânio-sacrée,C1 / C2,M. Petit droit postérieur / M. Oblique supérieur de la tête / M. Oblique inférieur de la tête / M. Droit antérieur / M. Long du cou / M. Droit latéral de la tête /  M. Splénius du cou / M. Trapèze / M. Elévateur de la scapula / M. Grand droit postérieur / M. Scalène moyen / M. Longissimus,,Type articulaire : Ellipsoïde ,,
+Articulation C2C3,Rachis / Supérieure / Crânio-sacrée,C2 / C3,M. Elévateur de la scapula / M. Long du cou / M. Grand droit postérieur / M. Oblique inférieur de la tête / M. Scalène moyen / M. Longissimus / M. Splénius du cou / M. Trapèze  / M. Long de la tête / M. Scalène antérieur / M. Longissimus ,,Type articulaire : Plane,,
+C3,Rachis / Supérieure / Crânio-sacrée,C2 / C4 / Articulation C3C4 / Articulation C2C3,M. Long du cou / M. Long de la tête / M. Elévateur de la scapula / M. Scalène antérieur / M. Scalène moyen / M. Longissimus / M. Splénius du cou / M. Trapèze,,,,
+C4,Rachis / Supérieure / Crânio-sacrée,C3 / C5 / Articulation C4C5 / Articulation C3C4,M. Long du cou / M. Long de la tête / M. Elévateur de la scapula / M. Scalène antérieur / M. Scalène moyen / M. Ilio-costal / M. Longissimus / M. Splénius de la tête / M. Semi-épineux de la tête / M. Trapèze / M. Scalène postérieur,,,,
+C5,Rachis / Supérieure / Crânio-sacrée,C4 / C6 / Articulation C5C6 / Articulation C4C5,M. Long du cou / M. Long de la tête / M. Scalène antérieur / M. Scalène moyen / M. Scalène postérieur / M. Ilio-costal / M. Longissimus / M. Splénius de la tête / M. Semi-épineux de la tête / M. Trapèze,,,,
+C6,Rachis / Supérieure / Crânio-sacrée,C5 / C7 / Articulation C6C7 / Articulation C5C6,M. Long du cou / M. Long de la tête / M. Trapèze / M. Semi-épineux de la tête / M. Splénius de la tête / M. Scalène moyen / M. Scalène antérieur / M. Longissimus / M. Ilio-costal,,,,
+C7,Rachis / Supérieure / Crânio-sacrée,C6 / T1 / Articulation C7T1 / Articulation C6C7 / Articulation costovertébrale K1 / K1,M. Long du cou / M. Scalène moyen / M. Ilio-costal / M. Longissimus / M. Splénius de la tête / M. Semi-épineux de la tête / M. Trapèze / M. Rhomboïdes / M. Dentelé postéro-supérieur,,,,
+Articulation C3C4,Rachis / Supérieure / Crânio-sacrée,C3 / C4,M. Long du cou / M. Long de la tête / M. Elévateur de la scapula / M. Scalène antérieur / M. Scalène moyen / M. Longissimus / M. Splénius du cou / M. Trapèze / M. Ilio-costal / M. Longissimus / M. Splénius de la tête / M. Semi-épineux de la tête ,,Type articulaire : Plane,,
+Articulation C4C5,Rachis / Supérieure / Crânio-sacrée,C4 / C5,M. Long du cou / M. Long de la tête / M. Elévateur de la scapula / M. Scalène antérieur / M. Scalène moyen / M. Ilio-costal / M. Splénius de la tête / M. Semi-épineux de la tête / M. Trapèze / M. Scalène postérieur / M. Trapèze,,Type articulaire : Plane,,
+Articulation C5C6,Rachis / Supérieure / Crânio-sacrée,C5 / C6,M. Long du cou / M. Long de la tête / M. Scalène antérieur / M. Scalène moyen / M. Scalène postérieur / M. Ilio-costal / M. Longissimus / M. Splénius de la tête / M. Semi-épineux de la tête / M. Trapèze ,,Type articulaire : Plane,,
+Articulation C6C7,Rachis / Supérieure / Crânio-sacrée,C6 / C7,M. Long du cou / M. Scalène moyen / M. Ilio-costal / M. Longissimus / M. Splénius de la tête / M. Semi-épineux de la tête / M. Trapèze / M. Rhomboïdes / M. Dentelé postéro-supérieur,,Type articulaire : Plane,,
+Articulation C7T1,Rachis / Supérieure / Crânio-sacrée / Thorax,C7 / T1 / K1,M. Long du cou / M. Scalène moyen / M. Ilio-costal / M. Longissimus / M. Splénius de la tête / M. Semi-épineux de la tête / M. Trapèze / M. Rhomboïdes / M. Dentelé postéro-supérieur / M. Scalène antérieur / M. Grand pectoral / M. Subclavier / M. Dentelé antérieur / M. Ilio-costal ,,Type articulaire : Plane,,
+T1,Rachis / Supérieure / Crânio-sacrée / Thorax,C7 / T2 / Articulation T1T2 / Articulation C7T1 / Articulation costovertébrale K1 / Articulation costovertébrale K2 / K1 / K2,M. Long du cou / M. Longissimus / M. Semi-épineux de la tête / M. Trapèze / M. Rhomboïdes / M. Dentelé postéro-supérieur / M. Splénius de la tête,,,,
+T2,Rachis / Supérieure / Crânio-sacrée / Thorax,T1 / T3 / Articulation T1T2 / Articulation T2T3 / Articulation costovertébrale K2 / Articulation costovertébrale K3 / K2 / K3,M. Long du cou / M. Longissimus / M. Semi-épineux de la tête / M. Trapèze / M. Rhomboïdes / M. Dentelé postéro-supérieur / M. Splénius de la tête,,,,
+T3,Rachis / Supérieure / Crânio-sacrée / Thorax,T2 / T4 / Articulation T2T3 / Articulation T3T4 / Articulation costovertébrale K3 / Articulation costovertébrale K4 / K3 / K4,M. Long du cou / M. Longissimus / M. Epineux du thorax / M. Splénius du cou / M. Semi-épineux de la tête / M. Trapèze / M. Rhomboïdes / M. Dentelé postéro-supérieur / M. Splénius de la tête,,,,
+T4,Rachis / Supérieure / Moyenne / Crânio-sacrée / Thorax,T3 / T5 / Articulation T3T4 / Articulation T4T5 / Articulation costovertébrale K4 / Articulation costovertébrale K5 / K4 / K5,M. Longissimus / M. Epineux du thorax / M. Splénius du cou / M. Semi-épineux de la tête / M. Trapèze / M. Rhomboïdes,,,,
+T5,Rachis / Moyenne / Crânio-sacrée / Thorax,T4 / T6 / Articulation T4T5 / Articulation T5T6 / Articulation costovertébrale K5 / Articulation costovertébrale K6 / K5 / K6,M. Longissimus / M. Epineux du thorax / M. Splénius du cou / M. Semi-épineux de la tête / M. Trapèze,,,,
+T6,Rachis / Moyenne / Crânio-sacrée / Thorax,T5 / T7 / Articulation T5T6 / Articulation T6T7 / Articulation costovertébrale K6 / Articulation costovertébrale K7 / K6 / K7, M. Longissimus / M. Epineux du thorax / M. Semi-épineux de la tête / M. Trapèze / M. Grand dorsal,,,,
+T7,Rachis / Moyenne / Crânio-sacrée / Thorax,T6 / T8 / Articulation T6T7 / Articulation T7T8 / Articulation costovertébrale K7 / Articulation costovertébrale K8 / K7 / K8,M. Epineux du thorax / M. Trapèze / M. Grand dorsal / M. Longissimus,,,,
+T8,Rachis / Moyenne / Crânio-sacrée / Thorax,T7 / T9 / Articulation T7T8 / Articulation T8T9 / Articulation costovertébrale K8 / Articulation costovertébrale K9 / K8 / K9,M. Epineux du thorax / M. Trapèze / M. Grand dorsal / M. Longissimus,,,,
+T9,Rachis / Moyenne / Crânio-sacrée / Thorax,T8 / T10 / Articulation T9T10 / Articulation T8T9 / Articulation costovertébrale K9 / Articulation costovertébrale K10 / K9 / K10,M. Epineux du thorax / M. Trapèze / M. Grand dorsal / M. Longissimus,,,,
+T10,Rachis / Moyenne / Crânio-sacrée / Thorax,T9 / T11 / Articulation T9T10 / Articulation T10T11 / Articulation costovertébrale K10 / Articulation costovertébrale K11 / K10 / K11,M. Trapèze / M. Grand dorsal / M. Longissimus,,,,
+T11,Rachis / Moyenne / Crânio-sacrée / Thorax,T10 / T12 / Articulation T10T11 / Articulation T11T12 / Articulation costovertébrale K11 / Articulation costovertébrale K12 / K11 / K12,M. Epineux du thorax / M. Trapèze / M. Grand dorsal / M. Dentelé postéro-inférieur / M. Longissimus,,,,
+T12,Rachis / Moyenne / Crânio-sacrée / Thorax,T11 / L1 / Articulation T11T12 / Articulation T12L1 / Articulation costovertébrale K12 / K12,M. Epineux du thorax / M. Grand dorsal / M. Dentelé postéro-inférieur / M. Longissimus / M. Psoas,,,,
+L1,Rachis / Moyenne / Crânio-sacrée,T12 / L2 / Articulation T12L1 / Articulation L1L2,M. Diaphragme  / M. Longissimus / M. Epineux du thorax / M. Grand dorsal / M. Dentelé postéro-inférieur / M. Transverse de l'abdomen / M. Carré des lombes / M. Psoas,,,,
+L2,Rachis / Moyenne / Crânio-sacrée,L1 / L3 / Articulation L1L2 / Articulation L2L3,M. Diaphragme / M. Longissimus / M. Epineux du thorax / M. Grand dorsal / M. Dentelé postéro-inférieur / M. Transverse de l'abdomen / M. Carré des lombes / M. Psoas,,,,
+L3,Rachis / Moyenne / Crânio-sacrée / Inférieure,L2 / L4 / Articulation L2L3 / Articulation L3L4,M. Diaphragme / M. Longissimus / M. Epineux du thorax / M. Grand dorsal / M. Dentelé postéro-inférieur / M. Transverse de l'abdomen / M. Carré des lombes / M. Psoas,,,,
+L4,Rachis / Inférieure / Crânio-sacrée,L3 / L5 / Articulation L3L4 / Articulation L4L5,M. Diaphragme / M. Longissimus / M. Grand dorsal / M. Transverse de l'abdomen / M. Carré des lombes / M. Psoas,,,,
+L5,Rachis / Inférieure / Crânio-sacrée,L4 / Sacrum / Articulation sacrolombaire / Articulation L4L5, M. Longissimus / M. Grand dorsal / M. Transverse de l'abdomen / M. Carré des lombes / M. Psoas,,,,
+Articulation T1T2,Rachis / Supérieure / Crânio-sacrée,T1 / T2 / K2,M. Long du cou / M. Longissimus / M. Semi-épineux de la tête / M. Trapèze / M. Rhomboïdes / M. Dentelé postéro-supérieur / M. Scalène antérieur / M. Scalène moyen / M. Grand pectoral / M. Subclavier / M. Dentelé antérieur / M. Ilio-costal,,Type articulaire : Plane,,
+Articulation T2T3,Rachis / Supérieure / Crânio-sacrée,T2 / T3 / K3,M. Long du cou / M. Longissimus / M. Semi-épineux de la tête / M. Trapèze / M. Rhomboïdes / M. Dentelé postéro-supérieur / M. Scalène postérieur / M. Grand pectoral / M. Dentelé antérieur / M. Ilio-costal / M. Epineux du thorax,,Type articulaire : Plane,,
+Articulation T3T4,Rachis / Supérieure / Moyenne / Crânio-sacrée,T3 / T4 / K4,M. Long du cou / M. Longissimus / M. Epineux du thorax / M. Splénius du cou / M. Semi-épineux de la tête / M. Trapèze / M. Rhomboïdes / M. Dentelé postéro-supérieur / M. Petit pectoral / M. Grand pectoral / M. Transverse du thorax / M. Dentelé antérieur / M. Ilio-costal,,Type articulaire : Plane,,
+Articulation T4T5,Rachis / Supérieure / Moyenne / Crânio-sacrée,T4 / T5 / K5,M. Long du cou / M. Longissimus / M. Epineux du thorax / M. Splénius du cou / M. Semi-épineux de la tête / M. Trapèze / M. Rhomboïdes / M. Petit pectoral / M. Grand pectoral / M. Transverse du thorax / M. Dentelé antérieur / M. Ilio-costal / M. Dentelé postéro-supérieur,,Type articulaire : Plane,,
+Articulation T5T6,Rachis / Moyenne / Crânio-sacrée,T5 / T6 / K6,M. Long du cou / M. Longissimus / M. Epineux du thorax / M. Splénius du cou / M. Semi-épineux de la tête / M. Trapèze / M. Grand dorsal / M. Petit pectoral / M. Grand pectoral / M. Transverse du thorax / M. Dentelé antérieur / M. Ilio-costal / M. Dentelé postéro-supérieur / M. Droit de l'abdomen / M. Oblique externe,,Type articulaire : Plane,,
+Articulation T6T7,Rachis / Moyenne / Crânio-sacrée,T6 / T7 / K7, M. Longissimus / M. Epineux du thorax / M. Semi-épineux de la tête / M. Trapèze / M. Grand dorsal / M. Grand pectoral / M. Transverse du thorax / M. Dentelé antérieur / M. Diaphragme / M. Ilio-costal / M. Droit de l'abdomen / M. Transverse de l'abdomen / M. Oblique externe,,Type articulaire : Plane,,
+Articulation T7T8,Rachis / Moyenne / Crânio-sacrée,T7 / T8 / K8,M. Epineux du thorax / M. Trapèze / M. Grand dorsal / M. Dentelé antérieur / M. Diaphragme / M. Ilio-costal / M. Droit de l'abdomen / M. Transverse de l'abdomen / M. Oblique externe,,Type articulaire : Plane,,
+Articulation T8T9,Rachis / Moyenne / Crânio-sacrée,T8 / T9 / K9,M. Epineux du thorax / M. Trapèze / M. Grand dorsal / M. Dentelé antérieur / M. Diaphragme / M. Ilio-costal / M. Transverse de l'abdomen / M. Oblique externe,,Type articulaire : Plane,,
+Articulation T9T10,Rachis / Moyenne / Crânio-sacrée,T9 / T10 / K10,M. Epineux du thorax / M. Trapèze / M. Grand dorsal / M. Dentelé antérieur / M. Diaphragme / M. Ilio-costal / M. Dentelé postéro-inférieur / M. Transverse de l'abdomen / M. Oblique externe,,Type articulaire : Plane,,
+Articulation T10T11,Rachis / Moyenne / Crânio-sacrée,T10 / T11 / K11,M. Trapèze / M. Grand dorsal / M. Dentelé antérieur / M. Diaphragme / M. Ilio-costal / M. Dentelé postéro-inférieur / M. Transverse de l'abdomen / M. Oblique externe / M. Oblique interne / M. Epineux du thorax,,Type articulaire : Plane,,
+Articulation T11T12,Rachis / Moyenne / Crânio-sacrée,T11 / T12 / K12,M. Epineux du thorax / M. Trapèze / M. Grand dorsal / M. Dentelé postéro-inférieur / M. Diaphragme / M. Ilio-costal / M. Dentelé postéro-inférieur / M. Transverse de l'abdomen / M. Oblique externe / M. Oblique interne / M. Psoas,,Type articulaire : Plane,,
+Articulation T12L1,Rachis / Moyenne / Crânio-sacrée,T12 / L1,M. Diaphragme  / M. Longissimus / M. Epineux du thorax / M. Grand dorsal / M. Dentelé postéro-inférieur / M. Transverse de l'abdomen / M. Carré des lombes / M. Ilio-costal / M. Oblique externe / M. Oblique interne / M. Psoas,,Type articulaire : Plane,,
+Articulation L1L2,Rachis / Moyenne / Crânio-sacrée,L1 / L2,M. Diaphragme  / M. Longissimus / M. Epineux du thorax / M. Grand dorsal / M. Dentelé postéro-inférieur / M. Transverse de l'abdomen / M. Carré des lombes / M. Psoas,,Type articulaire : Ellipsoïde ,,
+Articulation L2L3,Rachis / Moyenne / Crânio-sacrée / Inférieure,L2 / L3,M. Diaphragme / M. Longissimus / M. Epineux du thorax / M. Grand dorsal / M. Dentelé postéro-inférieur / M. Transverse de l'abdomen / M. Carré des lombes / M. Psoas,,Type articulaire : Ellipsoïde ,,
+Articulation L3L4,Rachis / Moyenne / Inférieure / Crânio-sacrée,L3 / L4,M. Diaphragme / M. Longissimus / M. Epineux du thorax / M. Grand dorsal / M. Dentelé postéro-inférieur / M. Transverse de l'abdomen / M. Carré des lombes / M. Psoas,,Type articulaire : Ellipsoïde ,,
+Articulation L4L5,Rachis / Inférieure / Crânio-sacrée,L4 / L5,M. Diaphragme / M. Longissimus / M. Grand dorsal / M. Transverse de l'abdomen / M. Carré des lombes / M. Psoas,,Type articulaire : Ellipsoïde ,,
+ Articulation sacrolombaire  ,Rachis / Inférieure / Crânio-sacrée,Sacrum / L5,M. Grand glutéal / M. Piriforme / M. Iliaque / M. Ilio-costal / M. Longissimus / M. Grand dorsal / M. Transverse de l'abdomen / M. Carré des lombes / M. Psoas,,Type articulaire : Ellipsoïde ,,
+Sacrum ,Rachis / Inférieure / Crânio-sacrée,Os coxal / L5 / Coccyx / Articulation sacrocoxale / Articulation sacrococcygienne / Articulation sacrolombaire,M. Grand glutéal / M. Piriforme / M. Iliaque / M. Ilio-costal / M. Longissimus / M. Grand dorsal,,,,
+Os coxal,Inférieure / Crânio-sacrée,Sacrum / Fémur / Articulation coxofémorale / Articulation sacrocoxale / Symphyse pubienne ,M. Iliaque / M. Psoas / M. Petit glutéal / M. Moyen glutéal / M. Grand glutéal / M. TFL / M. Piriforme / M. Obturateur interne / M. Jumeau supérieur / M. Jumeau inférieur / M. Carré fémoral / M. Obturateur externe / M. Sartorius / M. Vaste intermédiaire / M. Vaste médial / M. Vaste latéral / M. Droit fémoral / M. Biceps fémoral / M. Semi-tendineux / M. Semi-membraneux / M. Pectiné / M. Long adducteur / M. Court adducteur / M. Grand adducteur / M. Gracile / M. Longissimus / M. Grand dorsal / M. Droit de l'abdomen / M. Transverse de l'abdomen / M. Oblique externe / M. Oblique interne / M. Carré des lombes / M. Ilio-costal,,,,
+Coccyx ,Inférieure / Crânio-sacrée,Sacrum / Articulation sacrococcygienne ,,,,,
+Articulation coxofémorale ,Inférieure,Fémur / Os coxal,M. Iliaque / M. Psoas / M. Petit glutéal / M. Moyen glutéal / M. Grand glutéal / M. TFL / M. Piriforme / M. Obturateur interne / M. Jumeau supérieur / M. Jumeau inférieur / M. Carré fémoral / M. Obturateur externe / M. Sartorius / M. Vaste intermédiaire / M. Vaste médial / M. Vaste latéral / M. Droit fémoral / M. Biceps fémoral / M. Semi-tendineux / M. Semi-membraneux / M. Pectiné / M. Long adducteur / M. Court adducteur / M. Grand adducteur / M. Gracile / M. Longissimus / M. Grand dorsal / M. Droit de l'abdomen / M. Transverse de l'abdomen / M. Oblique externe / M. Oblique interne / M. Carré des lombes / M. Poplité / M. Gastrocnémien médial / M. Gastrocnémien latéral / M. Plantaire,,Type articulaire : Sphéroïde ,,
+Articulation sacrocoxale,Inférieure / Crânio-sacrée,Sacrum / Os coxal,M. Grand glutéal / M. Piriforme / M. Iliaque / M. Ilio-costal / M. Longissimus / M. Grand dorsal / M. Iliaque / M. Psoas / M. Petit glutéal / M. Moyen glutéal / M. TFL / M. Obturateur interne / M. Jumeau supérieur / M. Jumeau inférieur / M. Carré fémoral / M. Obturateur externe / M. Sartorius / M. Vaste intermédiaire / M. Vaste médial / M. Vaste latéral / M. Droit fémoral / M. Biceps fémoral / M. Semi-tendineux / M. Semi-membraneux / M. Pectiné / M. Long adducteur / M. Court adducteur / M. Grand adducteur / M. Gracile / M. Longissimus / M. Grand dorsal / M. Droit de l'abdomen / M. Transverse de l'abdomen / M. Oblique externe / M. Oblique interne / M. Carré des lombes,,Type articulaire : Ellipsoïde ,,
+ Articulation sacrococcygienne ,Inférieure / Crânio-sacrée,Sacrum / Coccyx ,M. Grand glutéal / M. Piriforme / M. Iliaque / M. Ilio-costal / M. Longissimus / M. Grand dorsal ,,,,
+Symphyse pubienne ,Inférieure,Os coxal, M. Pectiné / M. Long adducteur / M. Court adducteur / M. Grand adducteur / M. Gracile / M. Longissimus / M. Grand dorsal / M. Droit de l'abdomen / M. Transverse de l'abdomen / M. Oblique externe / M. Oblique interne,,,,
+K1,Thorax / Supérieure,C7 / T1 / Clavicule / Sternum / Articulation C7T1 / Articulation costovertébrale K1 / Articulation sternochondrocostale K1 / Articulation C7T1,M. Scalène antérieur / M. Scalène moyen / M. Grand pectoral / M. Subclavier / M. Dentelé antérieur / M. Ilio-costal ,,,,
+K2,Thorax / Supérieure,T1 / T2 / Sternum / Articulation T1T2 / Articulation costovertébrale K2 / Articulation sternochondrocostale K2 / Articulation T1T2,M. Scalène postérieur / M. Grand pectoral / M. Dentelé antérieur / M. Ilio-costal / M. Dentelé postéro-supérieur,,,,
+K3,Thorax / Supérieure,T2 / T3 / Sternum / Articulation T2T3 / Articulation costovertébrale K3 / Articulation sternochondrocostale K3 / Articulation T2T3,M. Petit pectoral / M. Grand pectoral / M. Transverse du thorax / M. Dentelé antérieur / M. Ilio-costal / M. Dentelé postéro-supérieur,,,,
+K4,Thorax / Moyenne / Supérieure,T3 / T4 / Sternum / Articulation T3T4 / Articulation costovertébrale K4 / Articulation sternochondrocostale K4 / Articulation T3T4,M. Petit pectoral / M. Grand pectoral / M. Transverse du thorax / M. Dentelé antérieur / M. Ilio-costal / M. Dentelé postéro-supérieur,,,,
+K5,Thorax / Moyenne,T4 / T5 / Sternum / Articulation T4T5 / Articulation costovertébrale K5 / Articulation sternochondrocostale K5 / Articulation T4T5,M. Petit pectoral / M. Grand pectoral / M. Transverse du thorax / M. Dentelé antérieur / M. Ilio-costal / M. Dentelé postéro-supérieur / M. Droit de l'abdomen / M. Oblique externe / M. Longissimus,,,,
+K6,Thorax / Moyenne,T5 / T6 / Sternum / Articulation T5T6 / Articulation costovertébrale K6 / Articulation sternochondrocostale K6 / Articulation T5T6,M. Grand pectoral / M. Transverse du thorax / M. Dentelé antérieur / M. Diaphragme / M. Ilio-costal / M. Droit de l'abdomen / M. Transverse de l'abdomen / M. Oblique externe / M. Longissimus,,,,
+K7,Thorax / Moyenne,T6 / T7 / Sternum / Articulation T6T7 / Articulation costovertébrale K7 / Articulation sternochondrocostale K7 / Articulation T6T7,M. Dentelé antérieur / M. Diaphragme / M. Ilio-costal / M. Droit de l'abdomen / M. Transverse de l'abdomen / M. Oblique externe / M. Longissimus,,,,
+K8,Thorax / Moyenne,T7 / T8 / Sternum / Articulation T7T8 / Articulation costovertébrale K8 / Articulation sternochondrocostale K8 / Articulation T7T8,M. Dentelé antérieur / M. Diaphragme / M. Ilio-costal / M. Transverse de l'abdomen / M. Oblique externe / M. Longissimus,,,,
+K9,Thorax / Moyenne,T8 / T9 / Sternum / Articulation T8T9 / Articulation costovertébrale K9 / Articulation sternochondrocostale K9 / Articulation T8T9,M. Dentelé antérieur / M. Diaphragme / M. Ilio-costal / M. Dentelé postéro-inférieur / M. Transverse de l'abdomen / M. Oblique externe / M. Longissimus / M. Grand dorsal,,,,
+K10,Thorax / Moyenne,T9 / T10 / Sternum / Articulation T9T10 / Articulation costovertébrale K10 / Articulation sternochondrocostale K10 / Articulation T9T10,M. Dentelé antérieur / M. Diaphragme / M. Ilio-costal / M. Dentelé postéro-inférieur / M. Transverse de l'abdomen / M. Oblique externe / M. Oblique interne / M. Longissimus / M. Grand dorsal,,,,
+K11,Thorax / Moyenne,T10 / T11 / Articulation T10T11 / Articulation costovertébrale K11 / Articulation T10T11,M. Diaphragme / M. Ilio-costal / M. Dentelé postéro-inférieur / M. Transverse de l'abdomen / M. Oblique externe / M. Oblique interne / M. Longissimus / M. Grand dorsal,,,,
+K12,Thorax / Moyenne,T11 / T12 / Articulation T11T12 / Articulation costovertébrale K12 / Articulation T11T12,M. Diaphragme / M. Ilio-costal / M. Dentelé postéro-inférieur / M. Transverse de l'abdomen / M. Oblique externe / M. Oblique interne / M. Carré des lombes / M. Longissimus / M. Grand dorsal,,,,
+Articulation costovertébrale K1,Thorax / Supérieure,K1 / C7 / T1,M. Scalène antérieur / M. Scalène moyen / M. Grand pectoral / M. Subclavier / M. Dentelé antérieur / M. Ilio-costal / M. Long du cou / M. Longissimus / M. Semi-épineux de la tête / M. Trapèze / M. Rhomboïdes / M. Dentelé postéro-supérieur /  M. Splénius de la tête ,,Type articulaire : Plane,,
+Articulation costovertébrale K2,Thorax / Supérieure,K2 / T1 / T2,M. Scalène postérieur / M. Grand pectoral / M. Dentelé antérieur / M. Ilio-costal / M. Dentelé postéro-supérieur / M. Long du cou / M. Longissimus / M. Semi-épineux de la tête / M. Trapèze / M. Rhomboïdes,,Type articulaire : Plane,,
+Articulation costovertébrale K3,Thorax / Supérieure, K3 / T2 / T3,M. Petit pectoral / M. Grand pectoral / M. Transverse du thorax / M. Dentelé antérieur / M. Ilio-costal / M. Dentelé postéro-supérieur / M. Long du cou / M. Longissimus / M. Semi-épineux de la tête / M. Trapèze / M. Rhomboïdes / M. Epineux du thorax / M. Splénius du cou ,,Type articulaire : Plane,,
+Articulation costovertébrale K4,Thorax / Moyenne / Supérieure,K4 / T4 / T3,M. Petit pectoral / M. Grand pectoral / M. Transverse du thorax / M. Dentelé antérieur / M. Ilio-costal / M. Dentelé postéro-supérieur / M. Long du cou / M. Longissimus / M. Epineux du thorax / M. Splénius du cou / M. Semi-épineux de la tête / M. Trapèze / M. Rhomboïdes,,Type articulaire : Plane,,
+ Articulation costovertébrale K5,Thorax / Moyenne,K5 / T5 / T4,M. Petit pectoral / M. Grand pectoral / M. Transverse du thorax / M. Dentelé antérieur / M. Ilio-costal / M. Dentelé postéro-supérieur / M. Droit de l'abdomen / M. Oblique externe / M. Long du cou / M. Longissimus / M. Epineux du thorax / M. Splénius du cou / M. Semi-épineux de la tête / M. Trapèze / M. Rhomboïdes,,Type articulaire : Plane,,
+ Articulation costovertébrale K6,Thorax / Moyenne,K6 / T6 / T5,M. Grand pectoral / M. Transverse du thorax / M. Dentelé antérieur / M. Diaphragme / M. Ilio-costal / M. Droit de l'abdomen / M. Transverse de l'abdomen / M. Oblique externe / M. Long du cou / M. Epineux du thorax / M. Splénius du cou / M. Semi-épineux de la tête / M. Trapèze / M. Longissimus / M. Grand dorsal,,Type articulaire : Plane,,
+ Articulation costovertébrale K7,Thorax / Moyenne,K7 / T7 / T6,M. Dentelé antérieur / M. Diaphragme / M. Ilio-costal / M. Droit de l'abdomen / M. Transverse de l'abdomen / M. Oblique externe /  M. Longissimus / M. Epineux du thorax / M. Semi-épineux de la tête / M. Trapèze / M. Grand dorsal,,Type articulaire : Plane,,
+ Articulation costovertébrale K8,Thorax / Moyenne,K8 / T8 / T7,M. Dentelé antérieur / M. Diaphragme / M. Ilio-costal / M. Transverse de l'abdomen / M. Oblique externe / M. Epineux du thorax / M. Trapèze / M. Grand dorsal ,,Type articulaire : Plane,,
+ Articulation costovertébrale K9,Thorax / Moyenne,K9 / T9 / T8,M. Dentelé antérieur / M. Diaphragme / M. Ilio-costal / M. Dentelé postéro-inférieur / M. Transverse de l'abdomen / M. Oblique externe / M. Epineux du thorax / M. Trapèze / M. Grand dorsal,,Type articulaire : Plane,,
+ Articulation costovertébrale K10,Thorax / Moyenne,K10 / T10 / T9,M. Dentelé antérieur / M. Diaphragme / M. Ilio-costal / M. Dentelé postéro-inférieur / M. Transverse de l'abdomen / M. Oblique externe / M. Oblique interne / M. Epineux du thorax / M. Trapèze / M. Grand dorsal ,,Type articulaire : Plane,,
+ Articulation costovertébrale K11,Thorax / Moyenne,K11 / T11 / T10,M. Diaphragme / M. Ilio-costal / M. Dentelé postéro-inférieur / M. Transverse de l'abdomen / M. Oblique externe / M. Oblique interne / M. Trapèze / M. Grand dorsal / M. Epineux du thorax,,Type articulaire : Plane,,
+ Articulation costovertébrale K12,Thorax / Moyenne,K12 / T12 / T11,M. Diaphragme / M. Ilio-costal / M. Dentelé postéro-inférieur / M. Transverse de l'abdomen / M. Oblique externe / M. Oblique interne / M. Carré des lombes / M. Epineux du thorax / M. Trapèze / M. Grand dorsal / M. Dentelé postéro-inférieur / M. Epineux du thorax,,Type articulaire : Plane,,
+Sternum,Supérieure / Thorax / Moyenne,Clavicule / K1 / K2 / K3 / K4 / K5 / K6 / K7 / K8 / K9 / K10 / Articulation sternoclaviculaire / Articulation sternochondrocostale K1 / Articulation sternochondrocostale K2 / Articulation sternochondrocostale K3 / Articulation sternochondrocostale K4 / Articulation sternochondrocostale K5 / Articulation sternochondrocostale K6 / Articulation sternochondrocostale K7 / Articulation sternochondrocostale K8 / Articulation sternochondrocostale K9 / Articulation sternochondrocostale K10,M. SCOM / M. Grand pectoral / M. Transverse du thorax / M. Diaphragme / M. Droit de l'abdomen / M. Transverse de l'abdomen / M. Oblique externe / M. Oblique interne / M. Sterno-hyoïdien / M. Sterno-thyroïdien,,,,
+Clavicule ,Supérieure / Thorax,Humérus / K1 / Sternum / Scapula / Articulation acromioclaviculaire / Articulation sternoclaviculaire,M. Deltoïde / M. SCOM / M. Grand pectoral / M. Subclavier / M. Trapèze,,,,
+Scapula ,Supérieure / Thorax ,Humérus / Clavicule / Articulation scapulohumérale / Articulation acromioclaviculaire,M. Omo-hyoïdien / M. Subscapulaire / M. Supraépineux / M. Infraépineux / M. Petit rond / M. Deltoïde / M. Grand rond / M. Coracobrachial / M. Long biceps / M. Court biceps / M. Triceps brachial / M. Elévateur de la scapula / M. Petit pectoral / M. Dentelé antérieur / M. Trapèze / M. Grand dorsal / M. Rhomboïdes,,,,
+Humérus,Supérieure,Radius / Ulna / Scapula / Articulation scapulohumérale / Articulation huméroulnaire / Articulation huméroradiale / Clavicule ,M. Subscapulaire / M. Supraépineux / M. Infraépineux / M. Petit rond / M. Deltoïde / M. Grand rond / M. Coracobrachial / M. Long biceps / M. Court biceps / M. Triceps brachial / M. Brachioradial / M. Long extenseur radial du carpe / M. Court extenseur radial du carpe / M. Supinateur / M. Ancôné / M. Extenseur ulnaire du carpe / M. Extenseur du 5ème doigt / M. Extenseur des doigts / M. Rond pronateur / M. Fléchisseur radial du carpe / M. Long palmaire / M. Fléchisseur ulnaire du carpe / M. Grand pectoral / M. Fléchisseur superficiel des doigts / M. Grand dorsal / M. Brachial,,,,
+Ulna ,Supérieure,Radius / Humérus / Articulation huméroulnaire / Articulation radioulnaire proximale / Articulation radioulnaire distale ,M. Brachial / M. Triceps brachial / M. Supinateur / M. Ancôné / M. Extenseur ulnaire du carpe / M. Long abducteur du pouce / M. Long extenseur du pouce / M. Court extenseur du pouce / M. Extenseur de l'index / M. Rond pronateur / M. Fléchisseur ulnaire du carpe / M. Fléchisseur superficiel des doigts / M. Fléchisseur profond des doigts / M. Carré pronateur / M. Long fléchisseur du pouce,,,,
+Radius,Supérieure,Ulna / Articulation huméroradiale / Humérus / Articulation radioulnaire proximale / Articulation radioulnaire distale / Articulation radiocarpienne / Scaphoïde / Lunatum / Triquétrum / Capitatum,M. Court biceps / M. Long biceps / M. Brachioradial / M. Supinateur / M. Long abducteur du pouce / M. Court extenseur du pouce / M. Rond pronateur / M. Fléchisseur superficiel des doigts / M. Long fléchisseur du pouce / M. Carré pronateur / M. Fléchisseur profond des doigts,,,,
+Scaphoïde,Supérieure,Articulation radiocarpienne / Articulation médiocarpienne / Radius / Lunatum / Triquétrum / Trapèze / Trapézoïde / Capitatum / Hamatum,M. Court abducteur du pouce / M. Abducteur du 5ème doigt,,,,
+Lunatum,Supérieure,Articulation radiocarpienne / Articulation médiocarpienne / Radius / Scaphoïde / Triquétrum / Trapèze / Trapézoïde / Capitatum / Hamatum,,,,,
+Capitatum,Supérieure,Articulation médiocarpienne / Articulation carpométacarpienne du II / Articulation carpométacarpienne du III / Articulation carpométacarpienne du IV / Radius / Trapèze / Trapézoïde / Lunatum / Scaphoïde / Triquétrum / Hamatum / Deuxième métacarpien (M2) / Troisième métacarpien (M3) / Quatrième métacarpien (M4),M. Court fléchisseur du pouce / M. Adducteur du pouce ,,,,
+Hamatum,Supérieure,Articulation médiocarpienne / Articulation carpométacarpienne du IV / Articulation carpométacarpienne du V / Scaphoïde / Lunatum / Triquétrum / Trapèze / Trapézoïde / Capitatum / Quatrième métacarpien (M4) / Cinquième métacarpien (M5),M. Court fléchisseur du 5ème doigt / M. Opposant du 5ème doigt ,,,,
+Triquétrum,Supérieure,Articulation radiocarpienne / Articulation médiocarpienne / Radius / Scaphoïde / Trapèze / Trapézoïde / Capitatum / Hamatum / Lunatum / Pisiforme,,,,,
+Pisiforme,Supérieure,Triquétrum,M. Fléchisseur ulnaire du carpe ,,,,
+Trapézoïde,Supérieure,Articulation médiocarpienne / Articulation carpométacarpienne du II / Scaphoïde / Lunatum / Triquétrum / Trapèze / Capitatum / Hamatum / Deuxième métacarpien (M2),M. Court fléchisseur du pouce / M. Adducteur du pouce ,,,,
+Trapèze,Supérieure,Articulation médiocarpienne / Articulation carpométacarpienne du II / Articulation carpométacarpienne du pouce / Scaphoïde / Lunatum / Triquétrum / Trapézoïde / Capitatum / Hamatum / Deuxième métacarpien (M2) / Premier métacarpien (M1),M. Opposant du pouce / M. Court fléchisseur du pouce ,,,,
+Premier métacarpien (M1),Supérieure,Articulation carpométacarpienne du pouce / Trapèze / P1 du 1 (main) / Os sésamoïdes de la main / Articulation métacarpophalangienne du I,M. Long abducteur du pouce / M. Opposant du pouce ,,,,
+Deuxième métacarpien (M2),Supérieure,Articulation carpométacarpienne du II / Trapèze / Trapézoïde / Capitatum / P1 du 2 (main) / Articulation métacarpophalangienne du II,M. Long extenseur radial du carpe / M. Fléchisseur radial du carpe ,,,,
+Troisième métacarpien (M3),Supérieure,Articulation carpométacarpienne du III / Capitatum / P1 du 3 (main) / Articulation métacarpophalangienne du III,M. Court extenseur radial du carpe / M. Adducteur du pouce ,,,,
+Quatrième métacarpien (M4),Supérieure, Articulation carpométacarpienne du IV / Capitatum / Hamatum / P1 du 4 (main) / Articulation métacarpophalangienne du IV,,,,,
+Cinquième métacarpien (M5),Supérieure, Articulation carpométacarpienne du V / Hamatum / P1 du 5 (main) / Articulation métacarpophalangienne du V,M. Extenseur ulnaire du carpe / M. Opposant du 5ème doigt,,,,
+P1 du 1 (main),Supérieure,Articulation interphalangienne du 1 (main) / Articulation métacarpophalangienne du I / Premier métacarpien (M1) / P2 du 1 (main),M. Court extenseur du pouce / M. Adducteur du pouce / M. Court abducteur du pouce / M. Court fléchisseur du pouce,,,,
+P2 du 1 (main),Supérieure,Articulation interphalangienne du 1 (main) / P1 du 1 (main),M. Long extenseur du pouce / M. Long fléchisseur du pouce / M. Fléchisseur profond des doigts,,,,
+P1 du 2 (main),Supérieure,Articulation interphalangienne du 2 (main) / Articulation métacarpophalangienne du II / Deuxième métacarpien (M2) / P2 du 2 (main),M. Extenseur des doigts ,,,,
+P2 du 2 (main),Supérieure,Articulation interphalangienne du 2 (main) / P1 du 2 (main) / P3 du 2 (main),M. Extenseur des doigts / M. Fléchisseur superficiel des doigts ,,,,
+P3 du 2 (main),Supérieure,Articulation interphalangienne du 2 (main) / P2 du 2 (main),M. Extenseur des doigts / M. Fléchisseur profond des doigts ,,,,
+P1 du 3 (main),Supérieure,Articulation interphalangienne du 3 (main) / Articulation métacarpophalangienne du III / Troisième métacarpien (M3) / P2 du 3 (main),M. Extenseur des doigts ,,,,
+P2 du 3 (main),Supérieure,Articulation interphalangienne du 3 (main) / P1 du 3 (main) / P3 du 3 (main),M. Extenseur des doigts / M. Fléchisseur superficiel des doigts ,,,,
+P3 du 3 (main),Supérieure,Articulation interphalangienne du 3 (main) / P2 du 3 (main),M. Extenseur des doigts / M. Fléchisseur profond des doigts ,,,,
+P1 du 4 (main),Supérieure,Articulation interphalangienne du 4 (main) / Articulation métacarpophalangienne du IV / Quatrième métacarpien (M4) / P2 du 4 (main),M. Extenseur des doigts ,,,,
+P2 du 4 (main),Supérieure,Articulation interphalangienne du 4 (main) / P1 du 4 (main) / P3 du 4 (main),M. Extenseur des doigts / M. Fléchisseur superficiel des doigts ,,,,
+P3 du 4 (main),Supérieure,Articulation interphalangienne du 4 (main) / P2 du 4 (main),M. Extenseur des doigts / M. Fléchisseur profond des doigts ,,,,
+P1 du 5 (main),Supérieure,Articulation métacarpophalangienne du V / Articulation interphalangienne du 5 (main) / Cinquième métacarpien (M5) / P2 du 5 (main),M. Extenseur des doigts / M. Abducteur du 5ème doigt / M. Court fléchisseur du 5ème doigt / M. Extenseur du 5ème doigt,,,,
+P2 du 5 (main),Supérieure,Articulation interphalangienne du 5 (main) / P1 du 5 (main) / P3 du 5 (main),M. Extenseur des doigts / M. Fléchisseur superficiel des doigts / M. Extenseur du 5ème doigt,,,,
+P3 du 5 (main),Supérieure,Articulation interphalangienne du 5 (main) / P2 du 5 (main),M. Extenseur des doigts / M. Fléchisseur profond des doigts / M. Extenseur du 5ème doigt,,,,
+Articulation scapulohumérale,Supérieure / Thorax,Humérus / Scapula,M. Omo-hyoïdien / M. Subscapulaire / M. Supraépineux / M. Infraépineux / M. Petit rond / M. Deltoïde / M. Grand rond / M. Coracobrachial / M. Long biceps / M. Court biceps / M. Triceps brachial / M. Elévateur de la scapula / M. Petit pectoral / M. Dentelé antérieur / M. Trapèze / M. Grand dorsal / M. Rhomboïdes / M. Subscapulaire / M. Supraépineux / M. Infraépineux / M. Coracobrachial / M. Long biceps / M. Court biceps / M. Triceps brachial / M. Grand pectoral,,Type articulaire : Sphéroïde ,,
+Articulation acromioclaviculaire,Supérieure / Thorax,Scapula / Clavicule,M. Deltoïde / M. SCOM / M. Grand pectoral / M. Subclavier / M. Trapèze / M. Omo-hyoïdien / M. Subscapulaire / M. Supraépineux / M. Infraépineux / M. Petit rond / M. Grand rond / M. Coracobrachial / M. Long biceps / M. Court biceps / M. Triceps brachial / M. Elévateur de la scapula / M. Petit pectoral / M. Dentelé antérieur / M. Grand dorsal / M. Rhomboïdes,,Type articulaire : Plane ,,
+Articulation sternoclaviculaire,Supérieure / Thorax,Sternum / Clavicule,M. SCOM / M. Grand pectoral / M. Transverse du thorax / M. Diaphragme / M. Droit de l'abdomen / M. Transverse de l'abdomen / M. Oblique externe / M. Oblique interne / M. Deltoïde / M. Subclavier / M. Trapèze,,Type articulaire : Trochoïde,,
+Articulation huméroulnaire,Supérieure,Humérus / Ulna,M. Triceps brachial / M. Supinateur / M. Ancôné / M. Extenseur ulnaire du carpe / M. Rond pronateur / M. Fléchisseur ulnaire du carpe / M. Fléchisseur superficiel des doigts / M. Brachial,,Type articulaire : Ginglyme ,,
+Articulation huméroradiale,Supérieure,Humérus / Radius,M. Court biceps / M. Long biceps / M. Brachioradial / M. Supinateur / M. Rond pronateur / M. Fléchisseur superficiel des doigts / M. Brachioradial / M. Fléchisseur superficiel des doigts,,Type articulaire : Sphéroïde ,,
+Articulation radioulnaire proximale,Supérieure,Radius / Ulna,M. Supinateur / M. Long abducteur du pouce / M. Court extenseur du pouce / M. Rond pronateur / M. Fléchisseur superficiel des doigts / M. Fléchisseur profond des doigts / M. Carré pronateur / M. Long abducteur du pouce / M. Court extenseur du pouce / M. Rond pronateur / M. Fléchisseur superficiel des doigts / M. Long fléchisseur du pouce,,Type articulaire : Trochoïde ,,
+Articulation radioulnaire distale,Supérieure,Radius / Ulna,M. Supinateur / M. Long abducteur du pouce / M. Court extenseur du pouce / M. Rond pronateur / M. Fléchisseur superficiel des doigts / M. Fléchisseur profond des doigts / M. Carré pronateur / M. Long fléchisseur du pouce / M. Carré pronateur ,,Type articulaire : Trochoïde ,,
+Articulation radiocarpienne,Supérieure,Radius / Scaphoïde / Lunatum / Triquétrum,,,Type articulaire : Condylaire ,,
+Articulation médiocarpienne ,Supérieure,Scaphoïde / Lunatum / Triquétrum / Trapèze / Trapézoïde / Capitatum / Hamatum ,M. Court fléchisseur du pouce / M. Adducteur du pouce,,Type articulaire :Trochoïde ,,
+Articulation carpométacarpienne du pouce ,Supérieure,Trapèze / Premier métacarpien (M1),M. Opposant du pouce / M. Court fléchisseur du pouce,,Type articulaire :Trochoïde ,,
+Articulation carpométacarpienne du II ,Supérieure,Trapèze / Trapézoïde / Capitatum / Deuxième métacarpien (M2),,,Type articulaire : Plane,,
+Articulation carpométacarpienne du III,Supérieure,Capitatum / Troisième métacarpien (M3),M. Adducteur du pouce,,Type articulaire : Plane,,
+Articulation carpométacarpienne du IV,Supérieure,Capitatum / Quatrième métacarpien (M4) / Hamatum,,,Type articulaire : Plane ,,
+Articulation carpométacarpienne du V,Supérieure,Cinquième métacarpien (M5) / Hamatum,,,Type articulaire : Plane,,
+Articulation métacarpophalangienne du I ,Supérieure,Premier métacarpien (M1) / P1 du 1 (main),M. Long abducteur du pouce / M. Court extenseur du pouce / M. Adducteur du pouce / M. Court fléchisseur du pouce ,,Type articulaire : Condylaire ,,
+Articulation métacarpophalangienne du II,Supérieure,Deuxième métacarpien (M2) / P1 du 2 (main),M. Long extenseur radial du carpe / M. Fléchisseur radial du carpe / M. Extenseur des doigts ,,Type articulaire : Condylaire ,,
+Articulation métacarpophalangienne du III,Supérieure,Troisième métacarpien (M3) / P1 du 3 (main),M. Extenseur des doigts,,Type articulaire : Condylaire ,,
+Articulation métacarpophalangienne du IV,Supérieure,Quatrième métacarpien (M4) / P1 du 4 (main),M. Extenseur des doigts ,,Type articulaire : Condylaire ,,
+Articulation métacarpophalangienne du V,Supérieure,Cinquième métacarpien (M5) / P1 du 5 (main),M. Opposant du 5ème doigt / M. Extenseur des doigts / M. Abducteur du 5ème doigt / M. Court fléchisseur du 5ème doigt,,Type articulaire : Condylaire ,,
+Articulation interphalangienne du 1 (main),Supérieure,P2 du 1 (main) / P1 du 1 (main),M. Long extenseur du pouce / M. Long fléchisseur du pouce / M. Extenseur des doigts,,Type articulaire : Condylaire ,,
+Articulation interphalangienne du 2 (main),Supérieure,P2 du 2 (main) / P3 du 2 (main) / P1 du 2 (main),M. Extenseur des doigts / M. Fléchisseur superficiel des doigts / M. Fléchisseur profond des doigts ,,Type articulaire : Condylaire ,,
+Articulation interphalangienne du 3 (main),Supérieure,P2 du 3 (main) / P3 du 3 (main) / P1 du 3 (main),M. Extenseur des doigts / M. Fléchisseur superficiel des doigts / M. Fléchisseur profond des doigts ,,Type articulaire : Condylaire ,,
+Articulation interphalangienne du 4 (main),Supérieure,P2 du 4 (main) / P3 du 4 (main) / P1 du 4 (main),M. Extenseur des doigts / M. Fléchisseur superficiel des doigts / M. Fléchisseur profond des doigts ,,Type articulaire : Condylaire ,,
+Articulation interphalangienne du 5 (main),Supérieure,P2 du 5 (main) / P3 du 5 (main) / P1 du 5 (main),M. Extenseur des doigts / M. Fléchisseur superficiel des doigts / M. Fléchisseur profond des doigts ,,Type articulaire : Condylaire ,,
+Fémur,Inférieure,Patella / Os coxal / Tibia / Fibula / Articulation fémoropatellaire / Articulation fémorotibiale / Articulation coxofémorale,M. Iliaque / M. Psoas / M. Moyen glutéal / M. Grand glutéal / M. Petit glutéal / M. Piriforme / M. Obturateur interne / M. Jumeau supérieur / M. Jumeau inférieur / M. Obturateur externe / M. Carré fémoral / M. Droit fémoral / M. Vaste intermédiaire / M. Vaste latéral / M. Vaste médial / M. Biceps fémoral / M. Pectiné / M. Long adducteur / M. Court adducteur / M. Grand adducteur / M. Poplité / M. Gastrocnémien médial / M. Gastrocnémien latéral / M. Plantaire,,,,
+Patella ,Inférieure,Articulation fémoropatellaire / Fémur,M. Vaste intermédiaire / M. Vaste latéral / M. Vaste médial / M. Droit fémoral ,,,,
+Tibia,Inférieure,Fémur / Fibula / Articulation talocrurale / Articulation tibiofibulaire proximale / Articulation tibiofibulaire distale / Articulation fémorotibiale / Talus,M. Gracile / M. Semi-tendineux / M. Semi-membraneux / M. Vaste médial / M. Vaste intermédiaire / M. Vaste latéral / M. Droit fémoral / M. Sartorius / M. TFL  / M. Tibial antérieur / M. Poplité / M. Soléaire / M. Tibial postérieur / M. Long fléchisseur des orteils ,,,,
+Fibula ,Inférieure,Fémur / Tibia / Articulation tibiofibulaire distale / Articulation tibiofibulaire proximale,M. Long fléchisseur de l'hallux / M. Tibial postérieur / M. Court fibulaire / M. Long fibulaire / M. 3ème fibulaire / M. Long extenseur des orteils / M. Long extenseur de l'hallux / M. Biceps fémoral / M. Soléaire,,,,
+Articulation fémoropatellaire,Inférieure,Fémur / Patella,M. Iliaque / M. Psoas / M. Moyen glutéal / M. Grand glutéal / M. Petit glutéal / M. Piriforme / M. Obturateur interne / M. Jumeau supérieur / M. Jumeau inférieur / M. Obturateur externe / M. Carré fémoral / M. Droit fémoral / M. Vaste intermédiaire / M. Vaste latéral / M. Vaste médial / M. Biceps fémoral / M. Pectiné / M. Long adducteur / M. Court adducteur / M. Grand adducteur / M. Poplité / M. Gastrocnémien médial / M. Gastrocnémien latéral / M. Plantaire,,"Type articulaire : Ginglyme 
+",,
+ Articulation fémorotibiale,Inférieure,Fémur / Tibia ,M. Iliaque / M. Psoas / M. Moyen glutéal / M. Grand glutéal / M. Petit glutéal / M. Piriforme / M. Obturateur interne / M. Jumeau supérieur / M. Jumeau inférieur / M. Obturateur externe / M. Carré fémoral / M. Droit fémoral / M. Vaste intermédiaire / M. Vaste latéral / M. Vaste médial / M. Biceps fémoral / M. Pectiné / M. Long adducteur / M. Court adducteur / M. Grand adducteur / M. Poplité / M. Gastrocnémien médial / M. Gastrocnémien latéral / M. Plantaire / M. Gracile / M. Semi-tendineux / M. Semi-membraneux / M. Vaste médial / M. Vaste intermédiaire / M. Vaste latéral / M. Droit fémoral / M. Sartorius / M. TFL  / M. Tibial antérieur / M. Poplité / M. Soléaire / M. Tibial postérieur / M. Long fléchisseur des orteils ,,Type articulaire : Bicondylaire ,,
+Talus,Inférieure,Articulation transverse du tarse / Articulation subtalaire (talocalcanéenne) / Articulation talonaviculaire / Articulation talocrurale / Calcanéum / Tibia / Naviculaire / Cuboïde,,,,,
+Calcanéum,Inférieure,Articulation subtalaire (talocalcanéenne) / Articulation transverse du tarse / Articulation calcanéocuboïdienne / Talus / Naviculaire / Cuboïde,M. Court fibulaire / M. Tibial postérieur / M. Soléaire / M. Gastrocnémien latéral / M. Gastrocnémien médial / M. Plantaire / M. Court extenseur des orteils / M. Court extenseur de l'hallux / M. Abducteur de l'hallux / M. Abducteur du 5 / M. Carré plantaire / M. Court fléchisseur des orteils ,,,,
+Naviculaire,Inférieure,Articulation talonaviculaire / Articulations cunéonaviculaires / Articulation cuboïdonaviculaire / Articulation transverse du tarse / Talus / Calcanéum / Naviculaire / Cuboïde / Cunéiforme médial / Cunéiforme intermédiaire / Cunéiforme latéral,M. Tibial postérieur,,,,
+Cuboïde,Inférieure,Articulation calcanéocuboïdienne / Articulation cuboïdonaviculaire /  Articulation transverse du tarse / Articulation tarsométatarsienne / Talus / Calcanéum / Naviculaire / Quatrième métatarsien (M4) / Cinquième métatarsien (M5) / Cunéiforme latéral,M. Tibial postérieur / M. Court fléchisseur du 5 / M. Opposant du 5 / M. Adducteur de l'hallux / M. Court fléchisseur de l'hallux ,,,,
+Cunéiforme médial,Inférieure,Articulations cunéonaviculaires / Articulation intercunéenne / Articulation tarsométatarsienne / Naviculaire / Cunéiforme intermédiaire / Cunéiforme latéral / Premier métatarsien (M1) ,M. Tibial antérieur / M. Long fibulaire / M. Tibial postérieur / M. Adducteur de l'hallux / M. Court fléchisseur de l'hallux,,,,
+Cunéiforme latéral,Inférieure,Articulations cunéonaviculaires / Articulation intercunéenne / Articulation tarsométatarsienne / Naviculaire / Cunéiforme médial / Cunéiforme intermédiaire / Troisième métatarsien (M3) / Cuboïde,M. Tibial postérieur,,,,
+Cunéiforme intermédiaire,Inférieure,Articulations cunéonaviculaires / Articulation intercunéenne / Articulation tarsométatarsienne / Naviculaire / Cunéiforme médial / Cunéiforme latéral / Deuxième métatarsien (M2),M. Tibial postérieur / M. Court fléchisseur de l'hallux,,,,
+Premier métatarsien (M1),Inférieure,Articulation tarsométatarsienne / Cunéiforme médial / Articulation métatarsophalangienne du 1 / P1 de l'hallux (pied) / Articulation intermétatarsienne / Os sésamoïdes du pied,M. Tibial antérieur / M. Long fibulaire,,,,
+Deuxième métatarsien (M2),Inférieure,Articulation tarsométatarsienne / Articulation métatarsophalangienne du 2 / P1 du 2 (pied) / Cunéiforme intermédiaire / Articulation intermétatarsienne,M. Tibial postérieur,,,,
+Troisième métatarsien (M3),Inférieure,Articulation tarsométatarsienne / Articulation métatarsophalangienne du 3 / P1 du 3 (pied) / Cunéiforme latéral / Articulation intermétatarsienne,M. Tibial postérieur / M. Adducteur de l'hallux,,,,
+Quatrième métatarsien (M4),Inférieure,Articulation tarsométatarsienne / Articulation métatarsophalangienne du 4 / P1 du 4 (pied) / Cuboïde / Articulation intermétatarsienne,M. Tibial postérieur / M. Adducteur de l'hallux,,,,
+Cinquième métatarsien (M5),Inférieure,Articulation tarsométatarsienne / Articulation métatarsophalangienne du 5 / P1 du 5 (pied) / Cuboïde / Articulation intermétatarsienne,M. 3ème fibulaire / M. Court fibulaire / M. Abducteur du 5 / M. Opposant du 5,,,,
+P1 de l'hallux (pied),Inférieure,Articulation métatarsophalangienne du 1 / Premier métatarsien (M1) / P2 de l'hallux (pied) / Articulation interphalangienne du 1 (pied),M. Court extenseur de l'hallux / M. Abducteur de l'hallux / M. Adducteur de l'hallux / M. Court fléchisseur de l'hallux,,,,
+P2 de l'hallux (pied),Inférieure,Articulation interphalangienne du 1 (pied) / P1 de l'hallux (pied),M. Long extenseur de l'hallux / M. Long fléchisseur de l'hallux,,,,
+P1 du 2 (pied),Inférieure,Articulation métatarsophalangienne du 2 / P2 du 2 (pied) / Deuxième métatarsien (M2) / Articulation interphalangienne du 2 (pied),,,,,
+P2 du 2 (pied),Inférieure,Articulation interphalangienne du 2 (pied) / P1 du 2 (pied) / P3 du 2 (pied),M. Long extenseur des orteils / M. Court fléchisseur des orteils,,,,
+P3 du 2 (pied),Inférieure,Articulation interphalangienne du 2 (pied) / P2 du 2 (pied),M. Long extenseur des orteils / M. Long fléchisseur des orteils,,,,
+P1 du 3 (pied),Inférieure,Articulation métatarsophalangienne du 3 / Troisième métatarsien (M3) / P2 du 3 (pied) / Articulation interphalangienne du 3 (pied),,,,,
+P2 du 3 (pied),Inférieure,Articulation interphalangienne du 3 (pied) / P1 du 3 (pied) / P3 du 3 (pied),M. Long extenseur des orteils / M. Court fléchisseur des orteils,,,,
+P3 du 3 (pied),Inférieure,Articulation interphalangienne du 3 (pied) / P2 du 3 (pied),M. Long extenseur des orteils / M. Long fléchisseur des orteils,,,,
+P1 du 4 (pied),Inférieure,Articulation métatarsophalangienne du 4 / Articulation interphalangienne du 4 (pied) / P2 du 4 (pied) / Quatrième métatarsien (M4),,,,,
+P2 du 4 (pied),Inférieure,Articulation interphalangienne du 4 (pied) / P1 du 4 (pied) / P3 du 4 (pied),M. Long extenseur des orteils / M. Court fléchisseur des orteils,,,,
+P3 du 4 (pied),Inférieure,Articulation interphalangienne du 4 (pied) / P2 du 4 (pied),M. Long extenseur des orteils / M. Long fléchisseur des orteils,,,,
+P1 du 5 (pied),Inférieure,Articulation interphalangienne du 5 (pied) / P2 du 5 (pied) / Cinquième métatarsien (M5) / Articulation métatarsophalangienne du 5,M. Abducteur du 5 / M. Court fléchisseur du 5,,,,
+P2 du 5 (pied),Inférieure,Articulation interphalangienne du 5 (pied) / P1 du 5 (pied) / P3 du 5 (pied),M. Long extenseur des orteils / M. Court fléchisseur des orteils,,,,
+P3 du 5 (pied),Inférieure,Articulation interphalangienne du 5 (pied) / P2 du 5 (pied),M. Long extenseur des orteils / M. Long fléchisseur des orteils,,,,
+Os sésamoïdes de la main,Supérieure,Premier métacarpien (M1),M. Court abducteur du pouce / M. Court fléchisseur du pouce / M. Adducteur du pouce,,,,
+Os sésamoïdes du pied,Inférieure,Premier métatarsien (M1),M. Adducteur de l'hallux / M. Court fléchisseur de l'hallux,,,,
+Articulation talocrurale,Inférieure,Tibia / Talus,M. Gracile / M. Semi-tendineux / M. Semi-membraneux / M. Vaste médial / M. Vaste intermédiaire / M. Vaste latéral / M. Droit fémoral / M. Sartorius / M. TFL  / M. Tibial antérieur / M. Poplité / M. Soléaire / M. Tibial postérieur / M. Long fléchisseur des orteils / M. Biceps fémoral / M. Long extenseur des orteils / M. Long extenseur de l'hallux / M. 3ème fibulaire / M. Long fibulaire / M. Court fibulaire / M. Long fléchisseur de l'hallux / M. Gastrocnémien médial / M. Gastrocnémien latéral / M. Plantaire,,"Type articulaire : Ginglyme 
+",,
+Articulation tibiofibulaire proximale,Inférieure,Tibia / Fibula,M. Gracile / M. Semi-tendineux / M. Semi-membraneux / M. Vaste médial / M. Vaste intermédiaire / M. Vaste latéral / M. Droit fémoral / M. Sartorius / M. TFL  / M. Tibial antérieur / M. Poplité / M. Soléaire / M. Tibial postérieur / M. Long fléchisseur des orteils / M. Biceps fémoral / M. Long fibulaire / M. Court fibulaire / M. Soléaire / M. Tibial postérieur / M. Long fléchisseur de l'hallux,,Type articulaire : Plane,,
+Articulation tibiofibulaire distale ,Inférieure,Tibia / Fibula,M. Biceps fémoral / M. Long fibulaire / M. Court fibulaire / M. Soléaire / M. Tibial postérieur / M. Long fléchisseur de l'hallux / M. Gracile / M. Semi-tendineux / M. Semi-membraneux / M. Vaste médial / M. Vaste intermédiaire / M. Vaste latéral / M. Droit fémoral / M. Sartorius / M. TFL  / M. Tibial antérieur / M. Poplité / M. Soléaire / M. Tibial postérieur / M. Long fléchisseur des orteils ,,Type articulaire : Syndesmose ,,
+Articulation subtalaire (talocalcanéenne),Inférieure,Talus / Calcanéum,M. Court fibulaire / M. Tibial postérieur / M. Soléaire / M. Gastrocnémien latéral / M. Gastrocnémien médial / M. Plantaire / M. Court extenseur des orteils / M. Court extenseur de l'hallux / M. Abducteur de l'hallux / M. Abducteur du 5 / M. Carré plantaire / M. Court fléchisseur des orteils ,,Type articulaire : Ellipsoïde ,,
+Articulation transverse du tarse ,Inférieure,Talus / Naviculaire / Cuboïde / Calcanéum,M. Court fibulaire / M. Tibial postérieur / M. Soléaire / M. Gastrocnémien latéral / M. Gastrocnémien médial / M. Plantaire / M. Court extenseur des orteils / M. Court extenseur de l'hallux / M. Abducteur de l'hallux / M. Abducteur du 5 / M. Carré plantaire / M. Court fléchisseur des orteils / M. Tibial postérieur / M. Court fléchisseur du 5 / M. Opposant du 5,," Type articulaire : 
+- Sphéroïde (talonaviculaire)
+- Ellipsoïde (calcanéocuboïdienne)",,
+Articulation talonaviculaire,Inférieure,Talus / Naviculaire,M. Tibial postérieur,, Type articulaire : Sphéroïde ,,
+Articulation calcanéocuboïdienne,Inférieure,Calcanéum / Cuboïde,M. Court fléchisseur du 5 / M. Opposant du 5 / M. Court fibulaire / M. Tibial postérieur / M. Soléaire / M. Gastrocnémien latéral / M. Gastrocnémien médial / M. Plantaire / M. Court extenseur des orteils / M. Court extenseur de l'hallux / M. Abducteur de l'hallux / M. Abducteur du 5 / M. Carré plantaire / M. Court fléchisseur des orteils,, Type articulaire : Ellipsoïde ,,
+Articulations cunéonaviculaires,Inférieure,Naviculaire / Cunéiforme médial / Cunéiforme intermédiaire / Cunéiforme latéral,M. Tibial postérieur / M. Tibial antérieur / M. Long fibulaire / M. Tibial postérieur / M. Adducteur de l'hallux / M. Court fléchisseur de l'hallux ,, Type articulaire : Plane ,,
+Articulation cuboïdonaviculaire,Inférieure,Cuboïde / Naviculaire ,M. Tibial postérieur / M. Court fléchisseur du 5 / M. Opposant du 5,, Type articulaire : Syndesmose  ,,
+Articulation intercunéenne,Inférieure,Cunéiforme médial / Cunéiforme intermédiaire / Cunéiforme latéral ,M. Tibial antérieur / M. Long fibulaire / M. Tibial postérieur / M. Adducteur de l'hallux / M. Court fléchisseur de l'hallux ,, Type articulaire : Plane  ,,
+Articulation tarsométatarsienne,Inférieure,Cunéiforme médial / Cunéiforme intermédiaire / Cunéiforme latéral / Premier métatarsien (M1) / Deuxième métatarsien (M2) / Troisième métatarsien (M3) / Quatrième métatarsien (M4) / Cinquième métatarsien (M5) / Cuboïde,M. Tibial antérieur / M. Long fibulaire / M. Tibial postérieur / M. Adducteur de l'hallux / M. Court fléchisseur de l'hallux / M. 3ème fibulaire / M. Court fibulaire / M. Abducteur du 5 / M. Opposant du 5,, Type articulaire : Plane,,
+Articulation intermétatarsienne,Inférieure,Premier métatarsien (M1) / Deuxième métatarsien (M2) / Troisième métatarsien (M3) / Quatrième métatarsien (M4) / Cinquième métatarsien (M5),M. Tibial antérieur / M. Long fibulaire / M. Tibial postérieur / M. Adducteur de l'hallux / M. 3ème fibulaire / M. Court fibulaire / M. Abducteur du 5 / M. Opposant du 5,,Type articulaire : Plane,,
+Articulation métatarsophalangienne du 1,Inférieure,Premier métatarsien (M1) / P1 de l'hallux (pied),M. Tibial postérieur / M. Long fibulaire ,, Type articulaire : Ellipsoïde,,
+Articulation métatarsophalangienne du 2,Inférieure,Deuxième métatarsien (M2) / P1 du 2 (pied),M. Tibial postérieur,, Type articulaire : Ellipsoïde,,
+Articulation métatarsophalangienne du 3,Inférieure,Troisième métatarsien (M3) / P1 du 3 (pied),M. Tibial postérieur / M. Adducteur de l'hallux ,, Type articulaire : Ellipsoïde,,
+Articulation métatarsophalangienne du 4,Inférieure,Quatrième métatarsien (M4) / P1 du 4 (pied),M. Tibial postérieur / M. Adducteur de l'hallux ,, Type articulaire : Ellipsoïde,,
+Articulation métatarsophalangienne du 5 ,Inférieure,Cinquième métatarsien (M5) / P1 du 5 (pied),M. Court fibulaire / M. Abducteur du 5 / M. Opposant du 5 / M. 3ème fibulaire,, Type articulaire : Ellipsoïde,,
+Articulation interphalangienne du 1 (pied),Inférieure,P1 de l'hallux (pied) / P2 de l'hallux (pied),M. Court extenseur de l'hallux / M. Abducteur de l'hallux / M. Adducteur de l'hallux / M. Court fléchisseur de l'hallux / M. Long extenseur de l'hallux / M. Long fléchisseur de l'hallux,, Type articulaire : Ginglyme,,
+Articulation interphalangienne du 2 (pied),Inférieure,P1 du 2 (pied) / P2 du 2 (pied) / P3 du 2 (pied),M. Long extenseur des orteils / M. Long fléchisseur des orteils / M. Court fléchisseur des orteils,, Type articulaire : Ginglyme,,
+Articulation interphalangienne du 3 (pied),Inférieure,P1 du 3 (pied) / P2 du 3 (pied) / P3 du 3 (pied),M. Long extenseur des orteils / M. Long fléchisseur des orteils / M. Court fléchisseur des orteils,, Type articulaire : Ginglyme,,
+Articulation interphalangienne du 4 (pied),Inférieure,P1 du 4 (pied) / P2 du 4 (pied) / P3 du 4 (pied),M. Long extenseur des orteils / M. Long fléchisseur des orteils / M. Court fléchisseur des orteils,, Type articulaire : Ginglyme,,
+Articulation interphalangienne du 5 (pied),Inférieure,P1 du 5 (pied) / P2 du 5 (pied) / P3 du 5 (pied),M. Abducteur du 5 / M. Court fléchisseur du 5 / M. Long extenseur des orteils / M. Long fléchisseur des orteils / M. Court fléchisseur des orteils,, Type articulaire : Ginglyme,,
+M. Oblique supérieur de la tête,Supérieure,C0 / C1 / Articulation occipitoatloïdienne / Articulation atlantoaxoïdienne antérieure / Articulations atlantoaxoïdiennes latérales,M. Oblique inférieur de la tête ,Plexus cervical (Racine C1),"Processus transverse de C1 => Ligne nuchale inférieure
+Extension / Rotation controlatérale / Inclinaison homolatérale (tête)
+Innervé par la racine de C1
+Fait partie du triangle suboccipital (de Tillaux) lieu de passage de l'artère vertébrale + racine de C1",,
+M. Oblique inférieur de la tête,Supérieure,C1 / C2 / Articulation occipitoatloïdienne / Articulation atlantoaxoïdienne antérieure / Articulations atlantoaxoïdiennes latérales / Articulation C2C3,M. Oblique supérieur de la tête ,Plexus cervical (Racine C1) / Plexus cervical (Racine C2),"Processus épineux de C2 => Processus transverse de C1 
+Extension et rotation homolatérale de la tête 
+Innervé par les racines C1/C2 (surtout C2 nerf d'arnold)
+Fait partie du triangle suboccipital (de Tillaux) lieu de passage de l'artère vertébrale + racine de C1",,
+M. Droit antérieur,Supérieure,C0 / C1 / Temporal / Articulation temporo-mandibulaire / Articulation occipitoatloïdienne / Articulation atlantoaxoïdienne antérieure / Articulations atlantoaxoïdiennes latérales,,Plexus cervical (Racine C1),"PT et face antérieure de la masse latérale de C1 => C0 en avant du foramen magnum + déborde sur le rocher 
+Flexion / Inclinaison homolatérale (tête)
+Innervé par la racine de C1",,
+M. Petit droit postérieur,Supérieure,C0 / C1 / Articulation occipitoatloïdienne / Articulation atlantoaxoïdienne antérieure / Articulations atlantoaxoïdiennes latérales,,Plexus cervical (Racine C1),"Arc postérieur de C1 => Partie médiale de la Ligne nuchale inférieure 
+Extension de la tête 
+Innervé par la racine de C1 ",,
+M. Grand droit postérieur,Supérieure,C0 / C2 / Articulation occipitoatloïdienne / Articulation C2C3 / Articulation atlantoaxoïdienne antérieure / Articulations atlantoaxoïdiennes latérales,,Plexus cervical (Racine C1)," Processus épineux de C2 => Partie moyenne de la Ligne nuchale inférieure 
+Extension de la tête 
+Innervé par la racine de C1
+Fait partie du triangle suboccipital (de Tillaux) lieu de passage de l'artère vertébrale + racine de C1",,
+M. Long de la tête,Supérieure,C0 / C3 / C4 / C5 / C6 / Articulation occipitoatloïdienne / Articulation C2C3 / Articulation C3C4 / Articulation C4C5 / Articulation C5C6,,Plexus cervical (Racine C1) / Plexus cervical (Racine C2),"PT de C3 à C6 => Base de C0 près du sphénoïde 
+Flexion de la tête et des cervicales supérieures 
+Inclinaison homolatérale de la tête 
+Innervé par les racines de C1 et C2",,
+M. Long du cou,Supérieure,C1 / C2 / C3 / C4 / C5 / C6 / C7 / T1 / T2 / T3 / Articulation occipitoatloïdienne / Articulation atlantoaxoïdienne antérieure / Articulations atlantoaxoïdiennes latérales / Articulation C2C3 / Articulation C3C4 / Articulation C4C5 / Articulation C5C6 / Articulation C6C7 / Articulation C7T1 / Articulation T1T2 / Articulation T2T3 / Articulation T3T4 / Articulation T4T5 / Articulation T5T6 / Articulation costovertébrale K1 / Articulation costovertébrale K2 / Articulation costovertébrale K3 / Articulation costovertébrale K4 / Articulation costovertébrale K5 /Articulation costovertébrale K6,,Plexus cervical (Racine C1) / Plexus cervical (Racine C2) / Plexus cervical (Racine C3) / Plexus cervical (Racine C4)," Faisceau longitudinal : Partie antéro-latérale des corps de C5 à T3 => Partie antéro-latérale des corps de C2 à C4
+Faisceau oblique caudal : Partie antéro-latérale des corps de T1 à T3 => Processus transverses de C5 à C7 
+Faisceau oblique cranial : Processus transverses de C3 à C5 => Arc antérieur de C1 
+Flexion du cou (délordose) + Inclinaison homolatérale de la tête 
+Innervé par les racines de C1 à C4",,
+M. Droit latéral de la tête,Supérieure,C0 / C1 / Articulation occipitoatloïdienne / Articulation atlantoaxoïdienne antérieure / Articulations atlantoaxoïdiennes latérales,,Plexus cervical (Racine C1),"Processus transverse de C1 => processus jugulaire de l'occiput
+Inclinaison homolatérale (tête)
+Innervé par la racine de C1",,
+M. Digastrique,Supérieure,Temporal / Os hyoïde / Mandibule / Articulation temporo-mandibulaire,M. Mylo-hyoïdien / M. Stylo-hyoïdien / M. SCOM / M. Omo-hyoïdien,Nerf facial (VII) / Nerf trijumeau (V) ,"Inscisure mastoïdienne (inscisure du digastrique) => Bord inférieur (voire interne) du corps de la mandibule, partie médiale 
+NB : En deux ventres et fait relais au niveau de l'os Hyoïde dans sa poulie 
+Elévation de l'os Hyoïde + Ouverture de la bouche 
+Innervé par le Nerf facial (VII) pour son ventre postérieur et par le nerf mandibulaire (V.3) 
+pour son ventre antérieur",,
+M. Mylo-hyoïdien,Supérieure,Mandibule / Os hyoïde / Articulation temporo-mandibulaire ,M. Digastrique / M. Génio-hyoïdien,Nerf trijumeau (V),"Face interne de la mandibule au niveau de la ligne oblique => Face antérieure du corps de l'os Hyoïde 
+Elévation de l'os hyoïde et ouverture de la bouche 
+Innervé par le nerf mandibulaire (V.3) 
+",,
+M. Génio-hyoïdien,Supérieure,Mandibule / Os hyoïde / Articulation temporo-mandibulaire ,M. Mylo-hyoïdien,Nerf trijumeau (V),"Face interne de la mandibule au niveau de l'épine mentonière => Face antérieure du corps de l'os Hyoïde 
+Elévation de l'os hyoïde et ouverture de la bouche 
+Innervé par le nerf mandibulaire (V.3)",,
+M. Stylo-hyoïdien,Supérieure,Temporal / Os hyoïde / Articulation temporo-mandibulaire,M. Digastrique,Nerf facial (VII) ,"Processus styloïde du temporal => Face antérieure du corps de l'os Hyoïde 
+Elévation de l'os hyoïde et ouverture de la bouche 
+Innervé par le nerf facial (VII) ",,
+M. Omo-hyoïdien,Supérieure,Scapula / Os hyoïde / Articulation scapulohumérale / Articulation acromioclaviculaire,M. Digastrique / M. SCOM / M. Sterno-hyoïdien,Plexus cervical (Racine C2) / Plexus cervical (Racine C3),"Bord antéro-supérieur de la scapula => Partie latérale du bord inférieur de l'os Hyoïde 
+Abaissement de l'os Hyoïde + Ouverture de la bouche + Flexion de la tête (délordose) + Inspirateur accessoire 
+Innervé par le Plexus cervical (Racine C2++ / C3)",,
+M. Sterno-hyoïdien,Supérieure,Sternum / Os hyoïde,M. Omo-hyoïdien,Plexus cervical (Racine C2) / Plexus cervical (Racine C3),"Face postéro-supérieure du Manubrium + Extrémité médiale de la face postérieure de la clavicule  => Partie médiale du bord inférieur de l'os Hyoïde 
+Abaissement de l'os Hyoïde + Ouverture de la bouche + Flexion de la tête (délordose) + Inspirateur accessoire 
+Innervé par le Plexus cervical (Racine C2++ / C3)
+",,
+M. Sterno-thyroïdien,Supérieure,Sternum ,,Plexus cervical (Racine C2) / Plexus cervical (Racine C3),"Face postéro-supérieure du Manubrium sous le sterno-Hyoïdien   => Face antérieure du cartilage thyroïde (ligne oblique versant inférieur)
+Abaissement de l'os Hyoïde + Ouverture de la bouche + Flexion de la tête (délordose) + Inspirateur accessoire 
+Innervé par le Plexus cervical (Racine C2++ / C3)
+",,
+M. Thyro-hyoïdien,Supérieure,Os hyoïde ,,Plexus cervical (Racine C2) / Plexus cervical (Racine C3),"Face antérieure du cartilage thyroïde (ligne oblique versant Supérieur) => Bord inférieur de la grande corne de l'os Hyoïde 
+Abaissement de l'os Hyoïde + Ouverture de la bouche + Flexion de la tête (délordose) + Inspirateur accessoire 
+Innervé par le Plexus cervical (Racine C2++ / C3)
+",,
+M. Elévateur de la scapula,Supérieure,Scapula / C1 / C2 / C3 / C4 / Articulation occipitoatloïdienne / Articulation atlantoaxoïdienne antérieure / Articulations atlantoaxoïdiennes latérales / Articulation C3C4 / Articulation C4C5 / Articulation C2C3 / Articulation scapulohumérale / Articulation acromioclaviculaire,,Plexus brachial (Racine C5),"Angle supéro-médial de la scapula => PT de C1 à C4 (voire C5)
+Si point fixe rachis cervical : Elévation de la scapula + sonnette médiale 
+Si point fixe scapulaire : Inclinaison et Rotation homolatérales du rachis cervical 
+Nerf dorsal de la scapula (Racine C5)",,
+M. Scalène antérieur,Supérieure / Thorax,C3 / C4 / C5 / C6 / K1 / Articulation C2C3 / Articulation C3C4 / Articulation C4C5 / Articulation C5C6 / Articulation C7T1 / Articulation T1T2 / Articulation costovertébrale K1 / Articulation sternochondrocostale K1,,Plexus brachial (Racine C5)," Tubercule du scalène antérieur de K1 => Tubercule antérieur des PT de C3 à C6 
+Sur les côtes : Inspirateur accessoire 
+Sur le rachis : Hauban latéral du cou (rôle statique), inclinaison homolatérale et rotation controlatérale du cou
+Innervé par la racine de C5 
+/!\ Impliqué dans le défilé des scalènes (artère subclavière et racines du plexus brachial)",,
+M. Scalène moyen,Supérieure / Thorax,C2 / C3 / C4 / C5 / C6 / C7 / K1 / Articulation atlantoaxoïdienne antérieure / Articulations atlantoaxoïdiennes latérales / Articulation C2C3 / Articulation C3C4 / Articulation C5C6 / Articulation C6C7 / Articulation C7T1 / Articulation T1T2 / Articulation C4C5 / Articulation costovertébrale K1 / Articulation sternochondrocostale K1,M. Scalène postérieur,Plexus brachial (Racine C6) / Plexus brachial (Racine C7) / Plexus brachial (Racine C8),"Tubercule du scalène antérieur de K1 => Tubercule antérieur des PT de C2 à C7
+Sur les côtes : Inspirateur accessoire 
+Sur le rachis : Hauban latéral du cou (rôle statique), Flexion, inclinaison homolatérale
+Innervé par les racines C6 / C7 / C8
+/!\ Impliqué dans le défilé des scalènes (artère subclavière et racines du plexus brachial)",,
+M. Scalène postérieur,Supérieure / Thorax,C4 / C5 / K2 / Articulation C5C6 / Articulation C4C5 / Articulation T2T3 / Articulation costovertébrale K2 / Articulation sternochondrocostale K2,M. Scalène moyen,Plexus brachial (Racine C6) / Plexus brachial (Racine C7) / Plexus brachial (Racine C8),"Tubercule antérieur des PT de C4 à C6 => Face latérale et bord supérieur de K2
+Sur les côtes : Inspirateur accessoire 
+Sur le rachis : Hauban latéral du cou (rôle statique), Flexion, inclinaison homolatérale
+Innervé par les racines C6 / C7 / C8 ",,
+M. SCOM,Supérieure / Thorax,Clavicule / Sternum / C0 / Temporal / Mandibule / Articulation temporo-mandibulaire / Articulation occipitoatloïdienne / Articulation acromioclaviculaire / Articulation sternoclaviculaire / Articulation sternochondrocostale K1 / Articulation sternochondrocostale K2,M. Digastrique / M. Omo-hyoïdien,Nerf accessoire (XI) / Plexus cervical (Racine C2) / Plexus cervical (Racine C3),"Chef claviculaire : Face supérieure du tier médial du corps de la clavicule => Apex du processus mastoïde + partie latérale de la ligne nuchale supérieure
+Chef sternal : Face antérieure du manubrium sternal près de la facette claviculaire => Face latérale du processus mastoïde + Partie latérale de la ligne nuchale supérieure
+Flexion du cou + inclinaison homolatérale du cou + rotation controlatérale du cou + légère extension de la tète 
+NB : Echange une bandelette fibreuse avec Gonion (bandelette mandibulaire) 
+Innervé par le nerf accessoire (XI) et par quelques rameaux des racines C2 / C3",,
+M. Platysma,Supérieure / ,Mandibule / Articulation temporo-mandibulaire,,Nerf facial (VII) ,"Commissure des lèvres + Branche inférieure de la mandibule => Derme de la région acromio-pectorale
+C'est une nappe musculaire sous cutanée 
+Abaissement des commissures de la bouche + Elévation/tension de la peau pectorale 
+Innervé par le nerf facial (VII)",,
+M. Grand pectoral,Supérieure / Thorax / Moyenne,Clavicule / Sternum / Humérus / K1 / K2 / K3 / K4 / K5 / K6 / Articulation T1T2 / Articulation T2T3 / Articulation T3T4 / Articulation T5T6 / Articulation T4T5 / Articulation T6T7 / Articulation C7T1 / Articulation costovertébrale K1 / Articulation costovertébrale K2 / Articulation costovertébrale K3 / Articulation costovertébrale K4 / Articulation costovertébrale K5 / Articulation costovertébrale K6 / Articulation scapulohumérale / Articulation acromioclaviculaire / Articulation sternoclaviculaire / Articulation sternochondrocostale K1 / Articulation sternochondrocostale K2 / Articulation sternochondrocostale K3 / Articulation sternochondrocostale K4 / Articulation sternochondrocostale K5 / Articulation sternochondrocostale K6 / Articulation sternochondrocostale K7 / Articulation sternochondrocostale K8 / Articulation sternochondrocostale K9 / Articulation sternochondrocostale K10,M. Subclavier / M. Petit pectoral / M. Deltoïde / M. Droit de l'abdomen / M. Transverse de l'abdomen / M. Oblique externe / M. Grand rond / M. Grand dorsal / M. Dentelé antérieur,Plexus brachial (Racine C5) / Plexus brachial (Racine C6) / Plexus brachial (Racine C7),"Chef supérieur : 2/3 médiaux du bord antérieur de la clavicule
+Chef moyen : Face antérieur du manubrium sternal et des arcs costaux de K1 / K2 
+Chef inférieur : Face antérieure du corps du sternum le long du bord latéral et arcs costaux de K3 / K4 / K5 / K6
+Terminaison commune : Lèvre latérale du sillon bicipital sur la partie antéro-supérieure de la diaphyse humérale + expansion sur la capsule de la gléno-humérale
+Il entretient des rapports étroits avec la glande mammaire, le deltoïde (avec qui il forme le trigone delto pectoral où on retrouve la veine céphalique, l'artère thoraco acromiale et les artères et veines subclavières), le droit de l'abdomen, le subclavier et le petit pectoral
+Il permet une adduction et une rotation interne de la gléno humérale ainsi qu'une élévation (fibres sup) ou un abaissement (fibres inf) de l'humérus + Inspirateur accessoire et élévation du tronc 
+Inervé par le nerf pectoral latéral (branche du plexus brachial + anse des pectoraux (racines C5 / C6 / C7)",,
+M. Petit pectoral,Supérieure / Thorax / Moyenne,Scapula / K3 / K4 / K5 / Articulation T3T4 / Articulation T4T5 / Articulation T5T6 / Articulation costovertébrale K3 / Articulation costovertébrale K4 / Articulation costovertébrale K5 / Articulation scapulohumérale / Articulation acromioclaviculaire / Articulation sternochondrocostale K3 / Articulation sternochondrocostale K4 / Articulation sternochondrocostale K5,M. Grand pectoral / M. Dentelé antérieur,Plexus brachial (Racine C8) / Plexus brachial (Racine T1),"Processus coracoïde de la scapula => Bord supéro-externe de K3 / K4 / K5
+Inspirateur accessoire + Antépulsion et bascule antérieure du moignon de l'épaule
+Innervé par le nerf pectoral médial (racines C8 / T1) et l'anse des pectoraux",,
+M. Subclavier,Supérieure / Thorax,Clavicule / K1 / Articulation C7T1 / Articulation T1T2 / Articulation costovertébrale K1 / Articulation acromioclaviculaire / Articulation sternoclaviculaire / Articulation sternochondrocostale K1,M. Grand pectoral,Plexus brachial (Racine C5) / Plexus brachial (Racine C6),"Partie moyenne de la face inférieure de la clavicule => Face supérieure de K1 + Premier cartilage 
+Rôle de stabilisation costo-claviculaire (coaptation sterno-claviculaire), abaissement de la clavicule et inspirateur (très) accessoire
+Innervé par le nerf du subclavier (Racine C5 voire C6) 
+A un rôle important dans la pince costo-claviculaire et dans l'ouverture ou fermeture de l'OST, il renforce le ligament costo-claviculaire",,
+M. Transverse du thorax,Supérieure / Thorax / Moyenne,Sternum / K3 / K4 / K5 / K6 / Articulation T3T4 / Articulation T4T5 / Articulation T5T6 / Articulation T6T7 / Articulation costovertébrale K3 / Articulation costovertébrale K4 / Articulation costovertébrale K5 / Articulation costovertébrale K6 / Articulation sternoclaviculaire / Articulation sternochondrocostale K1 / Articulation sternochondrocostale K2 / Articulation sternochondrocostale K3 / Articulation sternochondrocostale K4 / Articulation sternochondrocostale K5 / Articulation sternochondrocostale K6 / Articulation sternochondrocostale K7 / Articulation sternochondrocostale K8 / Articulation sternochondrocostale K9 / Articulation sternochondrocostale K10,,Nerfs spinaux (Racine T3) / Nerfs spinaux (Racine T4) / Nerfs spinaux (Racine T5) / Nerfs spinaux (Racine T6),"Face postérieure du corps et appendice xyphoïde du sternum => Face interne des arcs costaux de K3 / K4 / K5 / K6 
+Stabilise la partie antéro-inférieure du thorax
+Innervé par les nerfs intercostaux des étages costaux correspondants ",,
+M. Dentelé antérieur,Supérieure / Thorax / Moyenne,K1 / K2 / K3 / K4 / K5 / K6 / K7 / K8 / K9 / K10 / Scapula / Articulation C7T1 / Articulation T1T2 / Articulation T2T3 / Articulation T3T4 / Articulation T4T5 / Articulation T5T6 / Articulation T6T7 / Articulation T7T8 / Articulation T8T9 / Articulation T9T10 / Articulation T10T11 / Articulation costovertébrale K1 / Articulation costovertébrale K2 / Articulation costovertébrale K3 / Articulation costovertébrale K4 / Articulation costovertébrale K5 / Articulation costovertébrale K6 / Articulation costovertébrale K7 / Articulation costovertébrale K8 / Articulation costovertébrale K9 / Articulation costovertébrale K10 / Articulation scapulohumérale / Articulation acromioclaviculaire / Articulation sternochondrocostale K1 / Articulation sternochondrocostale K2 / Articulation sternochondrocostale K3 / Articulation sternochondrocostale K4 / Articulation sternochondrocostale K5 / Articulation sternochondrocostale K6 / Articulation sternochondrocostale K7 / Articulation sternochondrocostale K8 / Articulation sternochondrocostale K9 / Articulation sternochondrocostale K10,M. Subscapulaire / M. Rhomboïdes / M. Grand pectoral / M. Petit pectoral / M. Oblique externe,Plexus brachial (Racine C5) / Plexus brachial (Racine C6),"Faisceau supérieur : K1 / K2 
+Faisceau moyen : K2 / K3 / K4
+Faisceau inférieur : K5 / K6 / K7 / K8 / K9 / K10 
+Terminaison commune : Face Antéro-médiale de la scapula (de haut en bas pour les faicceaux)
+Inspirateur accessoire (scapula fixe) / Propulsion de l'épaule / Abduction et sonette externe de la scapula / Plaque la scapula contre le grill costal 
+Innervé par le nerf thoracique long (racines C5 / C6) => Déficit du nerf thoracique long, décollement de la scapula ",,
+M. Diaphragme,Moyenne / Inférieure / Thorax,L1 / L2 / L3 / L4 / K6 / K7 / K8 / K9 / K10 / K11 / K12 / Sternum / Articulation T6T7 / Articulation T7T8 / Articulation T8T9 / Articulation T10T11 / Articulation T11T12 / Articulation T12L1 / Articulation L1L2 / Articulation L2L3 / Articulation L4L5 / Articulation L3L4 / Articulation T9T10 / Articulation costovertébrale K6 / Articulation costovertébrale K7 / Articulation costovertébrale K8 / Articulation costovertébrale K9 / Articulation costovertébrale K10 / Articulation costovertébrale K11 / Articulation costovertébrale K12 / Articulation sternoclaviculaire / Articulation sternochondrocostale K4 / Articulation sternochondrocostale K5 / Articulation sternochondrocostale K6 / Articulation sternochondrocostale K7 / Articulation sternochondrocostale K8 / Articulation sternochondrocostale K9 / Articulation sternochondrocostale K10,M. Carré des lombes / M. Psoas,Plexus cervical (Racine C3) / Plexus cervical (Racine C4) / Plexus brachial (Racine C5),"Pillier Droit : Partie antéro-latérale droite des corps de L1 / L2 / L3 / L4 => Centre Phrénique
+Pillier gauche : Partie antéro-latérale gauche des corps de L1 / L2 => Centre Phrénique 
+NB : Il y a une arcade fibreuse entre les deux pilliers et chacun est renforcé par un pillier accessoire qui s'insère sur L2 
+Arcade médiale pour le passage du psoas : Corps de L2 => Transverse de L1 
+Arcade moyenne pour le passage du M. Carré des lombes : Transverse de L1 => K12 
+Arcade latérale : K12 => K11
+Coupoles : Centre phrénique => Arcs costaux de K6 / K7 / K8 / K9 / K10 / K11 / K12  + Appendice Xiphoïde du sternum
+Il sépare le thorax et l'abdomen et est donc en rapport avec le contenu viscéral du thorax ainsi qu'avec les viscères abdominaux. Il possède de nombreux ligaments avec eux. 
+A hauteur de T9 on trouve le foramen de la VCI et du nerf phrénique droit. 
+A hauteur de T10 on trouve le hiatus oesophagien qui contient l'oesophage et le nerf vague gauche (il partage ici des fibres musculaires lisses avec l'oesophage = Cardia)
+A hauteur de T12 on trouve le Hiatus aortique qui laisse passage à l'aorte desendante. 
+C'est le muscle principal de l'inspiration et sert aussi à la stabilisation du rachis en statique et à tous les phénomènes d'expulsion (miction, accouchement, défécation) en dynamique 
+Innervé par les nerfs phréniques droit et gauche (Racines C3 / C4++ / C5) et par les 6 derniers nerfs intercostaux ",,
+M. Ilio-costal,Supérieure / Moyenne / Inférieure / Thorax,C4 / C5 / C6 / C7 / Sacrum / Os coxal / K1 / K2 / K3 / K4 / K5 / K6 / K7 / K8 / K9 / K10 / K11 / K12 / Articulation C6C7 / Articulation C3C4 / Articulation C4C5 / Articulation C5C6 / Articulation C7T1 / Articulation T1T2 / Articulation T2T3 / Articulation T3T4 / Articulation T4T5 / Articulation T5T6 / Articulation T6T7 / Articulation T7T8 / Articulation T8T9 / Articulation T9T10 / Articulation T10T11 / Articulation T12L1 / Articulation T11T12 / Articulation sacrolombaire / Articulation sacrocoxale / Articulation sacrococcygienne / Articulation costovertébrale K1 / Articulation costovertébrale K2 / Articulation costovertébrale K3 / Articulation costovertébrale K4 / Articulation costovertébrale K5 / Articulation costovertébrale K6 / Articulation costovertébrale K7 / Articulation costovertébrale K8 / Articulation costovertébrale K9 / Articulation costovertébrale K10 / Articulation costovertébrale K11 / Articulation costovertébrale K12 / Articulation sternochondrocostale K1 / Articulation sternochondrocostale K2 / Articulation sternochondrocostale K3 / Articulation sternochondrocostale K4 / Articulation sternochondrocostale K5 / Articulation sternochondrocostale K6 / Articulation sternochondrocostale K7 / Articulation sternochondrocostale K8 / Articulation sternochondrocostale K9 / Articulation sternochondrocostale K10,M. Longissimus / M. Epineux du thorax / M. Grand dorsal / M. Dentelé postéro-inférieur / M. Rhomboïdes / M. Trapèze / M. Dentelé postéro-supérieur / M. Oblique externe / M. Oblique interne / M. Carré des lombes / M. Transverse de l'abdomen,Plexus cervical (Racine C4) / Plexus brachial (Racine C5) / Plexus brachial (Racine C6) / Plexus brachial (Racine C7) / Plexus brachial (Racine T1) / Nerfs spinaux (Racine T2) / Nerfs spinaux (Racine T3) / Nerfs spinaux (Racine T4) / Nerfs spinaux (Racine T5) / Nerfs spinaux (Racine T6) / Nerfs spinaux (Racine T7) / Nerfs spinaux (Racine T8) / Nerfs spinaux (Racine T9) / Nerfs spinaux (Racine T10) / Nerfs spinaux (Racine T11) / Plexus lombaire (Racine T12),"Partie Lombaire : Sacrum + Crête Iliaque => angles postérieurs de K4 à K12 
+Partie thoracique : Angles postérieurs de K6 à K12 => Angles postérieurs de K1 à K6 
+Partie cervicale : Angles postérieurs de K4 / K5 / K6 / K7 => PT de C4 / C5 / C6 / C7 
+Erection et extension du rachis (para vertébraux)
+Innervé par les nerfs spinaux des étages correspondants ",,
+M. Longissimus,Supérieure / Moyenne / Inférieure / Thorax,Temporal / C2 / C3 / C4 / C5 / C6 / C7 / T1 / T2 / T3 / T4 / T5 / T6 / T7 / T8 / T9 / T10 / T11 / T12 / K5 / K6 / K7 / K8 / K9 / K10 / K11 / K12 / Sacrum / Os coxal / L1 / L2 / L3 / L4 / L5 / Articulation temporo-mandibulaire / Articulation atlantoaxoïdienne antérieure / Articulation C2C3 / Articulations atlantoaxoïdiennes latérales / Articulation C3C4 / Articulation C5C6 / Articulation C6C7 / Articulation C7T1 / Articulation T1T2 / Articulation T2T3 / Articulation T3T4 / Articulation T4T5 / Articulation T5T6 / Articulation T6T7 / Articulation T12L1 / Articulation L1L2 / Articulation L2L3 / Articulation L3L4 / Articulation L4L5 / Articulation sacrolombaire / Articulation sacrocoxale / Articulation sacrococcygienne / Symphyse pubienne / Articulation coxofémorale / Articulation costovertébrale K1 / Articulation costovertébrale K2 / Articulation costovertébrale K3 / Articulation costovertébrale K4 / Articulation costovertébrale K5 / Articulation costovertébrale K6 / Articulation costovertébrale K7,M. Epineux du thorax / M. Ilio-costal / M. Grand dorsal / M. Dentelé postéro-inférieur / M. Rhomboïdes / M. Trapèze / M. Dentelé postéro-supérieur / M. Oblique externe / M. Oblique interne / M. Carré des lombes / M. Transverse de l'abdomen,Plexus cervical (Racine C2) / Plexus cervical (Racine C3) / Plexus cervical (Racine C4) / Plexus brachial (Racine C5) / Plexus brachial (Racine C6) / Plexus brachial (Racine C7) / Plexus brachial (Racine T1) / Nerfs spinaux (Racine T2) / Nerfs spinaux (Racine T3) / Nerfs spinaux (Racine T4) / Nerfs spinaux (Racine T5) / Nerfs spinaux (Racine T6) /  Nerfs spinaux (Racine T7) / Nerfs spinaux (Racine T8) / Nerfs spinaux (Racine T9) / Nerfs spinaux (Racine T10) / Nerfs spinaux (Racine T11) / Plexus lombaire (Racine T12) / Plexus lombaire (Racine L1) / Plexus lombaire (Racine L2) / Plexus lombaire (Racine L3) / Plexus lombaire (Racine L4) / Plexus lombaire (Racine L5) ,"Partie Thoraco-lombaire : Sacrum + Crête iliaque  + PT et PE de L1 à L5 => PT de T1 à T12 + K5 à K12 
+Partie cervicale : PT de T1 à T6 => PT de C2 à C7 
+Partie céphalique : PT de C3 à T3 => Processus mastoïde du temporal 
+Erection et extension du rachis (para vertébraux) + Stabilise les costaux transversaires 
+Innervé par les nerfs spinaux des étages correspondants ",,
+M. Epineux du thorax,Supérieure / Moyenne / Inférieure / Thorax,T3 / T4 / T5 / T6 / T7 / T8 / T9 / T11 / T12 / L1 / L2 / L3 / Articulation T2T3 / Articulation T3T4 / Articulation T4T5 / Articulation T5T6 / Articulation T6T7 / Articulation T7T8 / Articulation T8T9 / Articulation T10T11 / Articulation T11T12 / Articulation T12L1 / Articulation L1L2 / Articulation L2L3 / Articulation L3L4 / Articulation T9T10 / Articulation costovertébrale K3 / Articulation costovertébrale K4 / Articulation costovertébrale K5 / Articulation costovertébrale K6 / Articulation costovertébrale K7 / Articulation costovertébrale K8 / Articulation costovertébrale K9 / Articulation costovertébrale K10 / Articulation costovertébrale K11 / Articulation costovertébrale K12,M. Longissimus / M. Grand dorsal / M. Ilio-costal / M. Dentelé postéro-inférieur / M. Rhomboïdes / M. Trapèze / M. Dentelé postéro-supérieur / M. Oblique externe / M. Oblique interne / M. Carré des lombes / M. Splénius du cou / M. Splénius de la tête / M. Transverse de l'abdomen,Nerfs spinaux (Racine T3) / Nerfs spinaux (Racine T4) / Nerfs spinaux (Racine T5) / Nerfs spinaux (Racine T6) / Nerfs spinaux (Racine T7) / Nerfs spinaux (Racine T8) / Nerfs spinaux (Racine T9) / Nerfs spinaux (Racine T10) / Nerfs spinaux (Racine T11) / Plexus lombaire (Racine T12) / Plexus lombaire (Racine L1) / Plexus lombaire (Racine L2) / Plexus lombaire (Racine L3),"T11 à L3 => T3 à T9 
+NB : Pas d'insertion sur T10 (pivot de la dynamique du muscle) 
+Erection et extension du rachis (para vertébraux) + Stabilise la charnière thoraco-lombaire 
+Innervé par les nerfs des étages correspondants ",,
+M. Splénius du cou,Supérieure / Moyenne / Thorax,T3 / T4 / T5 / C1 / C2 / C3 / Articulation occipitoatloïdienne / Articulation atlantoaxoïdienne antérieure / Articulations atlantoaxoïdiennes latérales / Articulation C2C3 / Articulation C3C4 / Articulation T3T4 / Articulation T4T5 / Articulation T5T6 / Articulation costovertébrale K3 / Articulation costovertébrale K4 / Articulation costovertébrale K5 / Articulation costovertébrale K6,M. Epineux du thorax / M. Semi-épineux de la tête,Plexus cervical (Racine C2) / Plexus cervical (Racine C3) / Plexus cervical (Racine C4),"T3 / T4 / T5 + Muscle épineux et ligament nuchal => C1 / C2 
+Extension du rachis cervical + Rotation et Inclinaison homolatérales 
+Innervé par les nerfs spinaux de C2 / C3 / C4",,
+M. Splénius de la tête,Supérieure / Thorax,C4 / C5 / C6 / C7 / T1 / T2 / T3 / C0 / Temporal / Articulation temporo-mandibulaire / Articulation occipitoatloïdienne / Articulation C3C4 / Articulation C4C5 / Articulation C5C6 / Articulation C6C7 / Articulation C7T1 / Articulation costovertébrale K1,M. Epineux du thorax / M. Semi-épineux de la tête / M. Dentelé postéro-supérieur,Plexus cervical (Racine C2) / Plexus cervical (Racine C3) / Plexus cervical (Racine C4),"C4 / C5 / C6 / C7 / T1 / T2 / T3 + Muscle épineux et ligament nuchal => Ligne nuchale supérieure de l'occiput + bord postérieur du processus mastoïde du temporal 
+Extension du rachis cervical + Rotation et Inclinaison homolatérales 
+Innervé par les nerfs spinaux de C2 / C3 /C4",,
+M. Semi-épineux de la tête,Supérieure / Moyenne / Thorax,C0 / C4 / C5 / C6 / C7 / T1 / T2 / T3 / T4 / T5 / T6 / Articulation occipitoatloïdienne / Articulation C3C4 / Articulation C4C5 / Articulation C5C6 / Articulation C6C7 / Articulation C7T1 / Articulation T1T2 / Articulation T2T3 / Articulation T3T4 / Articulation T4T5 / Articulation T5T6 / Articulation T6T7 / Articulation costovertébrale K1 / Articulation costovertébrale K2 / Articulation costovertébrale K3 / Articulation costovertébrale K4 / Articulation costovertébrale K5 / Articulation costovertébrale K6 / Articulation costovertébrale K7,M. Splénius de la tête / M. Splénius du cou,Plexus cervical (Racine C2) / Plexus cervical (Racine C3) / Plexus cervical (Racine C4) / Plexus brachial (Racine C5) / Plexus brachial (Racine C6) / Plexus brachial (Racine C7) / Plexus brachial (Racine T1) / Nerfs spinaux (Racine T2) / Nerfs spinaux (Racine T3) / Nerfs spinaux (Racine T4) / Nerfs spinaux (Racine T5),"PT de C4 à T6 => Entre les lignes nuchales sup et inf de l'occiput (partie médiale) 
+Extension de la tête et inclinaison homolatérale 
+Innervé par les nerfs spinaux des étages de C2 à C5 
+NB : Il est digastrique avec les ventres qui se rejoignent au niveau de C4 et il forme une boutonière  pour le nerf grand occipital (nerf d'Arnold racine C2)
+",,
+M. Trapèze,Supérieure / Moyenne / Thorax,C0 / C1 / C2 / C3 / C4 / C5 / C6 / C7 / T1 / T2 / T3 / T4 / T5 / T6 / T7 / T8 / T9 / T10 / T11 / Scapula / Clavicule / Articulation occipitoatloïdienne / Articulation atlantoaxoïdienne antérieure / Articulations atlantoaxoïdiennes latérales / Articulation C2C3 / Articulation C3C4 / Articulation C4C5 / Articulation C5C6 / Articulation C6C7 / Articulation C7T1 / Articulation T1T2 / Articulation T2T3 / Articulation T3T4 / Articulation T4T5 / Articulation T5T6 / Articulation T6T7 / Articulation T7T8 / Articulation T8T9 / Articulation T9T10 / Articulation T10T11 / Articulation T11T12 / Articulation costovertébrale K1 / Articulation costovertébrale K2 / Articulation costovertébrale K3 / Articulation costovertébrale K4 / Articulation costovertébrale K5 / Articulation costovertébrale K6 / Articulation costovertébrale K7 / Articulation costovertébrale K8 / Articulation costovertébrale K9 / Articulation costovertébrale K10 / Articulation costovertébrale K11 / Articulation costovertébrale K12 / Articulation scapulohumérale / Articulation acromioclaviculaire / Articulation sternoclaviculaire,M. Deltoïde / M. Grand dorsal / M. Rhomboïdes / M. Petit rond / M. Infraépineux / M. Supraépineux / M. Ilio-costal / M. Longissimus / M. Epineux du thorax,Plexus cervical (Racine C3) / Plexus cervical (Racine C4) / Nerf accessoire (XI) ,"Origine commune : Ligne nuchale supérieure de l'occiput + PE de C1 à T11 + Ligament nuchal 
+=> Faisceau supérieur : Tier supéro-latéral et bord postérieur de la clavicule 
+=> Faisceau moyen : Bord postérieur de l'épine de la scapula 
+=> Faisceau inférieur : Tubercule du trapèze sur la scapula 
+Rachis fixe : Elevation du moignon de l'épaule (fsx sup) + sonette latérale (fsx sup), adduction du membre supérieur (fsx moy) + rétropulsion de la scapula (fsx moy), Abaissement du moignon de l'épaule (fsx inf) + add et sonette externe de la scapula (fsx inf)
+Scapula fixe : Extension, inclinaison homolatérale et rotation controlatérale de la tête (fsx sup), translation homolatérale du rachis (fsx moy), Tension supérieure du rachis inférieur (Fsx inf) 
+Globalement : Plaquage des muscles sous-jacents + stabilisation de la charnière cervico-dorsale 
+Innervé par le nerf accessoire (XI) ++ et par le nerf du trapèze pour la proprioception (C3 / C4)",,
+M. Grand dorsal ,Supérieure / Moyenne / Thorax / Inférieure,T6 / T7 / T8 / T9 / T10 / T11 / T12 / L1 / L2 / L3 / L4 / L5 / Sacrum / Os coxal / K9 / K10 / K11/ K12 / Humérus / Scapula / Articulation T5T6 / Articulation T6T7 / Articulation T7T8 / Articulation T8T9 / Articulation T9T10 / Articulation T10T11 / Articulation T11T12 / Articulation T12L1 / Articulation L1L2 / Articulation L2L3 / Articulation L3L4 / Articulation L4L5 / Articulation coxofémorale / Articulation sacrocoxale / Articulation sacrococcygienne / Symphyse pubienne / Articulation sacrolombaire / Articulation costovertébrale K6 / Articulation costovertébrale K7 / Articulation costovertébrale K8 / Articulation costovertébrale K9 / Articulation costovertébrale K10 / Articulation costovertébrale K11 / Articulation costovertébrale K12 / Articulation scapulohumérale / Articulation acromioclaviculaire,M. Oblique externe / M. Epineux du thorax / M. Ilio-costal / M. Dentelé postéro-inférieur / M. Trapèze / M. Longissimus / M. Oblique interne / M. Carré des lombes / M. Grand pectoral / M. Grand rond / M. Transverse de l'abdomen,Plexus brachial (Racine C6) / Plexus brachial (Racine C7) / Plexus brachial (Racine C8),"T6 à T12, Angle inf de la scapula, K9 à K12 (insertions charnues) + Face postérieure du sacrum, crête iliaque et L1 à L5  (via fascia thoraco lombaire surtout) => Sillion bicipital du 1/4 supérieur de l'humérus
+Bassin fixe : Rétropulsion de l'épaule, adduction, rotation médiale et extension de la scapulo-humérale et abaissement de la tête humérale 
+Humérus fixe : Elevation et antéversion du bassin 
+Globalement : Plaquage des érecteurs du rachis + rapprochement des deux ceintures 
+Innervé par le nerf thoraco-dorsal qui provient du plexus brachial (racines C6 / C7 / C8)",,
+M. Rhomboïdes,Supérieure / Moyenne / Thorax,C7 / T1 / T2 / T3 / T4 / Scapula / Articulation C6C7 / Articulation C7T1 / Articulation T1T2 / Articulation T2T3 / Articulation T3T4 / Articulation T4T5 / Articulation costovertébrale K1 / Articulation costovertébrale K2 / Articulation costovertébrale K3 / Articulation costovertébrale K4 / Articulation costovertébrale K5 / Articulation scapulohumérale / Articulation acromioclaviculaire,M. Trapèze / M. Ilio-costal / M. Dentelé antérieur / M. Longissimus / M. Epineux du thorax / M. Dentelé postéro-supérieur,Plexus brachial (Racine C5),"Petit rhomboïde : C7 / T1 => Bord médial de la scapula en regard de l'épine 
+Grand rhomboïde : T1 à T4 => Bord médial de la scapule en dessous de l'épine 
+Rachis fixe : Adduction, évélation, rétropulsion et sonette médiale de la scapula 
+Scapula fixe : Translation homolatérale et rotation controlatérale du rachis 
+NB : Ils fonctionnent en synergie avec le dentelé antérieur pour plaquer le bord médial de la scapula et avec le dentelé postéro-supérieur pour stapiliser la charnière cervico-thoracique
+Ils sont innervés par le nerf dorsal de la scapula, Racine C5 du plexus brachial ",,
+M. Dentelé postéro-supérieur,Supérieure / Moyenne / Thorax,C7 / T1 / T2 / T3 / K2 / K3 / K4 / K5 / Articulation C6C7 / Articulation T1T2 / Articulation T2T3 / Articulation T3T4 / Articulation T4T5 / Articulation T5T6 / Articulation C7T1 / Articulation costovertébrale K1 / Articulation costovertébrale K2 / Articulation costovertébrale K3 / Articulation costovertébrale K4 / Articulation costovertébrale K5 / Articulation sternochondrocostale K1 / Articulation sternochondrocostale K2 / Articulation sternochondrocostale K3 / Articulation sternochondrocostale K4 / Articulation sternochondrocostale K5,M. Rhomboïdes / M. Ilio-costal / M. Epineux du thorax / M. Longissimus / M. Splénius de la tête,Plexus brachial (Racine T1) / Nerfs spinaux (Racine T2) / Nerfs spinaux (Racine T3) / Nerfs spinaux (Racine T4),"C7 à T3 + Ligament nuchal => K2 à K5 
+Elevation des premières côtes = Inspirateur accessoire + Stabilisation de la charnière cervico-dorsale (en synergie avec les rhomboïdes)
+Innervé par les 4 premiers nerfs intercostaux (T1 à T4)",,
+M. Dentelé postéro-inférieur,Inférieure / Moyenne / Thorax,T11 / T12 / L1 / L2 / L3 / K9 / K10 / K11 / K12 / Articulation T9T10 / Articulation T10T11 / Articulation T11T12 / Articulation T12L1 / Articulation L1L2 / Articulation L2L3 / Articulation L3L4 / Articulation costovertébrale K9 / Articulation costovertébrale K10 / Articulation costovertébrale K11 / Articulation costovertébrale K12 / Articulation sternochondrocostale K9 / Articulation sternochondrocostale K10,M. Ilio-costal / M. Epineux du thorax / M. Longissimus / M. Grand dorsal / M. Transverse de l'abdomen / M. Carré des lombes / M. Oblique interne / M. Oblique externe,Nerfs spinaux (Racine T9) / Nerfs spinaux (Racine T10) / Nerfs spinaux (Racine T11) / Plexus lombaire (Racine T12),"T11 à L3 => K9 à K12
+Abaissement des dernières côtes = Expirateur + stabilisation de la charnière thoraco-lombaire 
+Innervé par les 4 derniers nerfs intercostaux (K9 à K12)",,
+M. Droit de l'abdomen ,Moyenne / Inférieure / Thorax,K5 / K6 / K7 / Sternum / Os coxal / Articulation T5T6 / Articulation T6T7 / Articulation T7T8 / Articulation coxofémorale / Articulation sacrocoxale / Symphyse pubienne / Articulation costovertébrale K5 / Articulation costovertébrale K6 / Articulation costovertébrale K7 / Articulation sternoclaviculaire / Articulation sternochondrocostale K5 / Articulation sternochondrocostale K6 / Articulation sternochondrocostale K7,M. Oblique interne / M. Oblique externe / M. Transverse de l'abdomen / M. Grand pectoral,Nerfs spinaux (Racine T5) / Nerfs spinaux (Racine T6) / Nerfs spinaux (Racine T7) / Nerfs spinaux (Racine T8) / Nerfs spinaux (Racine T9) / Nerfs spinaux (Racine T10) / Nerfs spinaux (Racine T11) / Plexus lombaire (Racine T12) / Plexus lombaire (Racine L1) / Plexus lombaire (Racine L2),"K5 à K7 + Processus xyphoïde du sternum => Pubis homolatéral + expansion sur le controlatéral 
+Fibres verticales 
+Renforce la symphyse pubienne 
+Si thorax fixe : Flexion du bassin sur le thorax 
+Si bassin fixe : Flexion du thorax sur le bassin
+Globalement : Expulsion (miction, défécation, toux ...) + Contention du caisson abdominal et stabilisation du rachis lombaire
+Innervé par  les nerfs intercostaux de T5 à T12 + Nerf Ilio-hypogastrique et Ilio-inguinal (Racine L1)  et Nerf génito-fémoral (Racine L2) du plexus lombaire 
+NB : Bien prendre en compte l'implication dans le canal inguinal ",,
+M. Oblique externe,Moyenne / Inférieure / Thorax,,M. Oblique interne / M. Droit de l'abdomen / M. Transverse de l'abdomen / M. Grand dorsal / M. Ilio-costal / M. Epineux du thorax / M. Dentelé postéro-inférieur / M. Longissimus / M. Dentelé antérieur / M. Grand pectoral / M. Carré des lombes,Nerfs spinaux (Racine T5) / Nerfs spinaux (Racine T6) / Nerfs spinaux (Racine T7) / Nerfs spinaux (Racine T8) / Nerfs spinaux (Racine T9) / Nerfs spinaux (Racine T10) / Nerfs spinaux (Racine T11) / Plexus lombaire (Racine T12) / Plexus lombaire (Racine L1) / Plexus lombaire (Racine L2),"K5 à K12 => Crête iliaque, EIAS, Pubis (Bilatéral), ligament inguinal + Ligne blanche sur toute sa longueur 
+Fibres obliques en BAS / DDS / AVT 
+Renforce la symphyse pubienne
+Si thorax fixe : Flexion du bassin sur le thorax  + Rotation homolatérale du bassin
+Si bassin fixe : Flexion du thorax sur le bassin + Rotation controlatérale du tronc
+Globalement : Expulsion (miction, défécation, toux ...) + Contention du caisson abdominal et stabilisation du rachis lombaire 
+Innervé par  les nerfs intercostaux de T5 à T12 + Nerf Ilio-hypogastrique et Ilio-inguinal (Racine L1)  et Nerf génito-fémoral (Racine L2) du plexus lombaire 
+NB : Bien prendre en compte l'implication dans le canal inguinal ",,
+M. Oblique interne,Moyenne / Inférieure / Thorax,Os coxal / K10 / K11 / K12 / Sternum / Articulation T10T11 / Articulation T11T12 / Articulation T12L1 / Articulation coxofémorale / Articulation sacrocoxale / Symphyse pubienne / Articulation costovertébrale K10 / Articulation costovertébrale K11 / Articulation costovertébrale K12 / Articulation sternoclaviculaire / Articulation sternochondrocostale K10,M. Droit de l'abdomen / M. Oblique externe / M. Transverse de l'abdomen / M. Grand dorsal / M. Carré des lombes / M. Ilio-costal / M. Epineux du thorax / M. Dentelé postéro-inférieur / M. Longissimus,Nerfs spinaux (Racine T5) / Nerfs spinaux (Racine T6) / Nerfs spinaux (Racine T7) / Nerfs spinaux (Racine T8) / Nerfs spinaux (Racine T9) / Nerfs spinaux (Racine T10) / Nerfs spinaux (Racine T11) / Plexus lombaire (Racine T12) / Plexus lombaire (Racine L1) / Plexus lombaire (Racine L2),"Crête iliaque + EIAS + Ligament inguinal => K10 à K12 + Ligne blanche sur toute sa longueur
+Fibres obliques en HAUT / DDS / AVT 
+Si thorax fixe : Flexion du bassin sur le thorax + Rotation controlatérale du bassin
+Si bassin fixe : Flexion du thorax sur le bassin + Rotation homolatérale du tronc 
+Globalement : Expulsion (miction, défécation, toux ...) + Contention du caisson abdominal et stabilisation du rachis lombaire
+Innervé par  les nerfs intercostaux de T5 à T12 + Nerf Ilio-hypogastrique et Ilio-inguinal (Racine L1)  et Nerf génito-fémoral (Racine L2) du plexus lombaire 
+NB : Bien prendre en compte l'implication dans le canal inguinal ",,
+M. Transverse de l'abdomen,Moyenne / Inférieure / Thorax,K6 / K7 / K8 / K9 / K10 / K11 / K12 / L1 / L2 / L3 / L4 / L5 / Os coxal / Sternum / Articulation T6T7 / Articulation T7T8 / Articulation T8T9 / Articulation T9T10 / Articulation T10T11 / Articulation T11T12 / Articulation T12L1 / Articulation L1L2 / Articulation L2L3 / Articulation L3L4 / Articulation L4L5 / Articulation sacrolombaire / Articulation coxofémorale / Articulation sacrocoxale / Symphyse pubienne / Articulation costovertébrale K6 / Articulation costovertébrale K7 / Articulation costovertébrale K8 / Articulation costovertébrale K9 / Articulation costovertébrale K10 / Articulation costovertébrale K11 / Articulation costovertébrale K12 / Articulation sternoclaviculaire / Articulation sternochondrocostale K6 / Articulation sternochondrocostale K7 / Articulation sternochondrocostale K8 / Articulation sternochondrocostale K9 / Articulation sternochondrocostale K10,M. Oblique interne / M. Oblique externe / M. Droit de l'abdomen/ M. Grand dorsal / M. Carré des lombes / M. Ilio-costal / M. Epineux du thorax / M. Dentelé postéro-inférieur / M. Longissimus / M. Grand pectoral,Nerfs spinaux (Racine T5) / Nerfs spinaux (Racine T6) / Nerfs spinaux (Racine T7) / Nerfs spinaux (Racine T8) / Nerfs spinaux (Racine T9) / Nerfs spinaux (Racine T10) / Nerfs spinaux (Racine T11) / Plexus lombaire (Racine T12) / Plexus lombaire (Racine L1) / Plexus lombaire (Racine L2),"K6 à K12 + L1 à L5 + Crête iliaque, EIAS et ligament inguinal => Ligne Blanche sur toute sa longueur
+Fibres Transversales 
+Si thorax fixe : Flexion du bassin sur le thorax 
+Si bassin fixe : Flexion du thorax sur le bassin
+Rentré de ventre = expiration forcée 
+Globalement : Expulsion (miction, défécation, toux ...) + Contention du caisson abdominal et stabilisation du rachis lombaire
+Innervé par  les nerfs intercostaux de T5 à T12 + Nerf Ilio-hypogastrique et Ilio-inguinal (Racine L1)  et Nerf génito-fémoral (Racine L2) du plexus lombaire 
+NB : Bien prendre en compte l'implication dans le canal inguinal ",,
+M. Carré des lombes ,Inférieure / Thorax,L1 / L2 / L3 / L4 / L5 / Os coxal / K12 / Articulation T12L1 / Articulation L1L2 / Articulation L2L3 / Articulation L3L4 / Articulation L4L5 / Articulation sacrolombaire / Articulation coxofémorale / Articulation sacrocoxale / Articulation costovertébrale K12,M. Transverse de l'abdomen / M. Oblique interne / M. Oblique externe / M. Ilio-costal / M. Longissimus / M. Epineux du thorax / M. Grand dorsal  / M. Dentelé postéro-inférieur / M. Diaphragme,Plexus lombaire (Racine T12) / Plexus lombaire (Racine L1) / Plexus lombaire (Racine L2) / Plexus lombaire (Racine L3),"Faisceau costo-transversaire : K12 => PT de L1 à L5
+Faisceau ilio-costal : Partie postérieure de la crête iliaque => K12 
+Faisceau ilio-transversaire :  Partie postérieure de la crête iliaque => PT de L1 à L5 
+Stabilisation / haubanage (dans le plan frontal) du rachis lombaire +++ 
+Point fixe bas : Inclinaison homolatérale du tronc + abaissement de K12 
+Point fixe haut : Elévation de l'hémi-bassin homolatéral 
+Innervé par le plexus lombaire (Racines T12 à L3 )",,
+M. Iliaque,Inférieure,Os coxal / Fémur / Sacrum / Articulation sacrolombaire / Articulation coxofémorale / Articulation sacrocoxale / Articulation sacrococcygienne / Articulation fémoropatellaire / Articulation fémorotibiale,M. Psoas,Plexus lombaire (Racine L2) / Plexus lombaire (Racine L3),"Face interne de l'os coxal et base du sacrum => Petit trochanter par un tendon commun avec le M.Psoas 
+Flexion de hanche / Antéversion du bassin / Stabilisation antérieure de la hanche 
+Innervé par le nerf fémoral (Racines L2 / L3)",,
+M. Psoas,Inférieure / Moyenne / Thorax,Os coxal / Fémur / T12 / L1 / L2 / L3 / L4 / L5 / Articulation coxofémorale / Articulation sacrocoxale / Articulation T12L1 / Articulation L1L2 / Articulation L2L3 / Articulation L3L4 / Articulation L4L5 / Articulation sacrolombaire / Articulation T11T12 / Articulation fémoropatellaire / Articulation fémorotibiale,M. Iliaque / M. Diaphragme,Plexus lombaire (Racine L1) / Plexus lombaire (Racine L2) / Plexus lombaire (Racine L3),"PT de L1 à L5 et Corps vertébral de T12 à L4 => Petit trochanter par un tendon commun avec le M. Iliaque 
+Flexion de hanche / rotation controlatérale du rachis / Stabilisation antérieure de la coxo-fémorale 
+Innervé par le nerf supérieur et inférieur du psoas (Racines L1 / L2 / L3)",,
+M. Petit glutéal,Inférieure,Os coxal / Fémur / Articulation coxofémorale / Articulation sacrocoxale / Articulation fémoropatellaire / Articulation fémorotibiale,M. TFL / M. Moyen glutéal,Plexus lombaire (Racine L4) / Plexus lombaire (Racine L5) / Plexus sacré (Racine S1),"Face externe de l'os coxal (en dessous de la ligne glutéale antérieure) => Extrémité supérieure du grand trochanter 
+Flexion de hanche / Abduction de hanche / Stablisateur de hanche en statique 
+Innervé par le nerf glutéal supérieur (racines L4 / L5 / S1)",,
+M. Moyen glutéal,Inférieure,Os coxal / Fémur / Articulation coxofémorale / Articulation sacrocoxale / Articulation fémoropatellaire / Articulation fémorotibiale,M. Piriforme / M. Petit glutéal / M. Grand glutéal,Plexus lombaire (Racine L4) / Plexus lombaire (Racine L5) / Plexus sacré (Racine S1)," Face externe de l'os coxal (entre les lignes glutéales antérieure et postérieure) => Extrémité supérieure du grand trochanter 
+Abduction de hanche / Stablisateur latérale du bassin / Rotation médiale de hanche si hanche fléchie
+Innervé par le nerf glutéal supérieur (racines L4 / L5 / S1)",,
+M. Grand glutéal,Inférieure,Os coxal / Fémur / Sacrum / Articulation sacrolombaire / Articulation coxofémorale / Articulation sacrocoxale / Articulation sacrococcygienne / Articulation fémoropatellaire / Articulation fémorotibiale,M. Obturateur interne / M. Jumeau supérieur / M. Jumeau inférieur / M. Carré fémoral / M. Piriforme / M. Moyen glutéal,Plexus lombaire (Racine L5) / Plexus sacré (Racine S1),"Crête iliaque de l'os coxal et face postérieure du sacrum (crêtes sacrales médiane et intermédiaire)  => Ligne âpre du fémur et une partie des fibres sur le fascia lata 
+Rotation latérale de hanche / Extension de hanche 
+Innervé par le nerf glutéal inférieur (racines L5 / S1 / S2)
+",,
+M. TFL,Inférieure,Os coxal / Tibia / Articulation coxofémorale / Articulation sacrocoxale / Articulation fémorotibiale / Articulation talocrurale / Articulation tibiofibulaire proximale / Articulation tibiofibulaire distale,M. Petit glutéal,Plexus lombaire (Racine L4) / Plexus lombaire (Racine L5) / Plexus sacré (Racine S1),"EIAS de l'os coxal  => Fascia lata et crête latérale de l'extrémité supérieur du tibia (par l'intermédiaire du fascia lata) 
+Flexion de hanche / Abduction de hanche / Rotation médiale de hanche / Rotation latérale de genou 
+Innervé par le nerf glutéal supérieur (racines L4 / L5 / S1)
+
+",,
+M. Piriforme,Inférieure,Sacrum / Fémur / Os coxal / Articulation sacrolombaire / Articulation coxofémorale / Articulation sacrocoxale / Articulation sacrococcygienne / Articulation fémoropatellaire / Articulation fémorotibiale,M. Grand glutéal / M. Moyen glutéal,Plexus sacré (Racine S2),"S2 / S3 / S4 et corps du sacrum  => Extrémité supérieure du grand trochanter 
+Abduction de hanche / Rotation latérale de hanche 
+Innervé par le nerf du piriforme  (racine S2)
+",,
+M. Obturateur interne,Inférieure,Os coxal / Fémur / Articulation coxofémorale / Articulation sacrocoxale / Articulation fémoropatellaire / Articulation fémorotibiale,M. Jumeau supérieur / M. Jumeau inférieur / M. Grand glutéal,Plexus lombaire (Racine L5) / Plexus sacré (Racine S1) / Plexus sacré (Racine S2),"Face interne de l'os coxal (pourtout du foramen obturé) => Extrémité supérieure du grand trochanter 
+Rotation latérale de hanche / Stabilisation de la hanche 
+Innervé par le nerf de l'obturateur interne et du jumeau supérieur (racine L5 / S1 / S2)",,
+M. Jumeau supérieur,Inférieure,Os coxal / Fémur / Articulation coxofémorale / Articulation sacrocoxale / Articulation fémoropatellaire / Articulation fémorotibiale,M. Grand glutéal / M. Obturateur interne ,Plexus lombaire (Racine L5) / Plexus sacré (Racine S1) / Plexus sacré (Racine S2),"Petite inscisure ischiatique de l'os coxal => Extrémité supérieure du grand trochanter 
+Rotation latérale de hanche / Stabilisation de la hanche 
+Innervé par le nerf de l'obturateur interne et du jumeau supérieur (racine L5 / S1 / S2)",,
+M. Jumeau inférieur,Inférieure,Os coxal / Fémur / Articulation coxofémorale / Articulation sacrocoxale / Articulation fémoropatellaire / Articulation fémorotibiale,M. Grand glutéal / M. Obturateur interne ,Plexus lombaire (Racine L4) / Plexus lombaire (Racine L5) / Plexus sacré (Racine S1),"Petite inscisure ischiatique de l'os coxal => Extrémité supérieure du grand trochanter 
+Rotation latérale de hanche / Stabilisation de la hanche 
+Innervé par le nerf du carré fémoral et du jumeau inférieur  (racines L4/ L5 / S1)",,
+M. Obturateur externe,Inférieure,Os coxal / Fémur / Articulation coxofémorale / Articulation sacrocoxale / Articulation fémoropatellaire / Articulation fémorotibiale,,Plexus lombaire (Racine L3) / Plexus lombaire (Racine L4) ,"Pourtour externe du foramen obturé de l'os coxal => Extrémité supérieure du grand trochanter 
+Rotation latérale de hanche / Stabilisation de la hanche 
+Innervé par le nerf de l'obturateur externe  (racines L3/L4)
+",,
+M. Carré fémoral,Inférieure,Os coxal / Fémur / Articulation coxofémorale / Articulation sacrocoxale / Articulation fémoropatellaire / Articulation fémorotibiale,M. Grand glutéal,Plexus lombaire (Racine L4) / Plexus lombaire (Racine L5) / Plexus sacré (Racine S1),"Corps de l'ischion de l'os coxal => Extrémité supérieure de la face postérieur du grand trochanter 
+Rotation latérale de hanche / Stabilisation de la hanche / Adduction de hanche
+Innervé par le nerf du jumeau inférieur et du carré fémoral  (racines L4 / L5/ S1)",,
+M. Sartorius,Inférieure,Os coxal / Tibia / Articulation coxofémorale / Articulation sacrocoxale / Articulation fémorotibiale / Articulation talocrurale / Articulation tibiofibulaire proximale / Articulation tibiofibulaire distale,M. Gracile / M. Semi-tendineux,Plexus lombaire (Racine L2) / Plexus lombaire (Racine L3),"EIAS de l'os coxal => Face médiale du tibia (patte d'oie)
+Au niveau de la hanche : Flexion / Abduction / Rotation latérale
+Au niveau du genou : Flexion / rotation médiale 
+Innervé par le nerf du sartorius  (racines L2 / L3)
+",,
+M. Droit fémoral,Inférieure,Fémur / Patella / Tibia / Os coxal / Articulation coxofémorale / Articulation sacrocoxale / Articulation fémoropatellaire / Articulation fémorotibiale / Articulation talocrurale / Articulation tibiofibulaire proximale / Articulation tibiofibulaire distale,M. Vaste médial / M. Vaste intermédiaire / M. Vaste latéral,Plexus lombaire (Racine L2) / Plexus lombaire (Racine L3) / Plexus lombaire (Racine L4) ,"EIAI de l'os coxal => Base de la patella et extrémité supérieure du tibia 
+Au niveau de la hanche : Flexion 
+Au niveau du genou (Quadriceprs entier) : Extension 
+Innervé par le nerf du quadriceps (racines L2 / L3/ L4)",,
+M. Vaste intermédiaire,Inférieure,Fémur / Patella / Tibia / Os coxal / Articulation coxofémorale / Articulation sacrocoxale / Articulation fémoropatellaire / Articulation fémorotibiale / Articulation talocrurale / Articulation tibiofibulaire proximale / Articulation tibiofibulaire distale,M. Droit fémoral / M. Vaste latéral / M. Vaste médial,Plexus lombaire (Racine L2) / Plexus lombaire (Racine L3) / Plexus lombaire (Racine L4) ,"Corps du fémur => Base de la patella 
+Au niveau de la hanche : Flexion 
+Au niveau du genou (Quadriceprs entier) : Extension 
+Innervé par le nerf du quadriceps (racines L2 / L3/ L4)",,
+M. Vaste latéral,Inférieure,Fémur / Patella / Tibia / Articulation coxofémorale / Articulation sacrocoxale / Os coxal / Articulation fémoropatellaire / Articulation fémorotibiale / Articulation talocrurale / Articulation tibiofibulaire proximale / Articulation tibiofibulaire distale,M. Droit fémoral / M. Vaste intermédiaire / M. Vaste médial,Plexus lombaire (Racine L2) / Plexus lombaire (Racine L3) / Plexus lombaire (Racine L4) ,"Ligne âpre du fémur => Base / bord latéral de la patella et Extrémité supérieure du tibia
+Au niveau de la hanche : Flexion 
+Au niveau du genou (Quadriceprs entier) : Extension 
+Innervé par le nerf du quadriceps (racines L2 / L3/ L4)",,
+M. Vaste médial,Inférieure,Fémur / Patella / Tibia / Os coxal / Articulation coxofémorale / Articulation sacrocoxale / Articulation fémoropatellaire / Articulation fémorotibiale / Articulation talocrurale / Articulation tibiofibulaire proximale / Articulation tibiofibulaire distale,M. Droit fémoral / M. Vaste intermédiaire / M. Vaste latéral,Plexus lombaire (Racine L2) / Plexus lombaire (Racine L3) / Plexus lombaire (Racine L4) ,"Ligne âpre du fémur => Base / bord médial de la patella et Extrémité supérieure du tibia
+Au niveau de la hanche : Flexion 
+Au niveau du genou (Quadriceprs entier) : Extension 
+Innervé par le nerf du quadriceps (racines L2 / L3/ L4)
+",,
+M. Biceps fémoral,Inférieure,Os coxal / Fémur / Fibula / Articulation coxofémorale / Articulation sacrocoxale / Articulation fémoropatellaire / Articulation fémorotibiale / Articulation talocrurale / Articulation tibiofibulaire proximale / Articulation tibiofibulaire distale,,Plexus lombaire (Racine L5) / Plexus sacré (Racine S1) / Plexus sacré (Racine S2),"1. Longue portion : tubérosité ischiatique de l'os coxal 
+2. Courte portion : 2/3 inf de la ligne âpre du fémur
+Terminaison sur l'extrémité supérieure de la fibula
+Maintien de la hanche lors de l'inclinaison antérieure du tronc (statique) / Extension de hanche / Flexion de genou / Rotation latérale de genou 
+Innervé par le nerf sciatique (Racines L5/S1/S2)",,
+M. Semi-tendineux,Inférieure,Os coxal / Tibia / Articulation coxofémorale / Articulation sacrocoxale / Articulation fémorotibiale / Articulation talocrurale / Articulation tibiofibulaire proximale / Articulation tibiofibulaire distale,M. Sartorius / M. Gracile / M. Semi-membraneux ,Plexus lombaire (Racine L5) / Plexus sacré (Racine S1) / Plexus sacré (Racine S2),"Face postérieure de la tubérosité ischiatique => Face médiale du corps du tibia (patte d'oie)
+En statique 
+- genou : stabilité postéro-médiale / Tenseur du fascia jambier 
+- hanche : maintien lors de l'inclinaison antérieure du buste 
+
+En dynamique : 
+- genou : Flexion / Rotation médiale 
+- hanche : Extension légère et rétroversion en force 
+Innervé par le nerf sciatique (Racines L5/S1/S2)",,
+M. Semi-membraneux,Inférieure,Os coxal / Tibia / Articulation coxofémorale / Articulation sacrocoxale / Articulation fémorotibiale / Articulation talocrurale / Articulation tibiofibulaire proximale / Articulation tibiofibulaire distale,M. Semi-tendineux,Plexus lombaire (Racine L5) / Plexus sacré (Racine S1) / Plexus sacré (Racine S2),"Face postérieure de la tubérosité ischiatique 
+Terminaison en 3 tendons : 
+- directe : Face postérieure de l'épiphyse supérieure du tibia 
+- réfléchie : Partie antéro-médiale de l'épiphyse supérieure du tibia
+- récurrente : Partie supérieure de la coque condylienne latérale 
+ 
+En statique 
+- genou : stabilité postéro-médiale 
+- hanche : maintien lors de l'inclinaison antérieure du buste 
+
+En dynamique : 
+- genou : Flexion / Rotation médiale 
+- hanche : Extension légère et rétroversion en force 
+Innervé par le nerf sciatique (Racines L5/S1/S2)
+
+Attention : il est en lien étroit avec le ménisque médial car possède une expansion dessus",,
+M. Pectiné,Inférieure,Os coxal / Fémur / Articulation coxofémorale / Articulation sacrocoxale / Symphyse pubienne / Articulation fémoropatellaire / Articulation fémorotibiale,M. Gracile / M. Long adducteur / M. Grand adducteur / M. Court adducteur,Plexus lombaire (Racine L2) / Plexus lombaire (Racine L3) / Plexus lombaire (Racine L4) ,"
+Branche supérieure du pubis (os coxal) sur la crête pectinéale => Face postérieure de l'épiphyse supérieure du fémur
+Adduction de hanche / Flexion de hanche 
+Innervé par le nerf musculaire médial (branche du nerf fémoral => Racines L2/L3/L4)",,
+M. Long adducteur,Inférieure,Os coxal / Fémur / Articulation coxofémorale / Articulation sacrocoxale / Symphyse pubienne / Articulation fémoropatellaire / Articulation fémorotibiale,M. Gracile / M. Pectiné / M. Grand adducteur / M. Court adducteur,Plexus lombaire (Racine L2) / Plexus lombaire (Racine L3) / Plexus lombaire (Racine L4) ,"Face externe du corps du pubis => Ligne âpre du fémur (diaphyse postérieure)
+En statique => Coaptation de la symphyse pubienne 
+En dynamique => adduction de hanche 
+Innervé par le nerf obturateur (Racines L2/L3/L4)",,
+M. Court adducteur,Inférieure,Os coxal / Fémur / Articulation coxofémorale / Articulation sacrocoxale / Symphyse pubienne / Articulation fémoropatellaire / Articulation fémorotibiale,M. Gracile / M. Long adducteur / M. Grand adducteur / M. Pectiné,Plexus lombaire (Racine L2) / Plexus lombaire (Racine L3) / Plexus lombaire (Racine L4) ,"Face externe du corps du pubis => terminaison en deux faisceaux (supérieur => Extrémité supérieure du fémur et inférieur => Bord postérieur du fémur sur la ligne âpre)
+Adduction de hanche  
+Innervé par le nerf obturateur (Racines L2/L3/L4)",,
+M. Grand adducteur,Inférieure,Os coxal / Fémur / Articulation coxofémorale / Articulation sacrocoxale / Symphyse pubienne / Articulation fémoropatellaire / Articulation fémorotibiale,M. Gracile / M. Long adducteur / M. Pectiné / M. Court adducteur,Plexus lombaire (Racine L2) / Plexus lombaire (Racine L3) / Plexus lombaire (Racine L4) ,"Il possède 3 faisceaux : 
+- Faisceau supérieur : face externe de la branche ischio-pubienne => Extrémité supérieure du fémur 
+- Faisceau moyen : Face externe de la branche ischio-pubienne => Ligne âpre du fémur 
+- Faisceau inférieur : Face postérieure de la tubérosité ischiatique => Extrémité inférieure du fémur
+
+Adduction de hanche 
+Innervé par le nerf obturateur pour les faisceaux supérieur et moyen et par le nerf sciatique pour le faisceau inférieur 
+",,
+ M. Gracile,Inférieure,Os coxal / Tibia / Articulation coxofémorale / Articulation sacrocoxale / Symphyse pubienne / Articulation fémorotibiale / Articulation talocrurale / Articulation tibiofibulaire proximale / Articulation tibiofibulaire distale,M. Long adducteur / M. Grand adducteur / M. Sartorius / M. Semi-tendineux / M. Pectiné / M. Court adducteur,Plexus lombaire (Racine L2) / Plexus lombaire (Racine L3),"Branche inférieure du pubis (os coxal) => Face médiale du corps du tibia (patte d'oie) 
+Adduction de hanche / Flexion de genou / Rotation médiale de genou 
+Innervé par la branche antérieure du nerf obturateur (Racines L2/L3)",,
+M. Tibial antérieur,Inférieure,Tibia / Cunéiforme médial / Premier métatarsien (M1) / Articulation fémorotibiale / Articulation talocrurale / Articulation tibiofibulaire proximale / Articulation tibiofibulaire distale / Articulations cunéonaviculaires / Articulation tarsométatarsienne / Articulation intercunéenne / Articulation intermétatarsienne,,Plexus lombaire (Racine L4) / Plexus lombaire (Racine L5) / Plexus sacré (Racine S1),"2/3 supérieur de la face latérale du tibia (déborde sur la MIO) => Face médiale du cunéiforme médial (déborde sur la base de M1 et sa capsule)
+
+En statique : Sustentation du tarse antéro-médial / Stabilisation cunéo - 1er métatarsien 
+En dynamique : Flexion dorsale / Supination / Adduction du pied => Inversion 
+
+Innervé par deux filets venant du nerf fibulaire commun et deux filets venant du nerf fibulaire profond (racines L4/L5/S1)",,
+M. Long extenseur des orteils,Inférieure,Fibula / P2 du 2 (pied) / P3 du 2 (pied) / P2 du 3 (pied) / P3 du 3 (pied) / P2 du 4 (pied) / P3 du 4 (pied) / P2 du 5 (pied) / P3 du 5 (pied) / Articulation talocrurale / Articulation interphalangienne du 2 (pied) / Articulation interphalangienne du 3 (pied) / Articulation interphalangienne du 4 (pied) / Articulation interphalangienne du 5 (pied),M. Court extenseur des orteils / M. 3ème fibulaire ,Plexus lombaire (Racine L4) / Plexus lombaire (Racine L5) / Plexus sacré (Racine S1),"Face médiale du du bord supérieur de la fibula (+ MIO) => Face dorsale de la base de P2/P3 des 4 derniers orteils 
+=> reçoive le tendon du M. Court extenseur des orteils sur leur bord latéral et des M. Lombricaux sur leur bord médial
+
+En statique : Stabilisation de l'articulation métatarso-phalangienne
+En dynamique : extension des 4 derniers orteils / Flexion dorsale de la cheville / Eversion du pied 
+Innervé par le nerf fibulaire profond (Racines L4/L5/S1)
+
+
+",,
+M. Long extenseur de l'hallux,Inférieure,Fibula / P2 de l'hallux (pied) / Articulation talocrurale / Articulation interphalangienne du 1 (pied),M. Court extenseur des orteils / M. Adducteur de l'hallux,Plexus lombaire (Racine L4) / Plexus lombaire (Racine L5) / Plexus sacré (Racine S1),"Face médiale du du bord supérieur de la fibula (+ MIO) => Face dorsale de la base de P2 de l'hallux 
+
+En statique : Stabilisation de l'hallux 
+En dynamique : extension de l'hallux / Adduction et supination du pied (de manière indirecte)
+Innervé par le nerf fibulaire profond (Racines L4/L5/S1)
+",,
+M. 3ème fibulaire,Inférieure,Fibula / Cinquième métatarsien (M5) / Articulation talocrurale / Articulation tarsométatarsienne / Articulation intermétatarsienne / Articulation métatarsophalangienne du 5,M. Long extenseur des orteils,Plexus lombaire (Racine L5) / Plexus sacré (Racine S1),"1/4 inférieur de la face médiale de la fibula (+ MIO) => Face dorsale de la base du 5ème métatarsien 
+Flexion dorsale / Abduction / Pronation du pied => Eversion 
+Innervé par le nerf fibulaire superificiel (Racines L5/S1)
+",,
+M. Long fibulaire,Inférieure,Fibula / Premier métatarsien (M1) / Cunéiforme médial / Articulation talocrurale / Articulation tibiofibulaire proximale / Articulation tibiofibulaire distale / Articulations cunéonaviculaires / Articulation intercunéenne / Articulation intermétatarsienne / Articulation métatarsophalangienne du 1 / Articulation tarsométatarsienne,M. Court fibulaire / M. Tibial postérieur ,Plexus lombaire (Racine L5) / Plexus sacré (Racine S1),"Face latérale et col de la fibula => Face plantaire de la base de M1 et déborde sur le cunéiforme médial 
+
+En statique : 
+- Stabilisation latérale de la cheville 
+- Sustentation de la malléole latérale 
+- Serrage de la pince malléolaire 
+- Maintien de la voûte plantaire 
+
+En dynamique : 
+- Pronation du pied avec abaissement du premier rayon et élévation du 5ème 
+- Abduction du pied 
+
+Innervé par le nerf fibulaire profond (Racines L5/S1)
+NB : forme un étrier avec le tibial postérieur => Aller les voir dans les périostites +++",,
+M. Court fibulaire,Inférieure,Fibula / Cinquième métatarsien (M5) / Calcanéum / Articulation talocrurale / Articulation tibiofibulaire proximale / Articulation tibiofibulaire distale / Articulation subtalaire (talocalcanéenne) / Articulation transverse du tarse / Articulation tarsométatarsienne / Articulation intermétatarsienne / Articulation métatarsophalangienne du 5 / Articulation calcanéocuboïdienne,M. Long fibulaire,Plexus lombaire (Racine L5) / Plexus sacré (Racine S1),"Face latérale du corps de la fibula => Base de M5
+
+En statique : 
+- Stabilisation latérale de la cheville 
+- Sustentation de la malléole latérale 
+- Serrage de la pince malléolaire 
+
+En dynamique : 
+- Pronation du pied avec abaissement du premier rayon et élévation du 5ème 
+- Adduction du pied 
+
+Innervé par le nerf fibulaire profond (Racines L5/S1)",,
+M. Poplité,Inférieure,Tibia / Fémur / Articulation coxofémorale / Articulation fémoropatellaire / Articulation fémorotibiale / Articulation talocrurale / Articulation tibiofibulaire proximale / Articulation tibiofibulaire distale,,Plexus lombaire (Racine L4) / Plexus lombaire (Racine L5) / Plexus sacré (Racine S1),"
+Face latérale de l'extrémité inférieure du fémur => 1/4 supérieur de la face postérieure du corps du tibia 
+
+En statique : Stabilité latérale du genou / Protection du ligament croisé postérieur contre le risque de tiroir postérieur 
+En dynamique : Rotation médiale et légère flexion de genou
+
+Innervé par le nerf tibial (Racines L4/L5/S1)
+
+",,
+M. Soléaire,Inférieure,Fibula / Tibia / Calcanéum / Articulation fémorotibiale / Articulation talocrurale / Articulation tibiofibulaire proximale / Articulation tibiofibulaire distale / Articulation subtalaire (talocalcanéenne) / Articulation transverse du tarse / Articulation calcanéocuboïdienne,M. Gastrocnémien médial / M. Gastrocnémien latéral / M. Plantaire / M. Tibial postérieur / M. Long fléchisseur de l'hallux / M. Long fléchisseur des orteils,Plexus lombaire (Racine L4) / Plexus lombaire (Racine L5) / Plexus sacré (Racine S1),"Crête oblique du tibia et col de la fibula => Face postérieure du calcanéum
+(Forme le triceps sural lorsqu'il est rejoint par les M. Gastrocnémiens)
+
+Flexion plantaire de la cheville (Triceps sural)
+- Contrôle de l'inclinaison vers l'avant de la jambe en synergie avec le M. Court fléchisseur des orteils
+
+Innervé par le nerf tibial (Racines L4/L5/S1)
+",,
+M. Tibial postérieur,Inférieure,Tibia / Fibula / Naviculaire / Cuboïde / Cunéiforme médial / Cunéiforme latéral / Cunéiforme intermédiaire / Calcanéum / Deuxième métatarsien (M2) / Troisième métatarsien (M3) / Quatrième métatarsien (M4) / Articulation fémorotibiale / Articulation talocrurale / Articulation tibiofibulaire proximale / Articulation tibiofibulaire distale / Articulation subtalaire (talocalcanéenne) / Articulation transverse du tarse / Articulation talonaviculaire / Articulation calcanéocuboïdienne / Articulations cunéonaviculaires / Articulation cuboïdonaviculaire / Articulation intercunéenne / Articulation tarsométatarsienne / Articulation intermétatarsienne / Articulation métatarsophalangienne du 1 / Articulation métatarsophalangienne du 2 / Articulation métatarsophalangienne du 3 / Articulation métatarsophalangienne du 4,M. Long fléchisseur des orteils / M. Abducteur de l'hallux / M. Soléaire / M. Long fibulaire / M. Long fléchisseur de l'hallux / M. Adducteur de l'hallux,Plexus lombaire (Racine L5) / Plexus sacré (Racine S1),"Origine face postérieure du tibia, de la fibula et de la membrane inter-osseuse => Face médiale de la tubérosité du naviculaire + Tous les os du tarse sauf le talus + Base de tous les métatarsiens sauf les deux extrêmes 
+
+En statique : Sustentation de la malléole médiale / Soutien de la voûte plantaire / Soutien et plaquage de la tête du talus 
+
+En dynamique : Inversion pure (Flexion plantaire / Adduction / Supination)
+
+Innervé par le nerf tibial (Racines L5/S1)
+NB : forme un étrier avec le long fibulaire => à aller voir dans les périostites +++",,
+M. Long fléchisseur de l'hallux,Inférieure,Fibula / P2 de l'hallux (pied) / Articulation talocrurale / Articulation tibiofibulaire proximale / Articulation interphalangienne du 1 (pied) / Articulation tibiofibulaire distale,M. Tibial postérieur / M. Soléaire / M. Long fléchisseur des orteils / M. Adducteur de l'hallux / M. Court fléchisseur de l'hallux,Plexus lombaire (Racine L5) / Plexus sacré (Racine S1) / Plexus sacré (Racine S2),"Face postérieure de la fibula => Face plantaire de la base de P2 de l'hallux 
+Flexion de l'hallux 
+
+Innervé par le nerf tibial (Racines L5/S1/S2)
+",,
+M. Long fléchisseur des orteils,Inférieure,Tibia / P3 du 2 (pied) / P3 du 3 (pied) / P3 du 4 (pied) / P3 du 5 (pied) / Articulation fémorotibiale / Articulation talocrurale / Articulation tibiofibulaire distale / Articulation interphalangienne du 2 (pied) / Articulation interphalangienne du 3 (pied) / Articulation interphalangienne du 4 (pied) / Articulation interphalangienne du 5 (pied) / Articulation tibiofibulaire proximale,M. Tibial postérieur / M. Carré plantaire / M. Court fléchisseur des orteils / M. Long fléchisseur de l'hallux / M. Soléaire / M. Adducteur de l'hallux,Plexus lombaire (Racine L5) / Plexus sacré (Racine S1),"Face postérieure du tibia => Face plantaire de la base de P3 des 4 derniers orteils
+
+Flexion des 4 derniers orteils / Flexion plantaire de la cheville 
+
+Innervé par le nerf tibial (Racines L5/S1)
+
+",,
+M. Gastrocnémien médial,Inférieure,Fémur / Calcanéum / Articulation coxofémorale / Articulation fémoropatellaire / Articulation fémorotibiale / Articulation talocrurale / Articulation subtalaire (talocalcanéenne) / Articulation transverse du tarse / Articulation calcanéocuboïdienne,M. Gastrocnémien latéral / M. Soléaire / M. Plantaire,Plexus lombaire (Racine L5) / Plexus sacré (Racine S1) / Plexus sacré (Racine S2),"Epicondyle médiale du fémur => Face postérieure du calcanéum (forme le triceps sural accompagné par le M. Gastrocnémien latéral et le M. Soléaire)
+
+Flexion du genou (gastrocnémien seul) / Flexion plantaire de la cheville (Triceps sural)
+
+Innervé par le nerf tibial (Racines L5/S1/S2)",,
+M. Gastrocnémien latéral,Inférieure,Fémur / Calcanéum / Articulation coxofémorale / Articulation fémoropatellaire / Articulation fémorotibiale / Articulation talocrurale / Articulation subtalaire (talocalcanéenne) / Articulation transverse du tarse / Articulation calcanéocuboïdienne,M. Gastrocnémien médial / M. Soléaire / M. Plantaire,Plexus lombaire (Racine L5) / Plexus sacré (Racine S1) / Plexus sacré (Racine S2),"Epicondyle latérale du fémur => Face postérieure du calcanéum (forme le triceps sural accompagné par le M. Gastrocnémien médial et le M. Soléaire)
+
+Flexion du genou (gastrocnémien seul) / Flexion plantaire de la cheville (Triceps sural)
+
+Innervé par le nerf tibial (Racines L5/S1/S2)",,
+M. Plantaire,Inférieure,Calcanéum / Fémur / Articulation coxofémorale / Articulation fémoropatellaire / Articulation fémorotibiale / Articulation talocrurale / Articulation subtalaire (talocalcanéenne) / Articulation transverse du tarse / Articulation calcanéocuboïdienne,M. Gastrocnémien latéral / M. Gastrocnémien médial / M. Soléaire,Plexus lombaire (Racine L5) / Plexus sacré (Racine S1) / Plexus sacré (Racine S2),"Condyle latéral du fémur => Bord médial du tendon calcanéen 
+
+Pas d'action majeure => Soutien les M. gastrocnémiens dans leurs rôles
+
+Innervé par le nerf tibial (Racines L5/S1/S2)",,
+M. Court extenseur des orteils,Inférieure,Calcanéum / Articulation subtalaire (talocalcanéenne) / Articulation transverse du tarse / Articulation calcanéocuboïdienne,M. Long extenseur des orteils / M. Long extenseur de l'hallux,Plexus lombaire (Racine L5) / Plexus sacré (Racine S1),"Face supérieure du calcanéum (paertie antéro-latérale) => Tendons du M. Long extenseur des orteils (des 4 derniers orteils)
+
+En statique => Equilibre l'action du M. Long extenseur des orteils 
+En dynamique => Extension des 4 derniers orteils
+
+Ce muscle travaille en synergie avec le M. Long extenseur de l'hallux et le M. Long extenseur des orteils pendant le mouvement d'éversion. 
+
+Innervé par le nerf fibulaire profond (Racines L5/S1)
+",,
+M. Court extenseur de l'hallux,Inférieure,Calcanéum / P1 de l'hallux (pied) / Articulation subtalaire (talocalcanéenne) / Articulation transverse du tarse / Articulation calcanéocuboïdienne / Articulation interphalangienne du 1 (pied),M. Adducteur de l'hallux ,Plexus lombaire (Racine L5) / Plexus sacré (Racine S1),"Face supérieure du calcanéum (paertie antéro-latérale) => Face dorsale de la base de P1 de l'hallux
+
+En statique => Equilibre l'action du M. Long extenseur des orteils 
+En dynamique => Extension de l'hallux
+Innervé par le nerf fibulaire profond (Racines L5/S1)
+",,
+M. Abducteur de l'hallux,Inférieure,Calcanéum / P1 de l'hallux (pied) / Articulation subtalaire (talocalcanéenne) / Articulation transverse du tarse / Articulation calcanéocuboïdienne / Articulation interphalangienne du 1 (pied),M. Court fléchisseur de l'hallux / M. Tibial postérieur,Plexus lombaire (Racine L5) / Plexus sacré (Racine S1),"Face inférieure du calcanéum (en avant du M. Court fléchisseur des orteils) => Face plantaire de la base de P1 de l'hallux (par un tendon commun avec le M. Court fléchisseur de l'hallux)
+
+Abduction de l'hallux / Flexion de l'hallux 
+- Rôle de stabilisation de la métatarso-phalangienne de l'hallux 
+
+Innervé par le nerf plantaire médial (Racines L5/S1)",,
+M. Adducteur de l'hallux,Inférieure,Cuboïde / Cunéiforme médial / Troisième métatarsien (M3) / Quatrième métatarsien (M4) / P1 de l'hallux (pied) / Os sésamoïdes du pied / Articulations cunéonaviculaires / Articulation intercunéenne / Articulation tarsométatarsienne / Articulation intermétatarsienne / Articulation métatarsophalangienne du 3 / Articulation métatarsophalangienne du 4 / Articulation interphalangienne du 1 (pied),M. Long fléchisseur de l'hallux / M. Long extenseur de l'hallux / M. Tibial postérieur / M. Court extenseur de l'hallux / M. Long fléchisseur des orteils,Plexus sacré (Racine S2) / Plexus sacré (Racine S3),"Prend son origine sur la face plantaire: 
+- La tubérosité du cuboïde
+- Du cunéiforme médial 
+- La base de M3 et M4 
+Termine sur la face plantaire de la base de P1 de l'hallux et sur l'os sésamoïde latéral 
+
+Ce muscle présente des expansions sur le M. Long fléchisseur de l'hallux et le M. Long extenseur de l'hallux 
+
+Stabilisation des métatarso-phalangiennes / Adduction de l'hallux 
+
+Innervé par le nerf plantaire latéral (Racines S2/S3)
+",,
+M. Court fléchisseur de l'hallux,Inférieure,Cuboïde / Cunéiforme médial / Cunéiforme intermédiaire / P1 de l'hallux (pied) / Os sésamoïdes du pied / Articulation intercunéenne / Articulation tarsométatarsienne / Articulation interphalangienne du 1 (pied) / Articulations cunéonaviculaires,M. Long fléchisseur de l'hallux / M. Abducteur de l'hallux,Plexus lombaire (Racine L5) / Plexus sacré (Racine S1),"Prend son origine sur la face plantaire: 
+- La tubérosité du cuboïde
+- Du cunéiforme médial 
+- Du cunéiforme intermédiaire
+
+Termine sur la face plantaire de la base de P1 de l'hallux 
++ os sésamoïde 
+
+Stabilisation de la métatarso-phalangienne de l'hallux 
+
+Innervé par le nerf plantaire médial (Racines L5/S1)
+",,
+M. Abducteur du 5,Inférieure,Calcanéum / Cinquième métatarsien (M5) / P1 du 5 (pied) / Articulation subtalaire (talocalcanéenne) / Articulation transverse du tarse / Articulation calcanéocuboïdienne / Articulation interphalangienne du 5 (pied) / Articulation intermétatarsienne / Articulation métatarsophalangienne du 5 / Articulation tarsométatarsienne,M. Court fléchisseur du 5,Plexus sacré (Racine S2) / Plexus sacré (Racine S3),"Face inférieure du calcanéum, aponévrose plantaire et styloïde de M5 => Face plantaire de la base de P1 du 5ème orteil
+
+Stabilisation de la métatarso-phalangienne du 5 / Abduction du 5ème orteil 
+
+Innervé par le nerf plantaire latéral (Racines S2/S3)
+",,
+M. Court fléchisseur du 5,Inférieure,Cuboïde / P1 du 5 (pied) / Articulation transverse du tarse / Articulation calcanéocuboïdienne / Articulation cuboïdonaviculaire / Articulation interphalangienne du 5 (pied),M. Abducteur du 5,Plexus sacré (Racine S2) / Plexus sacré (Racine S3),"Face plantaire du cuboïde => Face plantaire de la base de P1 du 5ème orteil 
+
+Stabilisation de l'articulation tarso-métatarsienne / Flexion de la métatarso-phalangienne du 5ème orteil 
+
+Innervé par le nerf plantaire latéral (Racines S2/S3)
+",,
+M. Opposant du 5,Inférieure,Cuboïde / Cinquième métatarsien (M5) / Articulation transverse du tarse / Articulation calcanéocuboïdienne / Articulation cuboïdonaviculaire / Articulation intermétatarsienne / Articulation métatarsophalangienne du 5 / Articulation tarsométatarsienne,,Plexus sacré (Racine S2) / Plexus sacré (Racine S3),"
+Face plantaire du cuboïde => Corps du cinquième métatarsien (M5)
+
+Stabilisation de l'articulation tarso-métatarsienne et du bord larér / Flexion et supination du cinquième métatarsien (M5)
+
+Innervé par le nerf plantaire latéral (Racines S2/S3)
+
+",,
+M. Court fléchisseur des orteils,Inférieure,Calcanéum / P2 du 2 (pied) / P2 du 3 (pied) / P2 du 4 (pied) / P2 du 5 (pied) / Articulation interphalangienne du 2 (pied) / Articulation interphalangienne du 3 (pied) / Articulation interphalangienne du 4 (pied) / Articulation interphalangienne du 5 (pied) / Articulation subtalaire (talocalcanéenne) / Articulation transverse du tarse / Articulation calcanéocuboïdienne,M. Long fléchisseur des orteils,Plexus lombaire (Racine L5) / Plexus sacré (Racine S1),"Face inférieure du calcanéum => Face inférieure du corps de P2 des quatres derniers orteils 
+
+Maintien la voûte plantaire / Flexion des 4 derniers orteils
+
+Innervé par le nerf plantaire médial (Racines L5/S1)
+",,
+M. Carré plantaire,Inférieure,Calcanéum / Articulation subtalaire (talocalcanéenne) / Articulation transverse du tarse / Articulation calcanéocuboïdienne,M. Long fléchisseur des orteils,Plexus sacré (Racine S2) / Plexus sacré (Racine S3),"Face inférieure du calcanéum => Tendon du M. Long fléchisseur des orteils
+
+Maintien la voûte plantaire / Correction axiale de l'action du M. Long fléchisseur des orteils 
+
+Innervé par le nerf plantaire latéral (Racines S2/S3)
+",,
+M. Subscapulaire,Supérieure / Thorax,Humérus / Scapula / Articulation scapulohumérale / Articulation acromioclaviculaire,M. Supraépineux / M. Dentelé antérieur,Plexus brachial (Racine C5) / Plexus brachial (Racine C6),"
+Face antérieure de la scapula => Extrémité supérieure du tubercule mineur de l'humérus 
+- En statique : stabilisation antérieure de la tête humérale (limite les risques de luxation antérieure de la tête humérale)
+- En dynamique : Rotation médiale / Adduction d'épaule
+Innervé par le nerf subscapulaire (Racines C5/C6)
+
+",,
+M. Supraépineux,Supérieure / Thorax,Humérus / Scapula / Articulation scapulohumérale / Articulation acromioclaviculaire,M. Long biceps / M. Infraépineux / M. Petit rond / M. Subscapulaire / M. Trapèze,Plexus brachial (Racine C5) / Plexus brachial (Racine C6),"Fosse supra-épineuse (face postérieure du corps et face supérieure de l'épine) de la scapula => Extrémité supérieure du tubercule majeur de l'humérus 
+- En statique : Stabilisation de la tête humérale 
+- En dynamique : Abduction d'épaule 
+
+Innervé par le nerf suprascapulaire (racines C5/C6)
+
+",,
+M. Infraépineux,Supérieure / Thorax,Scapula / Humérus / Articulation scapulohumérale / Articulation acromioclaviculaire,M. Supraépineux / M. Deltoïde / M. Petit rond / M. Trapèze,Plexus brachial (Racine C5) / Plexus brachial (Racine C6),"Fosse infra-épineuse (face postérieure du corps et face inférieure de l'épine) => Extrémité supérieure du tubercule majeur de l'humérus 
+- En statique : Stabilisation scapulo-humérale et abaissement de la tête humérale 
+- En dynamique : Rotation latérale de l'épaule 
+
+Innervé par le nerf suprascapulaire (racines C5/C6)
+",,
+M. Petit rond,Supérieure / Thorax,Scapula / Humérus / Articulation scapulohumérale / Articulation acromioclaviculaire,M. Infraépineux / M. Supraépineux / M. Trapèze ,Plexus brachial (Racine C5) / Plexus brachial (Racine C6),"Face postérieure de la scapula => Extrémité supérieure du tubercule majeur de l'humérus 
+- En statique : Stabilisation de la tête humérale et abaissement de la tête humérale 
+- En dynamique : Rotation latérale / Adduction de l'épaule 
+Innervé par le nerf axillaire (Racines C5/C6)",,
+M. Deltoïde,Supérieure / Thorax,Clavicule / Humérus / Scapula / Articulation scapulohumérale / Articulation acromioclaviculaire / Articulation sternoclaviculaire,M. Trapèze / M. Infraépineux / M. Coracobrachial / M. Grand pectoral,Plexus brachial (Racine C5) / Plexus brachial (Racine C6),"Le deltoïde possède 3 faisceaux : 
+- antérieur : 1/3 latéral du corps de la clavicule 
+- moyen : Apex et bord latéral de l'acromion 
+- postérieur : Versant inférieure du bord postérieur de l'épine de la scapula 
+
+Les trois faisceaux se termine sur la face latérale et le bord antérieur de  l'humérus 
+- en statique : Suspension de l'humérus avec rôle de coussin contractile 
+- en dynamique : Abduction puissante de l'épaule 
+	- faisceau antérieur : Flexion / Rotation médiale / Adduction horizontale 
+	- faisceau moyen : Abduction dans le plan de la scapula 
+	- faisceau postérieur : Extension / Rotation latérale / Abduction horizontale 
+Innervé par le nerf axillaire (Racines C5/C6)
+
+",,
+M. Grand rond,Supérieure / Thorax,Scapula / Humérus / Articulation scapulohumérale / Articulation acromioclaviculaire,M. Grand dorsal / M. Grand pectoral,Plexus brachial (Racine C5) / Plexus brachial (Racine C6),"Face postérieure de la scapula => Face médiale du corps de l'humérus (lèvre médiale du sillon bicipital)
+- en statique : Abaissement de la tête 
+- en dynamique : Adduction / Rotation médiale / Extension de la scapulo-humérale 
+Innervé par le nerf du grand rond (Racines C5/C6)
+
+
+
+",,
+M. Coracobrachial,Supérieure / Thorax,Scapula / Humérus / Articulation scapulohumérale / Articulation acromioclaviculaire,M. Court biceps / M. Deltoïde,Plexus brachial (Racine C5) / Plexus brachial (Racine C6),"
+Angle supéro-latéral du processus coracoïde de la scapula => 1/4 moyen supérieur de la diaphyse de l'humérus 
+
+- en statique : Suspension du bras 
+- en dynamique : Flexion / Adduction de l'épaule 
+
+Innervé par le nerf musculo-cutané (Racines C5/C6)",,
+M. Long biceps,Supérieure / Thorax,Scapula / Radius / Humérus / Articulation scapulohumérale / Articulation acromioclaviculaire / Articulation huméroradiale,M. Court biceps / M. Brachial / M. Supraépineux,Plexus brachial (Racine C5) / Plexus brachial (Racine C6),"Tubercule supra-glénoïdien de la scapula => Tubérosité radiale (extrémité supérieure) du radius 
+- en statique : Stabilisation de la tête humérale
+- en dynamique : Flexion / Supination du coude 
+
+Innervé par le nerf musculo-cutané (Racines C5/C6)
+",,
+M. Court biceps,Supérieure,Scapula / Radius / Humérus / Articulation scapulohumérale / Articulation acromioclaviculaire / Articulation huméroradiale,M. Long biceps / M. Brachial / M. Coracobrachial,Plexus brachial (Racine C5) / Plexus brachial (Racine C6),"
+Processus coracoÏde de la scapula => Tubérosité radiale (extrémité supérieure) du radius 
+- en statique : Suspension du bras 
+- en dynamique : Flexion / Supination du coude 
+
+Innervé par le nerf musculo-cutané (Racines C5/C6)
+",,
+M. Brachial,Supérieure,Humérus / Ulna / Articulation huméroulnaire,M. Long biceps / M. Court biceps ,Plexus brachial (Racine C5) / Plexus brachial (Racine C6),"Moitié inférieure de la diaphyse de l'humérus => Processus coronoïde de l'ulna 
+- en statique : renfort antérieur de la capsule du coude 
+- en dynamique : Flexion du coude 
+
+Innervé par le nerf musculo-cutané (Racines C5/C6)
+",,
+M. Triceps brachial,Supérieure / Thorax,Scapula / Humérus / Ulna / Articulation scapulohumérale / Articulation acromioclaviculaire / Articulation huméroulnaire,M. Ancôné,Plexus brachial (Racine C7) / Plexus brachial (Racine C8),"Longue portion du triceps :  
+- Bord axillaire de la scapula => Extrémité supérieure de l'olécrâne de l'ulna 
+Action en statique de suspension de l'humérus / protection de la capsule
+Action en dynamique d'adduction et extension de la scapulo-humérale
+
+Chef latéral : 
+- Partie supérieure de la face postérieure de la diaphyse humérale => Extrémité supérieure de l'olécrâne de l'ulna 
+Action en statique de protection inférieure de la capsule 
+
+Chef médial :
+- Partie inférieure de la face postérieure de la diaphye humérale => Extrémité supérieure de l'olécrâne de l'ulna 
+Action en statique de stabilisation du coude 
+
+En dynamique l'ensemble des portions => Extension du coude 
+Innervé par le nerf radial (racines C7/C8)
+",,
+M. Brachioradial,Supérieure,Humérus / Radius / Articulation huméroradiale,M. Long fléchisseur du pouce / M. Long extenseur radial du carpe / M. Court extenseur radial du carpe,Plexus brachial (Racine C5) / Plexus brachial (Racine C6),"1/3 inférieur (bord latéral) du corps de l'humérus => Face latérale de l'extrémité inférieure du radius 
+Flexion du coude 
+Innervé par le nerf radial (Racines C5/C6) 
+",,
+M. Long extenseur radial du carpe,Supérieure,Humérus / Deuxième métacarpien (M2) / Articulation métacarpophalangienne du II,M. Brachioradial / M. Court extenseur radial du carpe,Plexus brachial (Racine C6) / Plexus brachial (Racine C7),"Bord latéral du corps de l'humérus => Face dorsale de la base du 2ème métacarpien (sur le tubercule latéral)
+- En statique : Stabilisation latérale du coude 
+- En dynamique : Abduction / Extension du coude 
+
+Innervé par le nerf radial (Racines C6/C7) 
+",,
+M. Court extenseur radial du carpe,Supérieure,Humérus / Troisième métacarpien (M3),M. Brachioradial / M. Long extenseur radial du carpe,Plexus brachial (Racine C6) / Plexus brachial (Racine C7),"Epicondyle latérale de l'extrémité inférieur de l'humérus => Face dorsale de la base du 3ème métacarpien (sur le tubercule latéral)
+- En statique : Stabilisation latérale du coude 
+- En dynamique : Extension du coude 
+
+Innervé par le nerf radial (Racines C6/C7) 
+
+",,
+M. Supinateur,Supérieure,Humérus / Ulna / Radius / Articulation huméroulnaire / Articulation huméroradiale / Articulation radioulnaire proximale / Articulation radioulnaire distale,,Plexus brachial (Racine C6) / Plexus brachial (Racine C7),"Origine en deux plans : 
+=> Plan superficiel avec insertion au niveau de l'extrémité inférieure de l'épicondyle latérale de l'humérus et sur la crête supinatrice de l'extrémité supérieure de l'ulna 
+=> Plan profond dans la fosse supinatrice du corps de l'ulna 
+
+Terminaison en deux plans :
+=> Plan superficiel sur le bord antérieur du radius 
+=> Plan profond sur la face latérale du radius 
+
+- En statique : Stabilisation latérale du coude 
+- En dynamique : Supination du coude 
+
+Innervé par le nerf radial (Racines C6/C7) 
+
+",,
+M. Ancôné,Supérieure,Humérus / Ulna / Articulation huméroulnaire,M. Triceps brachial,Plexus brachial (Racine C7) / Plexus brachial (Racine C8),"Epicondyle latérale de l'extrémité inférieure de l'humérus => A cheval sur l'extremité supérieure et le corps de l'ulna 
+- En statique : Stabilisation postérolatérale du coude 
+- En dynamique : Extension du coude (en fin de mouvement => Verrouillage en rectitude)
+Innervé par le nerf inférieur du chef médial et de l'ancôné (Racines C7/C8)",,
+M. Extenseur ulnaire du carpe,Supérieure,Humérus / Ulna / Cinquième métacarpien (M5) / Articulation huméroulnaire,,Plexus brachial (Racine C6) / Plexus brachial (Racine C7) / Plexus brachial (Racine C8) ,"Epicondyle latérale de l'extrémité inférieure de l'humérus et bord postérieur du corps de l'ulna => Face dorsale de la base du 5ème métacarpien 	
+Extension / Adduction du poignet 
+Innervé par une branche profonde du nerf radial (Racines C6/C7/C8)",,
+M. Extenseur du 5ème doigt,Supérieure,Humérus / P1 du 5 (main) / P2 du 5 (main) / P3 du 5 (main),M. Extenseur des doigts,Plexus brachial (Racine C7) / Plexus brachial (Racine C8),"Epicondyle latérale de l'extrémité inférieure de l'humérus  => Bord médial du tendon destiné au 5ème doigt du M. Extenseur des doigts
+Extension du 5ème doigt + Participation à l'extension et l'adduction du poignet 
+Innervé par une branche profonde du nerf radial (Racines C7/C8)
+",,
+M. Extenseur des doigts,Supérieure,Humérus / P1 du 2 (main) / P2 du 2 (main) / P3 du 2 (main) / P1 du 3 (main) / P2 du 3 (main) / P3 du 3 (main) / P1 du 4 (main) / P2 du 4 (main) / P3 du 4 (main) / P1 du 5 (main) / P2 du 5 (main) / P3 du 5 (main) / Articulation métacarpophalangienne du II / Articulation métacarpophalangienne du III / Articulation métacarpophalangienne du IV / Articulation métacarpophalangienne du V / Articulation interphalangienne du 1 (main) / Articulation interphalangienne du 2 (main) / Articulation interphalangienne du 3 (main) / Articulation interphalangienne du 4 (main) / Articulation interphalangienne du 5 (main),M. Extenseur de l'index / M. Extenseur du 5ème doigt,Plexus brachial (Racine C7) / Plexus brachial (Racine C8),"Epicondyle latérale de l'extrémité inférieure de l'humérus  => Face dorsale de la base des 3 phalanges des 4 derniers doigts 
+Extension des 4 derniers doigts 
+Innervé par une branche profonde du nerf radial (Racines C7/C8)
+
+",,
+M. Long abducteur du pouce,Supérieure,Ulna / Radius / Premier métacarpien (M1) / Articulation radioulnaire proximale / Articulation radioulnaire distale / Articulation métacarpophalangienne du I,M. Court extenseur du pouce / M. Long extenseur du pouce,Plexus brachial (Racine C7) / Plexus brachial (Racine C8),"
+Face postérieure de l'ulna et du radius => Tubercule latéral de la base du 1er métacarpien 
+- En statique : Stabilisation de l'articulation trapézo-métacarpienne
+- En dynamique : Abduction du pouce 
+Innervé par une branche profonde du nerf radial (Racines C7/C8) 
+",,
+M. Long extenseur du pouce,Supérieure,Ulna / P2 du 1 (main) / Articulation interphalangienne du 1 (main),M. Long abducteur du pouce / M. Court extenseur du pouce,Plexus brachial (Racine C7) / Plexus brachial (Racine C8),"Face postérieure de l'ulna (sous le M. Long abducteur du pouce) => Face dorsale de la base de P2 du 1
+Extension de l'interphalangienne du 1 / Contre-opposition
+Innervé par une branche profonde du nerf radial (Racines C7/C8)
+",,
+M. Court extenseur du pouce,Supérieure,Ulna / Radius / P1 du 1 (main) / Articulation radioulnaire distale / Articulation radioulnaire proximale / Articulation métacarpophalangienne du I,M. Long extenseur du pouce / M. Long abducteur du pouce,Plexus brachial (Racine C7) / Plexus brachial (Racine C8),"Face postérieure de l'ulna (sous le M. Long abducteur du pouce) et face postérieure du radius => Face dorsale de la base de P1 du 1
+Extension de la métacarpo-phalangienne du 1
+Innervé par une branche profonde du nerf radial (Racines C7/C8)",,
+M. Extenseur de l'index,Supérieure,Ulna,M. Extenseur des doigts,Plexus brachial (Racine C7) / Plexus brachial (Racine C8),"Face postérieure du corps de l'ulna => Tendon du M. Extenseur des doigts pour le 2ème doigt 
+Extension du doigt / Adduction du doigt
+Innervé par une branche profonde du nerf radial (Racines C7/C8)",,
+M. Rond pronateur,Supérieure,Humérus / Ulna / Radius / Articulation huméroulnaire / Articulation huméroradiale / Articulation radioulnaire proximale / Articulation radioulnaire distale,,Plexus brachial (Racine C6) / Plexus brachial (Racine C7),"Epicondyle médiale de l'extrémité inférieure de l'humérus et processus coronoïde de l'ulna => Face latérale du corps du radius 	
+- En statique : Stabilisation médiale du coude 
+- En dynamique : Pronation / Flexion du coude 
+
+Innervé par le nerf médian (Racines C6/C7)",,
+M. Fléchisseur radial du carpe,Supérieure,Humérus / Deuxième métacarpien (M2) / Articulation métacarpophalangienne du II,M. Fléchisseur superficiel des doigts / M. Long palmaire,Plexus brachial (Racine C6) / Plexus brachial (Racine C7),"Epicondyle médiale de l'extrémité inférieure de l'humérus => Face palmaire de la base du 2ème métacarpien
+- En statique : Stabilisation médiale du poignet
+- En dynamique : Abduction / Flexion du poignet
+
+Innervé par le nerf médian (Racines C6/C7)",,
+M. Long palmaire,Supérieure,Humérus,M. Fléchisseur radial du carpe,Plexus brachial (Racine C7) / Plexus brachial (Racine C8) / Plexus brachial (Racine T1),"Epicondyle médiale de l'extrémité inférieure de l'humérus => Rétinaculum des fléchisseurs au niveau du carpe 
+Flexion du poignet 
+
+Innervé par le nerf médian (Racines C6/C7)
+
+",,
+M. Fléchisseur ulnaire du carpe,Supérieure,Humérus / Ulna / Pisiforme / Articulation huméroulnaire,,Plexus brachial (Racine C7) / Plexus brachial (Racine C8) / Plexus brachial (Racine T1),"Epicondyle médiale de l'extrémité inférieure de l'humérus et corps de l'ulna (déborde sur l'olécrâne) => Pôle supérieur du pisiforme 
+Flexion / Adduction du poignet 
+
+Innervé par le nerf ulnaire (Racines C7/C8/T1)
+",,
+M. Fléchisseur superficiel des doigts,Supérieure,Humérus / Ulna / Radius / P2 du 2 (main) / P2 du 3 (main) / P2 du 4 (main) / P2 du 5 (main) / Articulation huméroulnaire / Articulation huméroradiale / Articulation radioulnaire proximale / Articulation radioulnaire distale / Articulation interphalangienne du 2 (main) / Articulation interphalangienne du 3 (main) / Articulation interphalangienne du 4 (main) / Articulation interphalangienne du 5 (main),M. Fléchisseur profond des doigts / M. Fléchisseur radial du carpe,Plexus brachial (Racine C7) / Plexus brachial (Racine C8) / Plexus brachial (Racine T1),"Le muscle prend son origine sur 5 structures : 
+- Epicondyle médiale de l'humérus (Extrémité inférieure)
+- Processus coronoïde de l'extrémité supérieure de l'ulna 
+- Sur une arcade entre le radius et l'ulna 
+- Bord antérieur du corps du radius 
+- Faisceau moyen du ligament collatéral ulnaire 
+
+Se termine sur la 2ème phalange des 4 derniers doigts 
+- En statique : Stabilisation de l'articulation interphalangienne proximale
+- En dynamique : Flexion des doigts 
+
+Innervé par le nerf médian (Racines C7/C8/T1)",,
+M. Fléchisseur profond des doigts,Supérieure,Radius / P2 du 1 (main) / Ulna / P3 du 2 (main) / P3 du 3 (main) / P3 du 4 (main) / P3 du 5 (main) / Articulation radioulnaire distale / Articulation radioulnaire proximale / Articulation interphalangienne du 2 (main) / Articulation interphalangienne du 3 (main) / Articulation interphalangienne du 4 (main) / Articulation interphalangienne du 5 (main),M. Fléchisseur superficiel des doigts,Plexus brachial (Racine C8) / Plexus brachial (Racine T1),"Corps de l'ulna => Face palmaire de la base de P3 des 4 derniers doigts 
+- En statique : Stabilisation de l'articulation interphalangienne distale 
+- En dynamique : Flexion de l'interphalangienne distale 
+
+Innervé par le nerf médian (Racines C7/C8/T1) pour les deux chefs latéraux et nerf ulnaire pour les deux chefs médiaux ",,
+M. Long fléchisseur du pouce,Supérieure,Radius / Ulna / P2 du 1 (main) / Articulation radioulnaire proximale / Articulation radioulnaire distale / Articulation interphalangienne du 1 (main),M. Carré pronateur / M. Brachioradial / M. Court fléchisseur du pouce,Plexus brachial (Racine C8) / Plexus brachial (Racine T1),"2/3 supérieur de la face antérieure du radius => Face palmaire de la base de P2 du pouce 
+Flexion de l'interphalangienne du pouce 
+Innervé par le nerf médian (Racines C8/T1)",,
+M. Carré pronateur,Supérieure,Ulna / Radius / Articulation radioulnaire distale / Articulation radioulnaire proximale,M. Long fléchisseur du pouce,Plexus brachial (Racine C8),"Face antérieure du corps de l'ulna => Face antérieure du corps du radius 
+Pronation et Stabilisation de l'articulation radio ulnaire inférieure 
+Innervé par le nerf interosseux antérieur (Racine C8) ",,
+M. Court abducteur du pouce,Supérieure,Scaphoïde / P1 du 1 (main) / Os sésamoïdes de la main,,Plexus brachial (Racine C8) / Plexus brachial (Racine T1),"Face antérieure du tubercule du scaphoïde => Partie latérale de la base de la première phalange du pouce + expansion sur l'os sésamoïde latéral 
+Abduction et flexion de la première phalange du pouce
+Innervé par la branche terminale latérale du nerf médian (Racines C8/T1)",,
+M. Opposant du pouce,Supérieure,Trapèze / Premier métacarpien (M1) / Articulation carpométacarpienne du pouce,,Plexus brachial (Racine C8) / Plexus brachial (Racine T1),"Face antérieure du trapèze au niveau de la crête verticale => Face antérieure du corps du premier métacarpien (M1)
+Flexion / Adduction / Pronation du pouce (prépare le mouvement d'opposition du pouce)
+Innervé par la branche terminale latérale du nerf médian (Racines C8/T1)",,
+M. Court fléchisseur du pouce,Supérieure,Trapèze / Trapézoïde / Capitatum / Os sésamoïdes de la main / P1 du 1 (main) / Articulation médiocarpienne / Articulation carpométacarpienne du pouce / Articulation métacarpophalangienne du I,M. Long fléchisseur du pouce,Plexus brachial (Racine C8) / Plexus brachial (Racine T1),"Origine par un faisceau superficiel au niveau de la face antérieure du trapèze au niveau de la crête verticale et par un faisceau profond au niveau des faces antérieures du trapézoïde et du capitatum 
+Terminaison au niveau de la base de P1 du pouce + expansion sur l'os sésamoïde latéral 
+Flexion de P1 du pouce et stabilisation de la métacarpo phalangienne du pouce 
+Innervé par le nerf médian (faisceau superficiel) et par le nerf ulnaire (faisceau profond) => Racines C8/T1",,
+M. Adducteur du pouce,Supérieure, Trapézoïde / Capitatum / Os sésamoïdes de la main / P1 du 1 (main) / Troisième métacarpien (M3) / Articulation médiocarpienne / Articulation carpométacarpienne du III / Articulation métacarpophalangienne du I,,Plexus brachial (Racine C8) / Plexus brachial (Racine T1),"Origine :
+- Faisceau oblique sur la face antérieure du trapézoïde et du captitatum + face antérieure de la base du troisième métacarpien (M3) 
+- Faisceau transverse au niveau du bord antérieur du corps du troisième métacarpien (M3)
+Terminaison au niveau de la base de la première phalange du pouce + expansion sur l'os sésamoïde médial 
+Adduction de la métacarpo-phalangienne du pouce 
+Innervé par la branche profonde du nerf ulnaire (racines C8/T1)",,
+M. Abducteur du 5ème doigt,Supérieure,Scaphoïde / P1 du 5 (main) / Articulation métacarpophalangienne du V,M. Court fléchisseur du 5ème doigt,Plexus brachial (Racine C8) / Plexus brachial (Racine T1),"Pôle inférieur du pisiforme (déborde sur la face antérieure) => Partie médiale de la base de la première phalange du 5ème doigt
+- En statique : Stabilisation de la métacarpo-phalangienne du 5ème doigt 
+- En dynamique : Abduction du 5ème doigt 
+Innervé par la branche profonde du nerf ulnaire (Racines C8/T1)",,
+M. Court fléchisseur du 5ème doigt,Supérieure,Hamatum / P1 du 5 (main) / Articulation métacarpophalangienne du V,M. Abducteur du 5ème doigt,Plexus brachial (Racine C8) / Plexus brachial (Racine T1),"Face antérieure de l'hamatum => Partie médiale de la base de la première phalange du 5ème doigt par un tendon commun avec le M. Abducteur du 5ème doigt
+- En statique : Stabilisation de la métacarpo-phalangienne du 5ème doigt 
+- En dynamique : Flexion de la métacarpo-phalangienne du 5ème doigt 
+Innervé par la branche profonde du nerf ulnaire (Racines C8/T1)",,
+M. Opposant du 5ème doigt,Supérieure,Hamatum / Cinquième métacarpien (M5) / Articulation métacarpophalangienne du V,,Plexus brachial (Racine C8) / Plexus brachial (Racine T1),"Face antérieure de l'hamatum => Face médiale du corps du cinquième métacarpien (M5)
+- En statique : Stabilisation de la carpo-métacarpienne du 5ème doigt 
+- En dynamique : Porte M5 en avant, en dehors et en supination 
+Innervé par la branche profonde du nerf ulnaire (Racine C8/T1)",,
+Nerf facial (VII) ,Supérieure / Crânio-sacrée,Temporal,M. Digastrique / M. Stylo-hyoïdien / M. Platysma,,,,
+Nerf trijumeau (V),Supérieure / Crânio-sacrée,Temporal,M. Digastrique / M. Mylo-hyoïdien / M. Génio-hyoïdien,,,,
+Nerf accessoire (XI),Supérieure / Crânio-sacrée / Thorax,,M. SCOM / M. Trapèze,,,,
+Plexus cervical (Racine C1),Supérieure,,M. Oblique supérieur de la tête / M. Oblique inférieur de la tête / M. Droit antérieur / M. Petit droit postérieur / M. Grand droit postérieur / M. Long de la tête / M. Long du cou / M. Droit latéral de la tête,,,,
+Plexus cervical (Racine C2),Supérieure,,M. Oblique inférieur de la tête / M. Long de la tête / M. Long du cou / M. Omo-hyoïdien / M. Sterno-hyoïdien / M. Sterno-thyroïdien / M. Thyro-hyoïdien / M. SCOM / M. Longissimus / M. Splénius du cou / M. Splénius de la tête / M. Semi-épineux de la tête,,,,
+Plexus cervical (Racine C3),Supérieure,,M. Long du cou / M. Omo-hyoïdien / M. Sterno-hyoïdien / M. Sterno-thyroïdien / M. Thyro-hyoïdien / M. SCOM / M. Diaphragme / M. Longissimus / M. Splénius du cou / M. Splénius de la tête / M. Semi-épineux de la tête / M. Trapèze,,,,
+Plexus cervical (Racine C4),Supérieure,,M. Long du cou / M. Diaphragme / M. Ilio-costal / M. Longissimus / M. Splénius du cou / M. Splénius de la tête / M. Semi-épineux de la tête / M. Trapèze,,,,
+Plexus brachial (Racine C5),Supérieure,,M. Elévateur de la scapula / M. Scalène antérieur / M. Grand pectoral / M. Subclavier / M. Dentelé antérieur / M. Diaphragme / M. Ilio-costal / M. Longissimus / M. Semi-épineux de la tête / M. Rhomboïdes / M. Subscapulaire / M. Supraépineux / M. Infraépineux / M. Petit rond / M. Deltoïde / M. Grand rond / M. Coracobrachial / M. Long biceps / M. Court biceps / M. Brachial / M. Brachioradial,,,,
+Plexus brachial (Racine C6),Supérieure,,M. Scalène moyen / M. Scalène postérieur / M. Grand pectoral / M. Subclavier / M. Dentelé antérieur / M. Ilio-costal / M. Longissimus / M. Semi-épineux de la tête / M. Subscapulaire / M. Supraépineux / M. Infraépineux / M. Petit rond / M. Deltoïde / M. Grand rond / M. Coracobrachial / M. Long biceps / M. Court biceps / M. Brachial / M. Brachioradial / M. Court extenseur radial du carpe / M. Supinateur / M. Long extenseur radial du carpe / M. Extenseur ulnaire du carpe / M. Rond pronateur / M. Fléchisseur radial du carpe / M. Grand dorsal,,,,
+Plexus brachial (Racine C7),Supérieure,,M. Long extenseur radial du carpe / M. Court extenseur radial du carpe / M. Supinateur / M. Ancôné / M. Extenseur ulnaire du carpe / M. Extenseur du 5ème doigt / M. Extenseur des doigts / M. Long abducteur du pouce / M. Long extenseur du pouce / M. Court extenseur du pouce / M. Extenseur de l'index / M. Rond pronateur / M. Fléchisseur radial du carpe / M. Long palmaire / M. Fléchisseur ulnaire du carpe / M. Triceps brachial / M. Grand dorsal / M. Semi-épineux de la tête / M. Longissimus / M. Ilio-costal / M. Grand pectoral / M. Scalène postérieur / M. Scalène moyen / M. Fléchisseur superficiel des doigts,,,,
+Plexus brachial (Racine C8),Supérieure,,M. Scalène moyen/ M. Scalène postérieur / M. Petit pectoral / M. Grand dorsal / M. Triceps brachial / M. Ancôné / M. Extenseur ulnaire du carpe / M. Extenseur du 5ème doigt / M. Extenseur des doigts / M. Long abducteur du pouce / M. Long extenseur du pouce / M. Court extenseur du pouce / M. Extenseur de l'index / M. Long palmaire / M. Fléchisseur ulnaire du carpe / M. Fléchisseur superficiel des doigts / M. Fléchisseur profond des doigts / M. Long fléchisseur du pouce / M. Carré pronateur / M. Court abducteur du pouce / M. Opposant du pouce / M. Court fléchisseur du pouce / M. Adducteur du pouce / M. Abducteur du 5ème doigt / M. Court fléchisseur du 5ème doigt / M. Opposant du 5ème doigt / ,,,,
+Plexus brachial (Racine T1),Supérieure,,M. Petit pectoral / M. Ilio-costal / M. Longissimus / M. Semi-épineux de la tête / M. Dentelé postéro-supérieur / M. Long palmaire / M. Fléchisseur ulnaire du carpe / M. Fléchisseur superficiel des doigts / M. Fléchisseur profond des doigts / M. Long fléchisseur du pouce / M. Court abducteur du pouce / M. Opposant du pouce / M. Court fléchisseur du pouce / M. Adducteur du pouce / M. Abducteur du 5ème doigt / M. Court fléchisseur du 5ème doigt / M. Opposant du 5ème doigt,,,,
+Nerfs spinaux (Racine T2),Supérieure,,M. Ilio-costal / M. Longissimus / M. Semi-épineux de la tête / M. Dentelé postéro-supérieur,,,,
+Nerfs spinaux (Racine T3),Supérieure,,M. Transverse du thorax / M. Ilio-costal / M. Longissimus / M. Epineux du thorax / M. Semi-épineux de la tête / M. Dentelé postéro-supérieur,,,,
+Nerfs spinaux (Racine T4),Supérieure / Moyenne,,M. Transverse du thorax / M. Ilio-costal / M. Longissimus / M. Epineux du thorax / M. Semi-épineux de la tête / M. Dentelé postéro-supérieur,,,,
+Nerfs spinaux (Racine T5),Supérieure / Moyenne,,M. Transverse du thorax / M. Ilio-costal / M. Longissimus / M. Epineux du thorax / M. Semi-épineux de la tête / M. Droit de l'abdomen / M. Oblique externe / M. Oblique interne / M. Transverse de l'abdomen,,,,
+Nerfs spinaux (Racine T6),Supérieure / Moyenne,,M. Transverse du thorax / M. Ilio-costal / M. Longissimus / M. Epineux du thorax / M. Droit de l'abdomen / M. Oblique externe / M. Oblique interne / M. Transverse de l'abdomen,,,,
+Nerfs spinaux (Racine T7),Supérieure / Moyenne,,M. Ilio-costal / M. Longissimus / M. Epineux du thorax / M. Droit de l'abdomen / M. Oblique externe / M. Oblique interne / M. Transverse de l'abdomen,,,,
+Nerfs spinaux (Racine T8),Supérieure / Moyenne,,M. Ilio-costal / M. Longissimus / M. Epineux du thorax / M. Droit de l'abdomen / M. Oblique externe / M. Oblique interne / M. Transverse de l'abdomen,,,,
+Nerfs spinaux (Racine T9),Supérieure / Moyenne,,M. Ilio-costal / M. Longissimus / M. Epineux du thorax / M. Droit de l'abdomen / M. Oblique externe / M. Oblique interne / M. Transverse de l'abdomen / M. Dentelé postéro-inférieur,,,,
+Nerfs spinaux (Racine T10),Supérieure / Moyenne,,M. Ilio-costal / M. Longissimus / M. Epineux du thorax / M. Droit de l'abdomen / M. Oblique externe / M. Oblique interne / M. Transverse de l'abdomen / M. Dentelé postéro-inférieur,,,,
+Nerfs spinaux (Racine T11),Supérieure / Moyenne,,M. Ilio-costal / M. Longissimus / M. Epineux du thorax / M. Droit de l'abdomen / M. Oblique externe / M. Oblique interne / M. Transverse de l'abdomen / M. Dentelé postéro-inférieur,,,,
+Plexus lombaire (Racine T12),Supérieure / Moyenne,,M. Ilio-costal / M. Longissimus / M. Epineux du thorax / M. Dentelé postéro-inférieur / M. Droit de l'abdomen / M. Oblique externe / M. Oblique interne / M. Transverse de l'abdomen / M. Carré des lombes,,,,
+Plexus lombaire (Racine L1),Supérieure / Moyenne,,M. Longissimus / M. Epineux du thorax / M. Droit de l'abdomen / M. Oblique externe / M. Oblique interne / M. Transverse de l'abdomen / M. Psoas / M. Carré des lombes,,,,
+Plexus lombaire (Racine L2),Supérieure / Moyenne,,M. Longissimus / M. Epineux du thorax / M. Droit de l'abdomen / M. Oblique externe / M. Oblique interne / M. Transverse de l'abdomen / M. Carré des lombes / M. Iliaque / M. Psoas / M. Sartorius / M. Droit fémoral / M. Vaste intermédiaire / M. Vaste latéral / M. Vaste médial / M. Pectiné / M. Long adducteur / M. Court adducteur / M. Grand adducteur / M. Gracile,,,,
+Plexus lombaire (Racine L3),Supérieure / Moyenne / Inférieure,,M. Longissimus / M. Epineux du thorax / M. Carré des lombes / M. Iliaque / M. Psoas / M. Obturateur externe / M. Sartorius / M. Droit fémoral / M. Vaste intermédiaire / M. Vaste latéral / M. Vaste médial / M. Pectiné / M. Long adducteur / M. Court adducteur / M. Grand adducteur / M. Gracile,,,,
+Plexus lombaire (Racine L4),Supérieure / Moyenne / Inférieure,,M. Longissimus / M. Petit glutéal / M. Moyen glutéal / M. TFL / M. Jumeau inférieur / M. Obturateur externe / M. Carré fémoral / M. Droit fémoral / M. Vaste intermédiaire / M. Vaste latéral / M. Vaste médial / M. Pectiné / M. Long adducteur / M. Court adducteur / M. Grand adducteur / M. Tibial antérieur / M. Long extenseur des orteils / M. Poplité / M. Soléaire / M. Long extenseur de l'hallux,,,,
+Plexus lombaire (Racine L5),Supérieure / Moyenne / Inférieure,,M. Longissimus / M. Petit glutéal / M. Moyen glutéal / M. Grand glutéal / M. TFL / M. Obturateur interne / M. Jumeau supérieur / M. Jumeau inférieur / M. Carré fémoral / M. Biceps fémoral / M. Semi-tendineux / M. Semi-membraneux / M. Tibial antérieur / M. Long extenseur des orteils / M. Long extenseur de l'hallux / M. 3ème fibulaire / M. Long fibulaire / M. Court fibulaire / M. Poplité / M. Soléaire / M. Tibial postérieur / M. Long fléchisseur de l'hallux / M. Long fléchisseur des orteils / M. Gastrocnémien médial / M. Gastrocnémien latéral / M. Plantaire / M. Court extenseur des orteils / M. Court extenseur de l'hallux / M. Abducteur de l'hallux / M. Court fléchisseur de l'hallux / M. Court fléchisseur des orteils,,,,
+Plexus sacré (Racine S1),Supérieure / Moyenne / Inférieure,,M. Petit glutéal / M. Moyen glutéal / M. Grand glutéal / M. TFL / M. Obturateur interne / M. Jumeau supérieur / M. Jumeau inférieur / M. Carré fémoral / M. Biceps fémoral / M. Semi-tendineux / M. Semi-membraneux / M. Tibial antérieur / M. Long extenseur des orteils / M. Long extenseur de l'hallux / M. 3ème fibulaire / M. Long fibulaire / M. Court fibulaire / M. Poplité / M. Soléaire / M. Tibial postérieur / M. Long fléchisseur de l'hallux / M. Long fléchisseur des orteils / M. Gastrocnémien médial / M. Gastrocnémien latéral / M. Plantaire / M. Court extenseur des orteils / M. Court extenseur de l'hallux / M. Abducteur de l'hallux / M. Court fléchisseur de l'hallux / M. Court fléchisseur des orteils,,,,
+Plexus sacré (Racine S2),Supérieure / Moyenne / Inférieure,,M. Piriforme / M. Obturateur interne / M. Jumeau supérieur / M. Biceps fémoral / M. Semi-tendineux / M. Semi-membraneux / M. Long fléchisseur de l'hallux / M. Gastrocnémien médial / M. Gastrocnémien latéral / M. Plantaire / M. Adducteur de l'hallux / M. Abducteur du 5 / M. Court fléchisseur du 5 / M. Opposant du 5 / M. Carré plantaire,,,,
+Plexus sacré (Racine S3),Supérieure / Moyenne / Inférieure,,M. Adducteur de l'hallux / M. Abducteur du 5 / M. Court fléchisseur du 5 / M. Opposant du 5 / M. Carré plantaire,,,,
+Plexus sacré (Racine S4),Supérieure / Moyenne / Inférieure,,,,,,
+Plexus sacré (Racine S5),Supérieure / Moyenne / Inférieure,,,,,,
+Articulation sternochondrocostale K1,Moyenne / Thorax / Supérieure,Sternum / K1,M. SCOM / M. Grand pectoral / M. Transverse du thorax / M. Scalène antérieur / M. Scalène moyen / M. Grand pectoral / M. Subclavier / M. Dentelé antérieur / M. Ilio-costal / M. Dentelé postéro-supérieur,,Type articulaire : Plane ,,
+Articulation sternochondrocostale K2,Moyenne / Thorax / Supérieure,Sternum / K2,M. SCOM / M. Grand pectoral / M. Transverse du thorax / M. Scalène postérieur / M. Grand pectoral / M. Dentelé antérieur / M. Ilio-costal / M. Dentelé postéro-supérieur,,Type articulaire : Plane ,,
+Articulation sternochondrocostale K3,Moyenne / Thorax / Supérieure,Sternum / K3,M. Grand pectoral / M. Transverse du thorax / M. Petit pectoral / M. Dentelé antérieur / M. Ilio-costal / M. Dentelé postéro-supérieur,,Type articulaire : Plane ,,
+Articulation sternochondrocostale K4,Moyenne / Thorax / Supérieure,Sternum / K4,M. Grand pectoral / M. Transverse du thorax / M. Diaphragme / M. Petit pectoral / M. Dentelé antérieur / M. Ilio-costal / M. Dentelé postéro-supérieur,,Type articulaire : Plane ,,
+Articulation sternochondrocostale K5 ,Moyenne / Thorax,Sternum / K5,M. Grand pectoral / M. Transverse du thorax / M. Diaphragme / M. Droit de l'abdomen / M. Oblique externe / M. Petit pectoral / M. Dentelé antérieur / M. Ilio-costal / M. Dentelé postéro-supérieur,,Type articulaire : Plane ,,
+Articulation sternochondrocostale K6,Moyenne / Thorax,Sternum / K6,M. Grand pectoral / M. Transverse du thorax / M. Diaphragme / M. Droit de l'abdomen / M. Transverse de l'abdomen / M. Oblique externe / M. Dentelé antérieur / M. Ilio-costal,,Type articulaire : Plane ,,
+Articulation sternochondrocostale K7,Moyenne / Thorax,Sternum / K7,M. Grand pectoral / M. Transverse du thorax / M. Diaphragme / M. Droit de l'abdomen / M. Transverse de l'abdomen / M. Oblique externe / M. Dentelé antérieur / M. Ilio-costal,,Type articulaire : Plane ,,
+Articulation sternochondrocostale K8,Moyenne / Thorax,Sternum / K8,M. Grand pectoral / M. Transverse du thorax / M. Diaphragme / M. Transverse de l'abdomen / M. Oblique externe / M. Dentelé antérieur / M. Ilio-costal,,Type articulaire : Plane ,,
+Articulation sternochondrocostale K9,Moyenne / Thorax,Sternum / K9,M. Grand pectoral / M. Transverse du thorax / M. Diaphragme / M. Transverse de l'abdomen / M. Oblique externe / M. Dentelé antérieur / M. Diaphragme / M. Ilio-costal / M. Dentelé postéro-inférieur,,Type articulaire : Plane ,,
+Articulation sternochondrocostale K10,Moyenne / Thorax,Sternum / K10,M. Grand pectoral / M. Transverse du thorax / M. Diaphragme / M. Transverse de l'abdomen / M. Oblique externe / M. Oblique interne / M. Dentelé antérieur / M. Ilio-costal / M. Dentelé postéro-inférieur,,Type articulaire : Plane ,,

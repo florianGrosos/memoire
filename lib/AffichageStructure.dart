@@ -74,7 +74,9 @@ class _PageAffichageStructureState extends State<PageAffichageStructure> {
           style: TextStyle(fontSize: 20),
         ),
         Expanded(
-          child: Image.network(structureActuelle.image),
+          child: Image.network(
+            structureActuelle.image,
+          ),
         ),
       ]);
     }
@@ -92,8 +94,14 @@ class _PageAffichageStructureState extends State<PageAffichageStructure> {
           style: TextStyle(fontSize: 20),
         ),
         Expanded(
-          child: Text(structureActuelle.tips),
-        ),
+          child: Container(
+            width: MediaQuery.of(context).size.width * 3 / 5,
+            child: Text(
+              structureActuelle.tips,
+              overflow: TextOverflow.fade,
+            ),
+          ),
+        )
       ]);
     }
     return Column(
@@ -132,6 +140,7 @@ class _PageAffichageStructureState extends State<PageAffichageStructure> {
                   )),
               makeLink(structureActuelle.lien),
               makeDescription(),
+              Divider(),
               Expanded(
                   child: Row(
                 children: [makeImage(), VerticalDivider(), makeTips()],

@@ -1,11 +1,21 @@
 // ignore_for_file: use_build_context_synchronously, file_names
 
+import 'dart:ffi';
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:memoire/AffichageStructure.dart';
 import 'package:memoire/selection_unite_fonctionnelle.dart';
 import 'package:tuple/tuple.dart';
 import 'package:flutter_email_sender/flutter_email_sender.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 import 'Structure.dart';
+import 'package:mailto/mailto.dart';
+// For Flutter applications, you'll most likely want to use
+// the url_launcher package.
+import 'package:url_launcher/url_launcher.dart';
+import 'package:intl/intl.dart';
+import 'package:string_validator/string_validator.dart';
 
 // ignore: must_be_immutable
 class PageResultat extends StatefulWidget {
@@ -39,6 +49,61 @@ class _PageResultatState extends State<PageResultat> {
   Text title;
   // UF sélectionnée
   List<String> fonctionnalUnityList;
+  // Controller pour saise de mail
+  TextEditingController _mail = TextEditingController();
+  DateTime now = DateTime.now();
+  String _errorMailMessage = "";
+  int nbMaxStruct = 5;
+
+  String genBody() {
+    String body = "";
+    int spaceCote = 2;
+    UFSort.forEach((key, value) {
+      // body = body + "<h1>" + key + "</h1>" + "\n";
+
+      body = body + "-" * spaceCote + "-" * key.length + "-" * spaceCote + "\n";
+      // body = body +
+      //     "|" +
+      //     " " * spaceCote +
+      //     " " * key.length +
+      //     " " * spaceCote +
+      //     "|" +
+      //     "\n";
+      body = body + "|" + " " * spaceCote + key + " " * spaceCote + "|" + "\n";
+      body = body + "-" * spaceCote + "-" * key.length + "-" * spaceCote + "\n";
+
+      var listStruc = value!.entries.toList();
+      listStruc.sort(((a, b) {
+        int premComp = -a.value.item1.length.compareTo(b.value.item1.length);
+        if (premComp == 0) {
+          return -a.value.item2.length.compareTo(b.value.item2.length);
+        }
+        return premComp;
+      }));
+
+      int structInMail = 0;
+      for (var mapStrucRes in listStruc) {
+        if (mapStrucRes.value.item1.length > 1 &&
+            structInMail <= nbMaxStruct - 1) {
+          int nbLienDirect = mapStrucRes.value.item1.toSet().toList().length;
+          int nbLienInter = mapStrucRes.value.item2.toSet().toList().length;
+          body = body + "\t -" + mapStrucRes.key!.nom + "\n";
+          body = body +
+              "\t\t " +
+              "Nombre de structures en dysfontion en lien direct : " +
+              nbLienDirect.toString() +
+              "\n";
+          body = body +
+              "\t\t " +
+              "--- Nombre de liens intermédiaires avec les structures en dysfontion : " +
+              nbLienInter.toString() +
+              "\n";
+          structInMail++;
+        }
+      }
+    });
+    return body;
+  }
 
   _PageResultatState(this.structureSelect, this.structures, this.title,
       this.fonctionnalUnityList);
@@ -139,26 +204,6 @@ class _PageResultatState extends State<PageResultat> {
     UFSort = analyse(nomToStructure, structureSelect, fonctionnalUnityList);
   }
 
-  // Future<void> debugEmailIssues() async {
-  //   Directory directory = await getTemporaryDirectory();
-  //   String fileName = 'debug_email.csv';
-  //   File file = File('${directory.path}/$fileName');
-  //   await file.writeAsString("data to test email attachment");
-  //   Email email = Email(
-  //       body: 'Debug test with attachment',
-  //       subject: 'Debugging Email',
-  //       recipients: ['debug@example.com'],
-  //       attachmentPaths: [file.path],
-  //       isHTML: false);
-  //   try {
-  //     await FlutterEmailSender.send(email);
-  //   } catch (e) {
-  //     print('Error sending email: $e');
-  //   } finally {
-  //     await file.delete();
-  //   }
-  // }
-
   List<Widget> showStrucureWithUF(String UF,
       Map<Structure?, Tuple2<List<String>, List<String>>>? resultat) {
     List<Widget> temp = [];
@@ -185,7 +230,7 @@ class _PageResultatState extends State<PageResultat> {
     ));
     temp.add(Divider());
     for (var i = 0; i < resultat.entries.length; i++) {
-      if (listStruc[i].value.item1.length > 1) {
+      if (listStruc[i].value.item1.length > 1 && i <= nbMaxStruct - 1) {
         temp.add(
           ListTile(
             title: Text(listStruc[i].key!.nom),
@@ -221,6 +266,30 @@ class _PageResultatState extends State<PageResultat> {
         ),
       ],
     );
+  }
+
+  Future<void> launchMailto() async {
+    String body = genBody();
+    print(body);
+    if (isEmail(_mail.text)) {
+      setState(() {
+        _errorMailMessage = "";
+      });
+      DateFormat isoFormat = DateFormat("yyyy-MM-dd");
+      String day = isoFormat.format(now);
+      final mailtoLink = Mailto(
+        to: [_mail.text],
+        cc: [],
+        subject: 'Session du ' + day.toString(),
+        body: body,
+      );
+      print(mailtoLink);
+      await launch('$mailtoLink');
+    } else {
+      setState(() {
+        _errorMailMessage = "Entre un email valide";
+      });
+    }
   }
 
   @override
@@ -275,7 +344,46 @@ class _PageResultatState extends State<PageResultat> {
                   textAlign: TextAlign.center,
                 ),
               ),
-            )
+            ),
+            SizedBox(
+              width: MediaQuery.of(context).size.width / 2,
+              child: Container(
+                // alignment: Alignment.center,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(9),
+                    color: Colors.white,
+                    border: Border.all(color: Colors.black, width: 3)),
+                padding: const EdgeInsets.all(10),
+                margin: const EdgeInsets.all(10),
+                // constraints: BoxConstraints.expand(),
+                child: const Text(
+                  "Une fois que tu as parcouru les structures, entres ton adresse mail si tu souhaites une sauvegarde de ta session",
+                  style: TextStyle(fontSize: 20),
+                  // textWidthBasis: TextWidthBasis.parent,
+                  // softWrap: true,
+                  overflow: TextOverflow.clip,
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+            Container(
+                width: MediaQuery.of(context).size.width / 3,
+                child: TextField(
+                  controller: _mail, // Associe le controller à ce TextField
+                  decoration: InputDecoration(
+                    labelText: 'Entre ton adresse mail',
+                    prefixIcon: Icon(Icons.mail),
+                  ),
+                )),
+            Text(
+              _errorMailMessage,
+              style: TextStyle(color: Colors.red),
+            ),
+            ElevatedButton(
+                onPressed: () async {
+                  await launchMailto();
+                },
+                child: Text("Envoyer")),
           ])
         ])));
   }

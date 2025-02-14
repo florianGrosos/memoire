@@ -392,7 +392,7 @@ class _PagePrincipalState extends State<PagePrincipal> {
                       border: Border.all(color: Colors.black, width: 3)),
                   padding: const EdgeInsets.all(10),
                   child: const Text(
-                    "Maintenant, sélectionne les structures anatomiques dysfonctionnelles retrouvées à l'examen clinique",
+                    "Sélectionnes les structures en dysfonction retrouvées lors de ton examen clinique",
                     style: TextStyle(fontSize: 20),
                     textAlign: TextAlign.center,
                     overflow: TextOverflow.visible,

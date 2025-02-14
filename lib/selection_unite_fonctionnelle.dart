@@ -223,7 +223,7 @@ class _SelectionUFState extends State<SelectionUF> {
                 // constraints: BoxConstraints.expand(),
                 width: MediaQuery.of(context).size.width * 2 / 3,
                 child: const Text(
-                  "Bonjour, je m'appelle Andrew. Pour commencer, sélectionne une ou plusieurs unité(s) fonctionnelle(s) correspondante(s) au motif de consultation de ton patient.",
+                  "Pour commencer, sélectionnes une ou plusieurs unités fonctionnelles en rapport avec le motif de consultation de ton patient.",
                   style: TextStyle(fontSize: textSize),
                   // textWidthBasis: TextWidthBasis.parent,
                   // softWrap: true,

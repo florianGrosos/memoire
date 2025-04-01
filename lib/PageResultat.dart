@@ -39,7 +39,8 @@ class PageResultat extends StatefulWidget {
 class _PageResultatState extends State<PageResultat> {
   Map<String, Structure> nomToStructure = {};
   Map<Structure, Tuple2<int, int>> res = {};
-  Map<String, Map<Structure?, Tuple2<List<String>, List<String>>>> UFSort = {};
+  Map<String, Map<Structure?, Tuple3<List<String>, List<String>, bool>>>
+      UFSort = {};
   late List<bool> selected = [];
   // Liste de toutes les structures
   List<Structure> structures;
@@ -58,6 +59,14 @@ class _PageResultatState extends State<PageResultat> {
   String genBody() {
     String body = "";
     int spaceCote = 2;
+    // affichage des structures selctionnées
+    body = body + "Structures sélectionnées : \n";
+    for (var struc in structureSelect) {
+      body = body + "\t -" + struc.nom + "\n";
+    }
+
+    body = body +
+        " Voici les structures qui auraient pu être investiguees dans l’UF (X) compte tenu des liens anatomiques existants avec les structures retrouvées dysfonctionnelles à l’examen clinique : \n";
     UFSort.forEach((key, value) {
       // body = body + "<h1>" + key + "</h1>" + "\n";
 
@@ -87,10 +96,14 @@ class _PageResultatState extends State<PageResultat> {
             structInMail <= nbMaxStruct - 1) {
           int nbLienDirect = mapStrucRes.value.item1.toSet().toList().length;
           int nbLienInter = mapStrucRes.value.item2.toSet().toList().length;
-          body = body + "\t -" + mapStrucRes.key!.nom + "\n";
+          body = body +
+              (mapStrucRes.value.item3 ? "" : " X") +
+              "\t -" +
+              mapStrucRes.key!.nom +
+              "\n";
           body = body +
               "\t\t " +
-              "Nombre de structures en dysfontion en lien direct : " +
+              "--- Nombre de structures en dysfontion en lien direct : " +
               nbLienDirect.toString() +
               "\n";
           body = body +
@@ -118,10 +131,11 @@ class _PageResultatState extends State<PageResultat> {
     return res;
   }
 
-  Map<String, Map<Structure?, Tuple2<List<String>, List<String>>>> rangementUF(
-      Map<String, Map<Structure?, Tuple2<List<String>, List<String>>>>
-          resultatListVierge,
-      Map<Structure?, Tuple2<List<String>, List<String>>> analyseRes) {
+  Map<String, Map<Structure?, Tuple3<List<String>, List<String>, bool>>>
+      rangementUF(
+          Map<String, Map<Structure?, Tuple3<List<String>, List<String>, bool>>>
+              resultatListVierge,
+          Map<Structure?, Tuple2<List<String>, List<String>>> analyseRes) {
     // On entre chaque structure dans l'unité fonctionnelle correspondante
     for (var resMap in analyseRes.entries) {
       bool uncast = true;
@@ -130,22 +144,25 @@ class _PageResultatState extends State<PageResultat> {
       for (String uf in resMap.key!.uniteFonctionnelle) {
         uf = uf.trim();
         if (resultatListVierge.keys.contains(uf)) {
-          resultatListVierge[uf]![resMap.key!] = resMap.value;
+          resultatListVierge[uf]![resMap.key!] =
+              Tuple3(resMap.value.item1, resMap.value.item1, false);
           uncast = false;
         }
       }
       if (uncast) {
-        resultatListVierge["Autres"]![resMap.key!] = resMap.value;
+        resultatListVierge["Autres"]![resMap.key!] =
+            Tuple3(resMap.value.item1, resMap.value.item1, false);
       }
     }
     return resultatListVierge;
   }
 
-  Map<String, Map<Structure?, Tuple2<List<String>, List<String>>>> analyse(
-      Map<String, Structure> structureListGlobalMap,
-      List<Structure> structureListChoose,
-      List<String> fonctionnalityUnityChoose) {
-    Map<String, Map<Structure?, Tuple2<List<String>, List<String>>>>
+  Map<String, Map<Structure?, Tuple3<List<String>, List<String>, bool>>>
+      analyse(
+          Map<String, Structure> structureListGlobalMap,
+          List<Structure> structureListChoose,
+          List<String> fonctionnalityUnityChoose) {
+    Map<String, Map<Structure?, Tuple3<List<String>, List<String>, bool>>>
         analyseResultat = {};
     Map<Structure?, Tuple2<List<String>, List<String>>> globalResultat = {};
 
@@ -205,7 +222,7 @@ class _PageResultatState extends State<PageResultat> {
   }
 
   List<Widget> showStrucureWithUF(String UF,
-      Map<Structure?, Tuple2<List<String>, List<String>>>? resultat) {
+      Map<Structure?, Tuple3<List<String>, List<String>, bool>>? resultat) {
     List<Widget> temp = [];
     //Le -1 c'est pour avoir un tri décroissant
 
@@ -234,8 +251,31 @@ class _PageResultatState extends State<PageResultat> {
         temp.add(
           ListTile(
             title: Text(listStruc[i].key!.nom),
-            subtitle: Text(
-                "Nombre de structures en dysfonction en lien direct : ${listStruc[i].value.item1.toSet().length}\nNombre de liens intermédaires avec les structures en dysfonction : ${listStruc[i].value.item2.toSet().length}"),
+            subtitle: Row(children: [
+              Text(
+                  "Nombre de structures en dysfonction en lien direct : ${listStruc[i].value.item1.toSet().length}\nNombre de liens intermédaires avec les structures en dysfonction : ${listStruc[i].value.item2.toSet().length}"),
+              Spacer(),
+              Checkbox(
+                value: listStruc[i].value.item3,
+                onChanged: (bool? value) {
+                  // List<
+                  //         MapEntry<Structure?,
+                  //             Tuple3<List<String>, List<String>, bool>>>
+                  //     newListStruc = List.from(listStruc);
+                  // newListStruc[i] = MapEntry(
+                  //     listStruc[i].key!, listStruc[i].value.withItem3(value!));
+                  // listStruc = newListStruc;
+                  // print(listStruc[i].key!.nom);
+                  // print(listStruc[i].value.item3);
+                  // listStruc = newListStruc;
+
+                  setState(() {
+                    UFSort[UF]![listStruc[i].key] =
+                        listStruc[i].value.withItem3(value!);
+                  });
+                },
+              )
+            ]),
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
